@@ -20,6 +20,9 @@ export default function FloorPlansPage() {
             <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
+            <a href="#available-homes" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
+              🏠 View Available Homes
+            </a>
           </div>
           <p className="text-lg">
             5060 Wind Springs Street, North Las Vegas, NV 89031
@@ -38,6 +41,83 @@ export default function FloorPlansPage() {
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
           Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
         </p>
+      </div>
+
+      {/* RealScout Available Homes Section */}
+      <div id="available-homes" className="mb-16">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+              🏠 Available Homes in Bravado
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+              See real-time availability, pricing, and move-in dates for Bravado homes. 
+              Get instant alerts when new homes become available.
+            </p>
+            
+            {/* RealScout Available Homes Widget */}
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏡 Quick Move-In Homes</h3>
+                  <p className="text-gray-700 mb-4">
+                    Browse homes that are move-in ready or nearing completion. 
+                    Perfect for buyers who want to move quickly.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <div className="text-center text-gray-500 py-8">
+                      <div className="text-4xl mb-4">🚚</div>
+                      <p className="font-semibold">RealScout Quick Move-In Widget</p>
+                      <p className="text-sm">Available homes ready for immediate purchase</p>
+                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏗️ New Construction Homes</h3>
+                  <p className="text-gray-700 mb-4">
+                    Explore homes currently under construction with estimated 
+                    completion dates and customization options.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <div className="text-center text-gray-500 py-8">
+                      <div className="text-4xl mb-4">🔨</div>
+                      <p className="font-semibold">RealScout New Construction Widget</p>
+                      <p className="text-sm">Homes in various stages of construction</p>
+                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Home Status Cards */}
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-green-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">✅</div>
+                <h4 className="font-bold text-gray-900 mb-2">Move-In Ready</h4>
+                <p className="text-sm text-gray-700">Homes completed and ready for immediate occupancy</p>
+              </div>
+              <div className="bg-yellow-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">⏰</div>
+                <h4 className="font-bold text-gray-900 mb-2">Coming Soon</h4>
+                <p className="text-sm text-gray-700">Homes nearing completion with estimated move-in dates</p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">🏗️</div>
+                <h4 className="font-bold text-gray-900 mb-2">Under Construction</h4>
+                <p className="text-sm text-gray-700">Customizable homes with construction timelines</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="/contact" className="cta-button inline-block">
+                Get Notified When New Homes Become Available
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Floor Plans Section */}

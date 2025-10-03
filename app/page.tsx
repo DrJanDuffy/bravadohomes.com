@@ -44,10 +44,90 @@ export default function Page() {
             <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
+            <a href="#property-search" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
+              🔍 Search Properties
+            </a>
           </div>
           <p className="text-lg">
             5060 Wind Springs Street, North Las Vegas, NV 89031
           </p>
+        </div>
+      </div>
+
+      {/* RealScout Property Search Section */}
+      <div id="property-search" className="mb-16">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+              🔍 Search Bravado & North Las Vegas Properties
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+              Use our advanced property search to find your perfect home in Bravado and throughout North Las Vegas. 
+              Get real-time market data and personalized recommendations from Dr. Janet Duffy.
+            </p>
+            
+            {/* RealScout Search Widget */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏡 Bravado Community Search</h3>
+                  <p className="text-gray-700 mb-4">
+                    Search specifically within the Bravado community for available homes, 
+                    floor plans, and pricing information.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <div className="text-center text-gray-500 py-8">
+                      <div className="text-4xl mb-4">🏠</div>
+                      <p className="font-semibold">RealScout Bravado Search Widget</p>
+                      <p className="text-sm">Interactive property search for Bravado homes</p>
+                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🗺️ North Las Vegas Market Search</h3>
+                  <p className="text-gray-700 mb-4">
+                    Explore the broader North Las Vegas market with advanced filters 
+                    for price, size, features, and location.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <div className="text-center text-gray-500 py-8">
+                      <div className="text-4xl mb-4">📊</div>
+                      <p className="font-semibold">RealScout Market Search Widget</p>
+                      <p className="text-sm">Comprehensive North Las Vegas property search</p>
+                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Market Insights */}
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-blue-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">📈</div>
+                <h4 className="font-bold text-gray-900 mb-2">Market Trends</h4>
+                <p className="text-sm text-gray-700">Real-time North Las Vegas market data and pricing trends</p>
+              </div>
+              <div className="bg-purple-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">🏘️</div>
+                <h4 className="font-bold text-gray-900 mb-2">Neighborhood Info</h4>
+                <p className="text-sm text-gray-700">Detailed insights on schools, amenities, and local attractions</p>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">💰</div>
+                <h4 className="font-bold text-gray-900 mb-2">Property Values</h4>
+                <p className="text-sm text-gray-700">Accurate home valuations and investment potential analysis</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="/contact" className="cta-button inline-block">
+                Get Personalized Property Alerts from Dr. Janet Duffy
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

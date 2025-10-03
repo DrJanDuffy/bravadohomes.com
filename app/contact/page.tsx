@@ -48,6 +48,60 @@ export default function ContactPage() {
         </p>
       </div>
 
+      {/* RealScout Lead Capture Section */}
+      <div className="mb-16">
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">
+              🎯 Get Personalized Home Alerts & Market Updates
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Sign up for Dr. Janet Duffy's exclusive property alerts and stay informed about 
+              new Bravado homes, market changes, and investment opportunities.
+            </p>
+            
+            <div className="bg-white p-6 rounded-lg text-gray-900 mb-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">📧 Property Alerts</h3>
+                  <ul className="text-left space-y-2 text-gray-700">
+                    <li>✅ New Bravado homes as they become available</li>
+                    <li>✅ Price changes and market updates</li>
+                    <li>✅ Move-in ready homes notifications</li>
+                    <li>✅ Exclusive pre-construction opportunities</li>
+                    <li>✅ Neighborhood development updates</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">📊 Market Intelligence</h3>
+                  <ul className="text-left space-y-2 text-gray-700">
+                    <li>✅ North Las Vegas market trends</li>
+                    <li>✅ Home value appreciation reports</li>
+                    <li>✅ Investment opportunity analysis</li>
+                    <li>✅ School district updates</li>
+                    <li>✅ Local amenity developments</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* RealScout Lead Capture Widget */}
+            <div className="bg-white p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Sign Up for Dr. Janet Duffy's Alerts</h3>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <div className="text-center text-gray-500 py-8">
+                  <div className="text-4xl mb-4">📧</div>
+                  <p className="font-semibold text-gray-700">RealScout Lead Capture Widget</p>
+                  <p className="text-sm text-gray-600">Advanced lead capture with property preferences</p>
+                  <p className="text-xs mt-2">Configure with your RealScout agent ID and CRM integration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Contact Options Section */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
