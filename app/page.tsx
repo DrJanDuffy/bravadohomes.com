@@ -7,6 +7,14 @@ export default function Page() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
+          <div className="w-full h-full bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 flex items-center justify-center">
+            <div className="text-center text-white opacity-60">
+              <div className="text-6xl mb-4">🏡</div>
+              <p className="text-xl font-semibold">Bravado Community</p>
+              <p className="text-sm">Add community-hero.jpg to see beautiful exterior</p>
+            </div>
+          </div>
+          {/* Uncomment when you add the image:
           <Image
             src="/images/bravado/exterior/community-hero.jpg"
             alt="Bravado Community Exterior"
@@ -14,6 +22,7 @@ export default function Page() {
             className="object-cover opacity-20"
             priority
           />
+          */}
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="vip-badge">
@@ -68,13 +77,20 @@ export default function Page() {
           {/* Residence 1792 */}
           <div className="floor-plan-card card-hover relative">
             <div className="mb-6">
-              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-2">🍳</div>
+                  <p className="text-sm font-medium">Residence 1792 Kitchen</p>
+                  <p className="text-xs">Add residence-1792-kitchen.jpg</p>
+                </div>
+                {/* Uncomment when you add the image:
                 <Image
                   src="/images/bravado/interior/residence-1792-kitchen.jpg"
                   alt="Residence 1792 Kitchen"
                   fill
                   className="object-cover"
                 />
+                */}
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1792</h3>
@@ -130,13 +146,20 @@ export default function Page() {
           <div className="floor-plan-card card-hover relative">
             <div className="most-popular-badge">MOST POPULAR</div>
             <div className="mb-6">
-              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-2">🛋️</div>
+                  <p className="text-sm font-medium">Residence 1943 Living Room</p>
+                  <p className="text-xs">Add residence-1943-living.jpg</p>
+                </div>
+                {/* Uncomment when you add the image:
                 <Image
                   src="/images/bravado/interior/residence-1943-living.jpg"
                   alt="Residence 1943 Living Room"
                   fill
                   className="object-cover"
                 />
+                */}
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1943</h3>
@@ -191,13 +214,20 @@ export default function Page() {
           {/* Residence 2119 */}
           <div className="floor-plan-card card-hover relative">
             <div className="mb-6">
-              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="text-4xl mb-2">🛏️</div>
+                  <p className="text-sm font-medium">Residence 2119 Master Suite</p>
+                  <p className="text-xs">Add residence-2119-master.jpg</p>
+                </div>
+                {/* Uncomment when you add the image:
                 <Image
                   src="/images/bravado/interior/residence-2119-master.jpg"
                   alt="Residence 2119 Master Suite"
                   fill
                   className="object-cover"
                 />
+                */}
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 2119</h3>
