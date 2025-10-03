@@ -1,5 +1,6 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutHomeValue from '../components/realscout-home-value'
+import RealScoutSimpleSearch from '../components/realscout-simple-search'
 
 export default function ContactPage() {
   return (
@@ -100,6 +101,15 @@ export default function ContactPage() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
+
+            {/* Simple Search Widget */}
+            <div className="bg-white p-6 rounded-lg mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 text-center">Quick Property Search</h3>
+              <p className="text-gray-700 text-center mb-6">Start your search right here</p>
+              <div className="max-w-xl mx-auto">
+                <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 

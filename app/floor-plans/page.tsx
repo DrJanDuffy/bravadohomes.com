@@ -1,4 +1,5 @@
 import RealScoutListings from '../components/realscout-listings'
+import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 
 export default function FloorPlansPage() {
   return (
@@ -114,6 +115,20 @@ export default function FloorPlansPage() {
                 <div className="text-3xl mb-2">🏗️</div>
                 <h4 className="font-bold text-gray-900 mb-2">Under Construction</h4>
                 <p className="text-sm text-gray-700">Customizable homes with construction timelines</p>
+              </div>
+            </div>
+
+            {/* Advanced Search Widget */}
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
+                🔍 Advanced Floor Plan Search
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Looking for something specific? Use our advanced search to find homes with 
+                exact features, square footage, bedrooms, and more in North Las Vegas.
+              </p>
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 

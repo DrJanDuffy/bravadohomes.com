@@ -1,5 +1,6 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutHomeValue from '../components/realscout-home-value'
+import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 
 export default function LocationPage() {
   return (
@@ -86,6 +87,20 @@ export default function LocationPage() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
+
+            {/* Advanced Search Widget */}
+            <div className="bg-white p-6 rounded-lg text-gray-900 mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                🔍 Advanced Location-Based Search
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Search for homes in specific areas around North Las Vegas. Find properties near 
+                schools, parks, shopping centers, or with specific commute times to your workplace.
+              </p>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 

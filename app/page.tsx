@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import RealScoutListings from './components/realscout-listings'
 import RealScoutHomeValue from './components/realscout-home-value'
+import RealScoutAdvancedSearch from './components/realscout-advanced-search'
+import RealScoutSimpleSearch from './components/realscout-simple-search'
 
 export default function Page() {
   return (
@@ -67,6 +69,15 @@ export default function Page() {
               Use our advanced property search to find your perfect home in Bravado and throughout North Las Vegas. 
               Get real-time market data and personalized recommendations from Dr. Janet Duffy.
             </p>
+            
+            {/* Quick Simple Search */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-4">Quick Property Search</h3>
+              <p className="text-white mb-6 opacity-90">Start your search with our streamlined search tool</p>
+              <div className="max-w-2xl mx-auto">
+                <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
             
             {/* RealScout Search Widget */}
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
@@ -139,6 +150,20 @@ export default function Page() {
               </p>
               <div className="bg-white p-4 rounded-lg border border-gray-200">
                 <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
+
+            {/* Advanced Search Widget */}
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
+                🔍 Advanced Property Search
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Use our powerful advanced search to find exactly what you're looking for. 
+                Filter by price, size, features, location, and more with Dr. Janet Duffy's RealScout system.
+              </p>
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 

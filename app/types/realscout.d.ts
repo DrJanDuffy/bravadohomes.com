@@ -11,5 +11,11 @@ declare namespace JSX {
     'realscout-home-value': {
       'agent-encoded-id': string
     }
+    'realscout-advanced-search': {
+      'agent-encoded-id': string
+    }
+    'realscout-simple-search': {
+      'agent-encoded-id': string
+    }
   }
 }
