@@ -30,10 +30,15 @@ export default function OptimizedImage({
   const [hasError, setHasError] = useState(false)
 
   const handleError = () => {
+    console.log('Image failed to load:', src, 'falling back to:', fallbackSrc)
     if (!hasError && fallbackSrc) {
       setHasError(true)
       setImgSrc(fallbackSrc)
     }
+  }
+
+  const handleLoad = () => {
+    console.log('Image loaded successfully:', src)
   }
 
   const imageProps = {
@@ -43,6 +48,7 @@ export default function OptimizedImage({
     priority,
     sizes,
     onError: handleError,
+    onLoad: handleLoad,
     ...(fill ? { fill: true } : { width, height })
   }
 

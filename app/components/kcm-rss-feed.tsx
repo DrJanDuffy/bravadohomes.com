@@ -95,24 +95,33 @@ export default function KCMRSSFeed() {
   }
 
   const getLocalImage = (item: RSSItem) => {
-    // Use local Bravado images if no image provided or if image fails to load
-    if (!item.image || item.image.includes('placeholder') || item.image.includes('default')) {
-      const imageOptions = [
-        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80'
-      ]
-      // Use a consistent image based on the article title hash for better caching
-      const titleHash = item.title.split('').reduce((a, b) => {
-        a = ((a << 5) - a) + b.charCodeAt(0)
-        return a & a
-      }, 0)
-      return imageOptions[Math.abs(titleHash) % imageOptions.length]
-    }
-    return item.image
+    // Debug logging
+    console.log('RSS Item:', {
+      title: item.title,
+      hasImage: !!item.image,
+      imageUrl: item.image
+    })
+    
+    // Always use fallback images for now to ensure they show up
+    const imageOptions = [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80'
+    ]
+    
+    // Use a consistent image based on the article title hash for better caching
+    const titleHash = item.title.split('').reduce((a, b) => {
+      a = ((a << 5) - a) + b.charCodeAt(0)
+      return a & a
+    }, 0)
+    
+    const selectedImage = imageOptions[Math.abs(titleHash) % imageOptions.length]
+    console.log('Selected image for', item.title, ':', selectedImage)
+    
+    return selectedImage
   }
 
   const getNextUpdateInfo = () => {
@@ -243,10 +252,21 @@ export default function KCMRSSFeed() {
               const localizedContent = hyperlocalizeContent(item.title, item.description)
               const itemImage = getLocalImage(item)
               
+              console.log('Rendering article:', {
+                index,
+                title: item.title,
+                imageUrl: itemImage,
+                hasImage: !!itemImage
+              })
+              
               return (
                 <article key={item.guid || index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                   {/* Article Image */}
                   <div className="relative h-48 w-full overflow-hidden">
+                    {/* Debug: Show image URL */}
+                    <div className="absolute top-0 left-0 bg-black/70 text-white text-xs p-1 z-10">
+                      {itemImage.substring(0, 50)}...
+                    </div>
                     <OptimizedImage
                       src={itemImage}
                       alt={localizedContent.title}
