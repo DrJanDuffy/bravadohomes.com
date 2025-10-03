@@ -23,24 +23,23 @@ const navItems: Record<string, NavItem> = {
   },
   '/community': {
     name: 'Community',
+    dropdown: [
+      { name: 'Amenities', href: '/amenities' },
+      { name: 'Smart Home Tech', href: '/smart-home-technology' },
+      { name: 'Location', href: '/location' },
+      { name: 'Century Communities', href: '/century-communities' },
+      { name: 'Neighborhoods', href: '/north-las-vegas-neighborhoods' },
+    ]
   },
-  '/location': {
-    name: 'Location',
-  },
-  '/amenities': {
-    name: 'Amenities',
-  },
-  '/new-home-construction': {
-    name: 'New Construction',
-  },
-  '/buyer-representation': {
-    name: 'Buyer Representation',
-  },
-  '/smart-home-technology': {
-    name: 'Smart Home Tech',
-  },
-  '/financing-incentives': {
-    name: 'Financing',
+  '/services': {
+    name: 'Services',
+    dropdown: [
+      { name: 'New Home Construction', href: '/new-home-construction' },
+      { name: 'Buyer Representation', href: '/buyer-representation' },
+      { name: 'Financing & Incentives', href: '/financing-incentives' },
+      { name: 'North Las Vegas Homes', href: '/north-las-vegas-homes' },
+      { name: 'New Homes Las Vegas', href: '/new-homes-las-vegas' },
+    ]
   },
   '/about': {
     name: 'About Dr. Janet',

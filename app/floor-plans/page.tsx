@@ -1,6 +1,18 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 
+export const metadata = {
+  title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
+  description: 'Explore Bravado floor plans in North Las Vegas. Luxury two-story homes from $459,990 with Century Connect smart home technology. Expert guidance from Dr. Janet Duffy.',
+  keywords: 'Bravado floor plans, new construction homes North Las Vegas, Century Communities homes, luxury homes 89031, Dr. Janet Duffy, two-story homes Las Vegas',
+  openGraph: {
+    title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
+    description: 'Explore Bravado floor plans in North Las Vegas. Luxury two-story homes from $459,990 with Century Connect smart home technology. Expert guidance from Dr. Janet Duffy.',
+    url: 'https://bravadohomes.com/floor-plans',
+    type: 'website',
+  },
+}
+
 export default function FloorPlansPage() {
   return (
     <section>
@@ -8,7 +20,7 @@ export default function FloorPlansPage() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">
-            Bravado Floor Plans
+            Bravado Floor Plans North Las Vegas
           </h1>
           <p className="text-2xl mb-4">
             Luxury Two-Story Homes from $459,990

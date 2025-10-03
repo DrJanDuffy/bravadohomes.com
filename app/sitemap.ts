@@ -12,8 +12,13 @@ export default async function sitemap() {
   let routes = [
     // Core pages (high priority)
     { route: '', priority: 1.0, changefreq: 'daily' },
+    { route: '/services', priority: 0.9, changefreq: 'weekly' },
     { route: '/floor-plans', priority: 0.9, changefreq: 'weekly' },
     { route: '/community', priority: 0.9, changefreq: 'weekly' },
+    { route: '/north-las-vegas-homes', priority: 0.9, changefreq: 'daily' },
+    { route: '/new-homes-las-vegas', priority: 0.8, changefreq: 'weekly' },
+    { route: '/north-las-vegas-neighborhoods', priority: 0.8, changefreq: 'weekly' },
+    { route: '/century-communities', priority: 0.8, changefreq: 'weekly' },
     { route: '/location', priority: 0.8, changefreq: 'weekly' },
     { route: '/contact', priority: 0.8, changefreq: 'monthly' },
     

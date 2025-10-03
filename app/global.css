@@ -379,6 +379,144 @@ table {
   aspect-ratio: 16/10;
 }
 
+/* KCM RSS Feed Styling */
+.kcm-rss-feed .line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.kcm-rss-feed article {
+  transition: all 0.3s ease;
+}
+
+.kcm-rss-feed article:hover {
+  transform: translateY(-2px);
+}
+
+.kcm-rss-feed .animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RSS Feed Responsive Design */
+@media (max-width: 768px) {
+  .kcm-rss-feed .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Enhanced Mobile Navigation */
+@media (max-width: 768px) {
+  .navbar .hidden.md\\:block {
+    display: none;
+  }
+  
+  .navbar .flex.items-center.space-x-4 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navbar .flex.items-center.space-x-4 > * {
+    margin: 0;
+  }
+}
+
+/* Mobile-Optimized Hero Sections */
+@media (max-width: 768px) {
+  .hero-gradient {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-gradient h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .hero-gradient p {
+    font-size: 1.125rem;
+  }
+  
+  .hero-gradient .flex.flex-wrap {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .hero-gradient .flex.flex-wrap a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Mobile-Optimized Grid Layouts */
+@media (max-width: 768px) {
+  .grid.md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid.md\\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid.md\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile-Optimized Cards */
+@media (max-width: 768px) {
+  .bg-white.p-8.rounded-lg.shadow-lg {
+    padding: 1.5rem;
+  }
+  
+  .bg-white.p-8.rounded-lg.shadow-lg h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile-Optimized Contact Sections */
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.125rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Mobile-Optimized Buttons */
+@media (max-width: 768px) {
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .bg-gradient-to-r.from-blue-600.to-purple-600 .flex.flex-wrap.justify-center.gap-6 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .bg-gradient-to-r.from-blue-600.to-purple-600 .flex.flex-wrap.justify-center.gap-6 a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* RealScout Widget Styling */
 .realscout-widget-wrapper {
   position: relative;

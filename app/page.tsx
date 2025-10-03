@@ -5,6 +5,7 @@ import RealScoutAdvancedSearch from './components/realscout-advanced-search'
 import RealScoutSimpleSearch from './components/realscout-simple-search'
 import SchemaMarkup from './components/schema'
 import PhotoGallery from './components/photo-gallery'
+import KCMRSSFeed from './components/kcm-rss-feed'
 
 export default function Page() {
   return (
@@ -29,8 +30,8 @@ export default function Page() {
             ⭐ VIP ACCESS
           </div>
           <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">
-            Bravado North Las Vegas
-      </h1>
+            Bravado North Las Vegas Luxury Homes
+          </h1>
           <p className="text-2xl mb-4 text-white drop-shadow-md font-semibold">
             $459K+ Luxury Homes in Gated Community
           </p>
@@ -44,8 +45,8 @@ export default function Page() {
             <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
-            <a href="#property-search" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
-              🔍 Search Properties
+            <a href="/services" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
+              🏗️ View Services
             </a>
           </div>
           <p className="text-lg text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
@@ -54,118 +55,50 @@ export default function Page() {
         </div>
       </div>
 
-      {/* RealScout Property Search Section */}
-      <div id="property-search" className="mb-16">
+      {/* Quick Property Search */}
+      <div className="mb-16">
         <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-              🔍 Search Bravado & North Las Vegas Properties
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              🔍 Find Your Dream Home in North Las Vegas
             </h2>
-            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
-              Use our advanced property search to find your perfect home in Bravado and throughout North Las Vegas. 
-              Get real-time market data and personalized recommendations from Dr. Janet Duffy.
+            <p className="text-lg text-gray-700 mb-8">
+              Start your search for the perfect home in Bravado or throughout North Las Vegas. 
+              Get expert guidance from Dr. Janet Duffy.
             </p>
             
-            {/* Quick Simple Search */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8 text-center">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8">
               <h3 className="text-2xl font-bold text-white mb-4">Quick Property Search</h3>
-              <p className="text-white mb-6 opacity-90">Start your search with our streamlined search tool</p>
+              <p className="text-white mb-6 opacity-90">Enter your criteria to find available homes</p>
               <div className="max-w-2xl mx-auto">
                 <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
-            
-            {/* RealScout Search Widget */}
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏡 Bravado Community Search</h3>
-                  <p className="text-gray-700 mb-4">
-                    Search specifically within the Bravado community for available homes, 
-                    floor plans, and pricing information.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <RealScoutListings
-                      agentEncodedId="QWdlbnQtMjI1MDUw"
-                      sortOrder="PRICE_LOW"
-                      listingStatus="For Sale"
-                      propertyTypes=",SFR,OTHER"
-                      priceMin="500000"
-                      priceMax="600000"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">🗺️ North Las Vegas Market Search</h3>
-                  <p className="text-gray-700 mb-4">
-                    Explore the broader North Las Vegas market with advanced filters 
-                    for price, size, features, and location.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <RealScoutListings
-                      agentEncodedId="QWdlbnQtMjI1MDUw"
-                      sortOrder="PRICE_LOW"
-                      listingStatus="For Sale"
-                      propertyTypes=",SFR,OTHER"
-                      priceMin="450000"
-                      priceMax="800000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            {/* Market Insights */}
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">📈</div>
-                <h4 className="font-bold text-gray-900 mb-2">Market Trends</h4>
-                <p className="text-sm text-gray-700">Real-time North Las Vegas market data and pricing trends</p>
+                <div className="text-3xl mb-2">🏡</div>
+                <h4 className="font-bold text-gray-900 mb-2">Bravado Homes</h4>
+                <p className="text-sm text-gray-700">New construction homes starting at $459K</p>
+                <a href="/floor-plans" className="text-blue-600 font-medium hover:underline">View Floor Plans</a>
               </div>
               <div className="bg-purple-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">🏘️</div>
-                <h4 className="font-bold text-gray-900 mb-2">Neighborhood Info</h4>
-                <p className="text-sm text-gray-700">Detailed insights on schools, amenities, and local attractions</p>
+                <div className="text-3xl mb-2">🏗️</div>
+                <h4 className="font-bold text-gray-900 mb-2">New Construction</h4>
+                <p className="text-sm text-gray-700">Expert guidance through the build process</p>
+                <a href="/services" className="text-blue-600 font-medium hover:underline">Learn More</a>
               </div>
               <div className="bg-green-50 p-6 rounded-lg text-center">
                 <div className="text-3xl mb-2">💰</div>
-                <h4 className="font-bold text-gray-900 mb-2">Property Values</h4>
-                <p className="text-sm text-gray-700">Accurate home valuations and investment potential analysis</p>
-              </div>
-            </div>
-
-            {/* Home Value Widget */}
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8">
-              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
-                🏡 Get Your Home's Current Market Value
-              </h3>
-              <p className="text-gray-700 text-center mb-6">
-                Find out what your home is worth in today's North Las Vegas market. 
-                Get an instant valuation from Dr. Janet Duffy's RealScout system.
-              </p>
-              <div className="bg-white p-4 rounded-lg border border-gray-200">
-                <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
-              </div>
-            </div>
-
-            {/* Advanced Search Widget */}
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg mb-8">
-              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
-                🔍 Advanced Property Search
-              </h3>
-              <p className="text-gray-700 text-center mb-6">
-                Use our powerful advanced search to find exactly what you're looking for. 
-                Filter by price, size, features, location, and more with Dr. Janet Duffy's RealScout system.
-              </p>
-              <div className="bg-white p-4 rounded-lg border border-gray-200">
-                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+                <h4 className="font-bold text-gray-900 mb-2">Market Value</h4>
+                <p className="text-sm text-gray-700">Get instant home valuations</p>
+                <a href="/services" className="text-blue-600 font-medium hover:underline">Get Valuation</a>
               </div>
             </div>
 
             <div className="text-center">
-              <a href="/contact" className="cta-button inline-block">
-                Get Personalized Property Alerts from Dr. Janet Duffy
+              <a href="/services" className="cta-button inline-block">
+                Explore All Services & Tools
               </a>
             </div>
           </div>
@@ -547,6 +480,11 @@ export default function Page() {
             <p className="text-gray-700">Nevada License S.0197614. Deep knowledge of North Las Vegas and the entire metro area.</p>
           </div>
         </div>
+      </div>
+
+      {/* Market Insights Section */}
+      <div className="mb-16">
+        <KCMRSSFeed />
       </div>
 
       {/* Ready to Explore Section */}
