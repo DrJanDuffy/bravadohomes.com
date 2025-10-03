@@ -27,11 +27,20 @@ const navItems: Record<string, NavItem> = {
   '/location': {
     name: 'Location',
   },
+  '/amenities': {
+    name: 'Amenities',
+  },
   '/new-home-construction': {
     name: 'New Construction',
   },
   '/buyer-representation': {
     name: 'Buyer Representation',
+  },
+  '/smart-home-technology': {
+    name: 'Smart Home Tech',
+  },
+  '/financing-incentives': {
+    name: 'Financing',
   },
   '/about': {
     name: 'About Dr. Janet',
