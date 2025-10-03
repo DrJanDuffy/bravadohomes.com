@@ -91,14 +91,38 @@ export default function PhotoGallery() {
 
   return (
     <div className="photo-gallery mb-12" data-image-count={galleryImages.length} role="region" aria-label="Photo Gallery">
-      {/* Gallery Flags */}
-      <div className="gallery_flags mb-4">
-        <span className="gallery_flags_icon custom-flag1-icon flag-dark-purple inline-block px-3 py-1 rounded-full text-white text-sm font-bold mr-2">
-          Two Stunning Models
-        </span>
-        <span className="gallery_flags_icon custom-flag2-icon flag-light-purple inline-block px-3 py-1 rounded-full text-white text-sm font-bold">
-          Tour Today!
-        </span>
+      {/* Gallery Header */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold mb-4 text-gray-900">
+          Explore the Stunning Homes and Beautiful Community at Bravado
+        </h2>
+        <p className="text-lg text-gray-700 mb-6 max-w-4xl mx-auto">
+          From modern exteriors to luxurious interiors, discover why Bravado is the perfect place to call home in North Las Vegas. 
+          Experience the exceptional quality and attention to detail that defines our luxury new construction homes.
+        </p>
+        
+        {/* Gallery Flags */}
+        <div className="gallery_flags mb-6">
+          <span className="gallery_flags_icon custom-flag1-icon flag-dark-purple inline-block px-3 py-1 rounded-full text-white text-sm font-bold mr-2">
+            Two Stunning Models
+          </span>
+          <span className="gallery_flags_icon custom-flag2-icon flag-light-purple inline-block px-3 py-1 rounded-full text-white text-sm font-bold">
+            Tour Today!
+          </span>
+        </div>
+        
+        {/* Call to Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="tel:+17025001955" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+            📞 Schedule a Tour: (702) 500-1955
+          </a>
+          <a href="/floor-plans" className="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors">
+            🏠 View Floor Plans
+          </a>
+          <a href="/community" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors">
+            🏘️ Explore Community
+          </a>
+        </div>
       </div>
 
       {/* Main Gallery */}
@@ -144,16 +168,25 @@ export default function PhotoGallery() {
               className={`carousel-item relative ${index === currentSlide ? 'active' : ''}`}
               data-index={index}
             >
-              <div className="relative w-full h-96 md:h-[500px] lg:h-[600px]">
+              <div className="relative w-full max-w-4xl mx-auto h-64 md:h-80 lg:h-96">
                 <OptimizedImage
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center rounded-lg shadow-lg"
                   priority={index === 0}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 60vw"
                   fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
+                {/* Image Overlay with Description */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-lg">
+                  <h3 className="text-white font-semibold text-lg mb-1">
+                    {image.alt.split(' - ')[0]}
+                  </h3>
+                  <p className="text-white/90 text-sm">
+                    {image.alt.split(' - ')[1] || 'Premium luxury home features'}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -161,27 +194,37 @@ export default function PhotoGallery() {
       </div>
 
       {/* Thumbnail Navigation */}
-      <div id="thumbnail-list" className="mt-4">
-        <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
+      <div id="thumbnail-list" className="mt-6">
+        <div className="text-center mb-4">
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Gallery Navigation</h3>
+          <p className="text-gray-600 text-sm">Click any thumbnail to view full image</p>
+        </div>
+        <div className="flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
           {galleryImages.map((image, index) => (
             <button
               key={index}
-              className={`thumbnail relative overflow-hidden rounded-lg transition-all ${
-                index === currentSlide ? 'active ring-2 ring-blue-600 ring-offset-2' : 'opacity-70 hover:opacity-100'
+              className={`thumbnail relative overflow-hidden rounded-lg transition-all group ${
+                index === currentSlide ? 'active ring-3 ring-blue-600 ring-offset-2 scale-105' : 'opacity-75 hover:opacity-100 hover:scale-105'
               }`}
               onClick={() => goToSlide(index)}
               data-target="#main-gallery"
               data-slide-to={index}
             >
-              <div className="relative w-16 h-16 md:w-20 md:h-20">
+              <div className="relative w-20 h-20 md:w-24 md:h-24">
                 <OptimizedImage
                   src={image.thumbnail}
                   alt={`${image.alt} thumbnail`}
                   fill
                   className="object-cover object-center"
-                  sizes="80px"
+                  sizes="96px"
                   fallbackSrc={FALLBACK_IMAGES.default}
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                <div className="absolute bottom-1 left-1 right-1">
+                  <span className="bg-white/90 text-black text-xs font-bold px-1 rounded">
+                    {index + 1}
+                  </span>
+                </div>
               </div>
               <span className="sr-only">Slide {index + 1} of {galleryImages.length}</span>
             </button>
@@ -189,14 +232,36 @@ export default function PhotoGallery() {
         </div>
       </div>
 
-      {/* Gallery Info */}
-      <div className="text-center mt-4">
-        <p className="text-sm text-gray-600">
-          Showing {currentSlide + 1} of {galleryImages.length} images
-        </p>
-        <p className="text-xs text-gray-500 mt-1">
-          Professional photography by Century Communities
-        </p>
+      {/* Gallery Info & Additional CTAs */}
+      <div className="text-center mt-8">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-6">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            Ready to Experience Bravado in Person?
+          </h3>
+          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+            These images showcase just a glimpse of the luxury and quality you'll find at Bravado. 
+            Schedule your personal tour today to see these stunning homes and community features up close.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:+17025001955" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg">
+              📞 Call Dr. Janet: (702) 500-1955
+            </a>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors shadow-lg">
+              📧 Email for Tour Info
+            </a>
+            <a href="/contact" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors shadow-lg">
+              📋 Contact Form
+            </a>
+          </div>
+        </div>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600">
+          <p>Showing {currentSlide + 1} of {galleryImages.length} professional images</p>
+          <span className="hidden sm:block">•</span>
+          <p>Professional photography by Century Communities</p>
+          <span className="hidden sm:block">•</span>
+          <p>Updated daily with new listings</p>
+        </div>
       </div>
     </div>
   )
