@@ -17,12 +17,12 @@ export default function FloorPlansPage() {
             <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               📞 Call: (702) 123-4567
             </a>
-            <a href="mailto:janet@bravadohomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
           </div>
           <p className="text-lg">
-            Eagle Way, North Las Vegas, NV 89081
+            5060 Wind Springs Street, North Las Vegas, NV 89031
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function FloorPlansPage() {
           From <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—<strong>Bravado</strong> offers exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          Located at <strong>Eagle Way, North Las Vegas, NV 89081</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
+          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
         </p>
       </div>
 
@@ -406,7 +406,7 @@ export default function FloorPlansPage() {
             CALL NOW<br />
             <span className="text-2xl">(702) 123-4567</span>
           </a>
-          <a href="mailto:janet@bravadohomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
             DrJanSells@BravadoHomes.com
           </a>
@@ -415,8 +415,8 @@ export default function FloorPlansPage() {
         <div className="grid md:grid-cols-3 gap-8 text-left">
           <div className="contact-info">
             <h3 className="text-xl font-bold mb-3">Bravado North Las Vegas</h3>
-            <p>Eagle Way<br />
-            North Las Vegas, NV 89081<br />
+            <p>5060 Wind Springs Street<br />
+            North Las Vegas, NV 89031<br />
             (702) 123-4567</p>
           </div>
           

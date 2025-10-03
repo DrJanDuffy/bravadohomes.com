@@ -20,12 +20,12 @@ export default function CommunityPage() {
             <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               📞 Call: (702) 123-4567
             </a>
-            <a href="mailto:janet@bravadohomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
           </div>
           <p className="text-lg">
-            Eagle Way, North Las Vegas, NV 89081
+            5060 Wind Springs Street, North Las Vegas, NV 89031
           </p>
         </div>
       </div>
@@ -301,7 +301,7 @@ export default function CommunityPage() {
             CALL NOW<br />
             <span className="text-2xl">(702) 123-4567</span>
           </a>
-          <a href="mailto:janet@bravadohomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
             DrJanSells@BravadoHomes.com
           </a>
@@ -310,8 +310,8 @@ export default function CommunityPage() {
         <div className="grid md:grid-cols-3 gap-8 text-left">
           <div className="contact-info">
             <h3 className="text-xl font-bold mb-3">Bravado North Las Vegas</h3>
-            <p>Eagle Way<br />
-            North Las Vegas, NV 89081<br />
+            <p>5060 Wind Springs Street<br />
+            North Las Vegas, NV 89031<br />
             (702) 123-4567</p>
           </div>
           

@@ -39,7 +39,7 @@ export default function ContactPage() {
                 <a href="tel:+17021234567" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                   Call (702) 123-4567
                 </a>
-                <a href="mailto:janet@bravadohomes.com" className="bg-white text-blue-600 border-2 border-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-white text-blue-600 border-2 border-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                   Email Dr. Duffy
                 </a>
               </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 to discuss your needs, show you available floor plans, and answer all 
                 your questions about life at Bravado.
               </p>
-              <a href="mailto:janet@bravadohomes.com" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+              <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
                 Schedule Virtual Meeting
               </a>
             </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Phone:</strong> (702) 123-4567<br />
-                <strong>Email:</strong> janet@bravadohomes.com
+                <strong>Email:</strong> DrJanSells@BravadoHomes.com
               </p>
               <p className="text-gray-700">
                 <strong>Specialty:</strong> New Home Sales<br />
@@ -105,8 +105,8 @@ export default function ContactPage() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold mb-3 text-gray-900">Bravado Community Address</h3>
               <p className="text-gray-700">
-                Eagle Way<br />
-                North Las Vegas, NV 89081<br />
+                5060 Wind Springs Street<br />
+                North Las Vegas, NV 89031<br />
                 <span className="text-sm text-gray-600">Near Craig Ranch Regional Park</span>
               </p>
             </div>
@@ -248,7 +248,7 @@ export default function ContactPage() {
           <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             Call Now: (702) 123-4567
           </a>
-          <a href="mailto:janet@bravadohomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
             Send Email
           </a>
           <a href="/floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
