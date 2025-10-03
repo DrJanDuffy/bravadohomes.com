@@ -98,30 +98,36 @@ export default function SchemaMarkup() {
                 "description": "1,792 sq ft, 3-4 bedrooms, 2.5 bathrooms",
                 "category": "New Home Construction"
               },
-              "price": "459990",
-              "priceCurrency": "USD"
+              "price": "459790",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2024-01-01"
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Product",
                 "name": "Residence 1943",
-                "description": "1,943 sq ft, 3-4 bedrooms, 2.5 bathrooms",
+                "description": "1,943 sq ft, 3 bedrooms, 2.5 bathrooms",
                 "category": "New Home Construction"
               },
-              "price": "469990",
-              "priceCurrency": "USD"
+              "price": "469790",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2024-01-01"
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Product",
                 "name": "Residence 2119",
-                "description": "2,119 sq ft, 3-4 bedrooms, 2.5 bathrooms",
+                "description": "2,119 sq ft, 3 bedrooms, 2.5 bathrooms",
                 "category": "New Home Construction"
               },
-              "price": "479990",
-              "priceCurrency": "USD"
+              "price": "479790",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2024-01-01"
             }
           ]
         },
@@ -241,21 +247,21 @@ export default function SchemaMarkup() {
             "@type": "PropertyValue",
             "name": "Residence 1792",
             "description": "1,792 sq ft, 3-4 bedrooms, 2.5 bathrooms",
-            "value": "459990",
+            "value": "459790",
             "unitCode": "USD"
           },
           {
             "@type": "PropertyValue",
             "name": "Residence 1943",
-            "description": "1,943 sq ft, 3-4 bedrooms, 2.5 bathrooms",
-            "value": "469990",
+            "description": "1,943 sq ft, 3 bedrooms, 2.5 bathrooms",
+            "value": "469790",
             "unitCode": "USD"
           },
           {
             "@type": "PropertyValue",
             "name": "Residence 2119",
-            "description": "2,119 sq ft, 3-4 bedrooms, 2.5 bathrooms",
-            "value": "479990",
+            "description": "2,119 sq ft, 3 bedrooms, 2.5 bathrooms",
+            "value": "479790",
             "unitCode": "USD"
           }
         ],
@@ -346,7 +352,7 @@ export default function SchemaMarkup() {
         "about": {
           "@id": "https://bravadohomes.com/#community"
         },
-        "description": "Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes from $459,990.",
+        "description": "Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes starting at $459,790. Now selling - limited availability!",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
