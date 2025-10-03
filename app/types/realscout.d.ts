@@ -8,5 +8,8 @@ declare namespace JSX {
       'price-min'?: string
       'price-max'?: string
     }
+    'realscout-home-value': {
+      'agent-encoded-id': string
+    }
   }
 }

@@ -1,4 +1,5 @@
 import RealScoutListings from '../components/realscout-listings'
+import RealScoutHomeValue from '../components/realscout-home-value'
 
 export default function LocationPage() {
   return (
@@ -72,6 +73,20 @@ export default function LocationPage() {
                 priceMin="400000"
                 priceMax="750000"
               />
+            </div>
+
+            {/* Home Value Widget */}
+            <div className="bg-white p-6 rounded-lg text-gray-900 mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                🏡 What's Your Current Home Worth?
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Thinking of moving to North Las Vegas? Get an instant valuation of your current home 
+                to see how it compares to the Bravado community pricing.
+              </p>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
             </div>
 
             <div className="text-center mt-8">

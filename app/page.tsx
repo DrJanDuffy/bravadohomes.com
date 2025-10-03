@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import RealScoutListings from './components/realscout-listings'
+import RealScoutHomeValue from './components/realscout-home-value'
 
 export default function Page() {
   return (
@@ -124,6 +125,20 @@ export default function Page() {
                 <div className="text-3xl mb-2">💰</div>
                 <h4 className="font-bold text-gray-900 mb-2">Property Values</h4>
                 <p className="text-sm text-gray-700">Accurate home valuations and investment potential analysis</p>
+              </div>
+            </div>
+
+            {/* Home Value Widget */}
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
+                🏡 Get Your Home's Current Market Value
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Find out what your home is worth in today's North Las Vegas market. 
+                Get an instant valuation from Dr. Janet Duffy's RealScout system.
+              </p>
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 

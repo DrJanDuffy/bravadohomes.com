@@ -1,4 +1,5 @@
 import RealScoutListings from '../components/realscout-listings'
+import RealScoutHomeValue from '../components/realscout-home-value'
 
 export default function ContactPage() {
   return (
@@ -85,6 +86,20 @@ export default function ContactPage() {
                     <li>✅ Local amenity developments</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+
+            {/* Home Value Widget */}
+            <div className="bg-white p-6 rounded-lg text-gray-900 mb-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 text-center">
+                🏡 Get Your Home's Instant Market Value
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Curious about your current home's value? Get an instant, accurate valuation 
+                from Dr. Janet Duffy's RealScout system. Perfect for planning your next move to Bravado!
+              </p>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
               </div>
             </div>
 
