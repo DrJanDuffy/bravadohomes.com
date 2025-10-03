@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: 'Bravado Homes by Dr. Janet Duffy | New Homes in North Las Vegas',
     template: '%s | Bravado Homes by Dr. Janet Duffy',
   },
-  description: 'Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes from $459,990.',
+  description: 'Now Selling! Discover luxury new homes at Bravado in North Las Vegas starting at $459,790. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on 3 two-story floor plans with 3 to 5 bedrooms and smart tech included.',
   keywords: [
     'Bravado North Las Vegas',
     'new homes Las Vegas',
@@ -45,7 +45,17 @@ export const metadata: Metadata = {
     'Century Connect',
     'Residence 1792',
     'Residence 1943',
-    'Residence 2119'
+    'Residence 2119',
+    'now selling',
+    'two-story floor plans',
+    '3 to 5 bedrooms',
+    '2,119 sq ft',
+    'smart tech included',
+    'Nellis AFB',
+    'Craig Ranch Regional Park',
+    'starting at $459,790',
+    'HOA fees',
+    'Building Homes Since 2002'
   ],
   authors: [{ name: 'Dr. Janet Duffy', url: 'https://bravadohomes.com' }],
   creator: 'Dr. Janet Duffy',
@@ -57,7 +67,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Bravado Homes by Dr. Janet Duffy | New Homes in North Las Vegas',
-    description: 'Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes from $459,990.',
+    description: 'Now Selling! Discover luxury new homes at Bravado in North Las Vegas starting at $459,790. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on 3 two-story floor plans with 3 to 5 bedrooms and smart tech included.',
     url: baseUrl,
     siteName: 'Bravado Homes by Dr. Janet Duffy',
     locale: 'en_US',

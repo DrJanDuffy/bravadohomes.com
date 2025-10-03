@@ -3,11 +3,11 @@ import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 
 export const metadata = {
   title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
-  description: 'Explore Bravado floor plans in North Las Vegas. Luxury two-story homes from $459,990 with Century Connect smart home technology. Expert guidance from Dr. Janet Duffy.',
-  keywords: 'Bravado floor plans, new construction homes North Las Vegas, Century Communities homes, luxury homes 89031, Dr. Janet Duffy, two-story homes Las Vegas',
+  description: 'Now Selling! Explore 3 two-story floor plans at Bravado North Las Vegas starting at $459,790. Smart tech included with Century Connect® package. Expert guidance from Dr. Janet Duffy, Featured Partner.',
+  keywords: 'Bravado floor plans, now selling, 3 two-story floor plans, new construction homes North Las Vegas, Century Communities homes, luxury homes 89031, Dr. Janet Duffy, two-story homes Las Vegas, smart tech included, Century Connect, starting at $459,790, 3 to 5 bedrooms, 2,119 sq ft, Nellis AFB, Craig Ranch Regional Park',
   openGraph: {
     title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
-    description: 'Explore Bravado floor plans in North Las Vegas. Luxury two-story homes from $459,990 with Century Connect smart home technology. Expert guidance from Dr. Janet Duffy.',
+    description: 'Now Selling! Explore 3 two-story floor plans at Bravado North Las Vegas starting at $459,790. Smart tech included with Century Connect® package. Expert guidance from Dr. Janet Duffy, Featured Partner.',
     url: 'https://bravadohomes.com/floor-plans',
     type: 'website',
   },
@@ -23,7 +23,7 @@ export default function FloorPlansPage() {
             Bravado Floor Plans North Las Vegas
           </h1>
           <p className="text-2xl mb-4">
-            Luxury Two-Story Homes from $459,990
+            Now Selling! Luxury Two-Story Homes Starting at $459,790
           </p>
           <p className="text-xl mb-8 opacity-90">
             Expert Guidance from Dr. Janet Duffy | Century Communities Partnership

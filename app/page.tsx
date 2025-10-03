@@ -35,7 +35,7 @@ export default function Page() {
             Bravado North Las Vegas Luxury Homes
           </h1>
           <p className="text-2xl mb-4 text-white drop-shadow-md font-semibold">
-            $459K+ Luxury Homes in Gated Community
+            Now Selling! Starting at $459,790 - Luxury Homes in Gated Community
           </p>
           <p className="text-xl mb-8 text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm">
             Expert Guidance from Dr. Janet Duffy | Century Communities Partnership
@@ -127,7 +127,7 @@ export default function Page() {
           Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. Residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, and world-class golf courses. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
+          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, world-class golf courses, and convenient access to <strong>Nellis AFB</strong>. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -155,7 +155,7 @@ export default function Page() {
           Bravado Floor Plans
         </h2>
         <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          Choose from three stunning two-story home designs, each featuring <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and room for customization
+          <strong>Now Selling!</strong> Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each home features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -172,10 +172,10 @@ export default function Page() {
                   fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1792</h3>
-                <p className="price-highlight">From $459,990</p>
-              </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1792</h3>
+                    <p className="price-highlight">From $459,790</p>
+                  </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -244,10 +244,10 @@ export default function Page() {
                   fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1943</h3>
-                <p className="price-highlight">From $469,990</p>
-              </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1943</h3>
+                    <p className="price-highlight">From $469,790</p>
+                  </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -307,10 +307,10 @@ export default function Page() {
                   fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 2119</h3>
-                <p className="price-highlight">From $479,990</p>
-              </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 2119</h3>
+                    <p className="price-highlight">From $479,790</p>
+                  </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
