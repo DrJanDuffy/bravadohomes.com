@@ -11,15 +11,15 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Bravado Homes | Dr. Janet Duffy - Century Communities',
+    template: '%s | Bravado Homes by Dr. Janet Duffy',
   },
-  description: 'This is my portfolio.',
+  description: 'Discover your dream home at Bravado in North Las Vegas. Dr. Janet Duffy, featured partner with Century Communities, offers stunning new homes from $459,990 with modern amenities and smart home features.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Bravado Homes | Dr. Janet Duffy - Century Communities',
+    description: 'Discover your dream home at Bravado in North Las Vegas. Dr. Janet Duffy, featured partner with Century Communities, offers stunning new homes from $459,990 with modern amenities and smart home features.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Bravado Homes by Dr. Janet Duffy',
     locale: 'en_US',
     type: 'website',
   },
@@ -52,7 +52,7 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-6xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}

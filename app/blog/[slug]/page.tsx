@@ -3,13 +3,14 @@ import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
 
-export async function generateStaticParams() {
-  let posts = getBlogPosts()
+// Static generation disabled due to React version conflicts with MDX content
+// export async function generateStaticParams() {
+//   let posts = getBlogPosts()
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
-}
+//   return posts.map((post) => ({
+//     slug: post.slug,
+//   }))
+// }
 
 export function generateMetadata({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
