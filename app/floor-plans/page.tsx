@@ -19,6 +19,9 @@ export default function FloorPlansPage() {
       {/* Hero Section */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="vip-badge">
+            ⭐ LIMITED TIME: 3 FLOOR PLANS REMAINING ⭐
+          </div>
           <h1 className="text-5xl font-bold mb-6">
             Bravado Floor Plans North Las Vegas
           </h1>
@@ -29,14 +32,14 @@ export default function FloorPlansPage() {
             Expert Guidance from Dr. Janet Duffy | Century Communities Partnership
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
-            <a href="#available-homes" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
-              🏠 View Available Homes
+            <a href="#floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+              🏠 View Floor Plans
             </a>
           </div>
           <p className="text-lg">
@@ -45,121 +48,30 @@ export default function FloorPlansPage() {
         </div>
       </div>
 
-      {/* About Floor Plans Section */}
-      <div className="about-section">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-          About Bravado Floor Plans
-        </h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, represents <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado</strong>, offering exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
+      {/* Urgency Banner */}
+      <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg mb-12 text-center">
+        <h2 className="text-2xl font-bold mb-4">🚨 ACT FAST - LIMITED AVAILABILITY!</h2>
+        <p className="text-lg mb-4">
+          <strong>Only 3 floor plans left at Bravado!</strong> These luxury homes are selling out fast. 
+          Get your VIP tour with Dr. Janet Duffy before they're gone forever.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
-        </p>
-      </div>
-
-      {/* RealScout Available Homes Section */}
-      <div id="available-homes" className="mb-16">
-        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-              🏠 Available Homes in Bravado
-            </h2>
-            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
-              See real-time availability, pricing, and move-in dates for Bravado homes. 
-              Get instant alerts when new homes become available.
-            </p>
-            
-            {/* RealScout Available Homes Widget */}
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏡 Quick Move-In Homes</h3>
-                  <p className="text-gray-700 mb-4">
-                    Browse homes that are move-in ready or nearing completion. 
-                    Perfect for buyers who want to move quickly.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <RealScoutListings
-                      agentEncodedId="QWdlbnQtMjI1MDUw"
-                      sortOrder="PRICE_LOW"
-                      listingStatus="For Sale"
-                      propertyTypes=",SFR,OTHER"
-                      priceMin="459990"
-                      priceMax="479990"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏗️ New Construction Homes</h3>
-                  <p className="text-gray-700 mb-4">
-                    Explore homes currently under construction with estimated 
-                    completion dates and customization options.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <RealScoutListings
-                      agentEncodedId="QWdlbnQtMjI1MDUw"
-                      sortOrder="PRICE_LOW"
-                      listingStatus="For Sale"
-                      propertyTypes=",SFR,OTHER"
-                      priceMin="450000"
-                      priceMax="750000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Home Status Cards */}
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-green-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">✅</div>
-                <h4 className="font-bold text-gray-900 mb-2">Move-In Ready</h4>
-                <p className="text-sm text-gray-700">Homes completed and ready for immediate occupancy</p>
-              </div>
-              <div className="bg-yellow-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">⏰</div>
-                <h4 className="font-bold text-gray-900 mb-2">Coming Soon</h4>
-                <p className="text-sm text-gray-700">Homes nearing completion with estimated move-in dates</p>
-              </div>
-              <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">🏗️</div>
-                <h4 className="font-bold text-gray-900 mb-2">Under Construction</h4>
-                <p className="text-sm text-gray-700">Customizable homes with construction timelines</p>
-              </div>
-            </div>
-
-            {/* Advanced Search Widget */}
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg mb-8">
-              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
-                🔍 Advanced Floor Plan Search
-              </h3>
-              <p className="text-gray-700 text-center mb-6">
-                Looking for something specific? Use our advanced search to find homes with 
-                exact features, square footage, bedrooms, and more in North Las Vegas.
-              </p>
-              <div className="bg-white p-4 rounded-lg border border-gray-200">
-                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="/contact" className="cta-button inline-block">
-                Get Notified When New Homes Become Available
-              </a>
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="tel:+17025001955" className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            📞 SECURE YOUR HOME: (702) 500-1955
+          </a>
+          <a href="#floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-red-600 transition-colors">
+            👀 VIEW FLOOR PLANS NOW
+          </a>
         </div>
       </div>
 
-      {/* Floor Plans Section */}
-      <div className="content-section">
+      {/* Floor Plans Section - Move up for immediate engagement */}
+      <div id="floor-plans" className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Bravado Floor Plans
+          Bravado Floor Plans - Now Selling!
         </h2>
         <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          Choose from three stunning two-story home designs, each featuring <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and room for customization
+          <strong>Limited Availability!</strong> Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each home features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -326,6 +238,131 @@ export default function FloorPlansPage() {
             <a href="/contact" className="cta-button w-full text-center">
               Learn More About Plan 2119
             </a>
+          </div>
+        </div>
+
+        {/* Urgent CTA after floor plans */}
+        <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-lg mt-12 text-center">
+          <h3 className="text-2xl font-bold mb-4">⚡ ACT NOW - LIMITED TIME OFFER!</h3>
+          <p className="text-lg mb-6">
+            Get VIP access to Bravado floor plans with Dr. Janet Duffy's expert guidance. 
+            <strong> Schedule your private tour today!</strong>
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:+17025001955" className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 CALL NOW: (702) 500-1955
+            </a>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-colors text-lg">
+              📧 EMAIL DR. JANET
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* About Floor Plans Section */}
+      <div className="about-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          About Bravado Floor Plans
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, represents <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado</strong>, offering exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
+        </p>
+      </div>
+
+      {/* RealScout Available Homes Section - Move down for secondary engagement */}
+      <div id="available-homes" className="mb-16">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+              🏠 Available Homes in Bravado
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+              See real-time availability, pricing, and move-in dates for Bravado homes. 
+              Get instant alerts when new homes become available.
+            </p>
+            
+            {/* RealScout Available Homes Widget */}
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏡 Quick Move-In Homes</h3>
+                  <p className="text-gray-700 mb-4">
+                    Browse homes that are move-in ready or nearing completion. 
+                    Perfect for buyers who want to move quickly.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="459990"
+                      priceMax="479990"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">🏗️ New Construction Homes</h3>
+                  <p className="text-gray-700 mb-4">
+                    Explore homes currently under construction with estimated 
+                    completion dates and customization options.
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200">
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="450000"
+                      priceMax="750000"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Home Status Cards */}
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-green-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">✅</div>
+                <h4 className="font-bold text-gray-900 mb-2">Move-In Ready</h4>
+                <p className="text-sm text-gray-700">Homes completed and ready for immediate occupancy</p>
+              </div>
+              <div className="bg-yellow-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">⏰</div>
+                <h4 className="font-bold text-gray-900 mb-2">Coming Soon</h4>
+                <p className="text-sm text-gray-700">Homes nearing completion with estimated move-in dates</p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">🏗️</div>
+                <h4 className="font-bold text-gray-900 mb-2">Under Construction</h4>
+                <p className="text-sm text-gray-700">Customizable homes with construction timelines</p>
+              </div>
+            </div>
+
+            {/* Advanced Search Widget */}
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
+                🔍 Advanced Floor Plan Search
+              </h3>
+              <p className="text-gray-700 text-center mb-6">
+                Looking for something specific? Use our advanced search to find homes with 
+                exact features, square footage, bedrooms, and more in North Las Vegas.
+              </p>
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="/contact" className="cta-button inline-block">
+                Get Notified When New Homes Become Available
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -39,6 +39,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="vip-badge">
+            ⭐ VIP CENTURY COMMUNITIES PARTNER ⭐
+          </div>
           <h1 className="text-5xl font-bold mb-6">
             About Dr. Janet Duffy
           </h1>
@@ -49,19 +52,36 @@ export default function AboutPage() {
             Century Communities Partnership | Las Vegas Real Estate Expert
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
-            <a href="/contact" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
+            <a href="/contact" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
               🏠 Schedule Consultation
             </a>
           </div>
           <p className="text-lg">
             Nevada License: S.0197614 | DrJanSells@BravadoHomes.com
           </p>
+        </div>
+      </div>
+
+      {/* Urgency Banner */}
+      <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg mb-12 text-center">
+        <h2 className="text-2xl font-bold mb-4">🚨 LIMITED TIME: BRAVADO HOMES SELLING FAST!</h2>
+        <p className="text-lg mb-4">
+          <strong>Only 3 floor plans remaining!</strong> Get VIP access to Bravado with Dr. Janet Duffy's expert guidance. 
+          Don't miss your chance to own a luxury home in North Las Vegas.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="tel:+17025001955" className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            📞 SECURE YOUR HOME: (702) 500-1955
+          </a>
+          <a href="/floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-red-600 transition-colors">
+            👀 VIEW FLOOR PLANS
+          </a>
         </div>
       </div>
 

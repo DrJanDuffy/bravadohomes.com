@@ -12,7 +12,7 @@ export default function Page() {
     <>
       <SchemaMarkup />
       <section>
-      {/* Hero Section */}
+      {/* Hero Section - Above the Fold */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
@@ -29,7 +29,7 @@ export default function Page() {
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="vip-badge">
-            ⭐ VIP ACCESS
+            ⭐ LIMITED TIME: VIP ACCESS TO BRAVADO ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">
             Bravado North Las Vegas Luxury Homes
@@ -41,14 +41,14 @@ export default function Page() {
             Expert Guidance from Dr. Janet Duffy | Century Communities Partnership
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
-            <a href="/services" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
-              🏗️ View Services
+            <a href="#floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+              🏠 View Floor Plans
             </a>
           </div>
           <p className="text-lg text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
@@ -57,105 +57,30 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Quick Property Search */}
-      <div className="content-section">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-          🔍 Find Your Dream Home in North Las Vegas
-        </h2>
-        <p className="text-lg text-gray-700 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
-          Start your search for the perfect home in <strong>Bravado</strong> or throughout North Las Vegas. 
-          Get expert guidance from <strong>Dr. Janet Duffy</strong>.
+      {/* Urgency & Social Proof Section */}
+      <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg mb-12 text-center">
+        <h2 className="text-2xl font-bold mb-4">🚨 LIMITED AVAILABILITY - ACT FAST!</h2>
+        <p className="text-lg mb-4">
+          <strong>Only 3 floor plans remaining!</strong> Bravado is selling out fast. 
+          Get your VIP tour with Dr. Janet Duffy before these luxury homes are gone.
         </p>
-            
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Quick Property Search</h3>
-              <p className="text-white mb-6 opacity-90">Enter your criteria to find available homes</p>
-              <div className="max-w-2xl mx-auto">
-                <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">🏡</div>
-                <h4 className="font-bold text-gray-900 mb-2">Bravado Homes</h4>
-                <p className="text-sm text-gray-700">New construction homes starting at $459K</p>
-                <a href="/floor-plans" className="text-blue-600 font-medium hover:underline">View Floor Plans</a>
-              </div>
-              <div className="bg-purple-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">🏗️</div>
-                <h4 className="font-bold text-gray-900 mb-2">New Construction</h4>
-                <p className="text-sm text-gray-700">Expert guidance through the build process</p>
-                <a href="/services" className="text-blue-600 font-medium hover:underline">Learn More</a>
-              </div>
-              <div className="bg-green-50 p-6 rounded-lg text-center">
-                <div className="text-3xl mb-2">💰</div>
-                <h4 className="font-bold text-gray-900 mb-2">Market Value</h4>
-                <p className="text-sm text-gray-700">Get instant home valuations</p>
-                <a href="/services" className="text-blue-600 font-medium hover:underline">Get Valuation</a>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="/services" className="cta-button inline-block">
-                Explore All Services & Tools
-              </a>
-            </div>
-      </div>
-
-      {/* Photo Gallery Section */}
-      <div className="content-section">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-          Bravado Community Gallery
-        </h2>
-        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto leading-relaxed">
-          Explore the stunning homes and beautiful community at <strong>Bravado</strong>. From modern exteriors to luxurious interiors, 
-          discover why Bravado is the perfect place to call home in North Las Vegas.
-        </p>
-        <PhotoGallery />
-      </div>
-
-      {/* About Bravado Section */}
-      <div className="about-section">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-          About Bravado by Century Communities
-        </h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, is proud to represent <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado in North Las Vegas, NV</strong>. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative <strong>Century Connect® smart home package</strong>, modern design elements, and premium finishes that define luxury living in the 89031 zip code.
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. Residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, world-class golf courses, and convenient access to <strong>Nellis AFB</strong>. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
-        </p>
-        
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div className="text-center">
-            <a href="/community" className="cta-button w-full text-center">
-              🏘️ Community Features
-            </a>
-          </div>
-          <div className="text-center">
-            <a href="/amenities" className="cta-button w-full text-center">
-              🌳 Amenities & Lifestyle
-            </a>
-          </div>
-          <div className="text-center">
-            <a href="/smart-home-technology" className="cta-button w-full text-center">
-              🏠 Smart Home Tech
-            </a>
-          </div>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="tel:+17025001955" className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            📞 SECURE YOUR HOME: (702) 500-1955
+          </a>
+          <a href="#floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-red-600 transition-colors">
+            👀 VIEW AVAILABLE FLOOR PLANS
+          </a>
         </div>
       </div>
 
-      {/* Floor Plans Section */}
-      <div className="content-section">
+      {/* Floor Plans Section - Move up for immediate engagement */}
+      <div id="floor-plans" className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Bravado Floor Plans
+          Bravado Floor Plans - Now Selling!
         </h2>
         <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          <strong>Now Selling!</strong> Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each home features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
+          <strong>Limited Availability!</strong> Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each home features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -357,12 +282,163 @@ export default function Page() {
             </a>
           </div>
         </div>
+
+        {/* Urgent CTA after floor plans */}
+        <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-lg mt-12 text-center">
+          <h3 className="text-2xl font-bold mb-4">⚡ ACT NOW - LIMITED TIME OFFER!</h3>
+          <p className="text-lg mb-6">
+            Get VIP access to Bravado floor plans with Dr. Janet Duffy's expert guidance. 
+            <strong> Schedule your private tour today!</strong>
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:+17025001955" className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 CALL NOW: (702) 500-1955
+            </a>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-colors text-lg">
+              📧 EMAIL DR. JANET
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Photo Gallery Section */}
+      <div className="content-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          Bravado Community Gallery
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto leading-relaxed">
+          Explore the stunning homes and beautiful community at <strong>Bravado</strong>. From modern exteriors to luxurious interiors, 
+          discover why Bravado is the perfect place to call home in North Las Vegas.
+        </p>
+        <PhotoGallery />
+      </div>
+
+      {/* Quick Property Search - Move after visual content */}
+      <div className="content-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          🔍 Find Your Dream Home in North Las Vegas
+        </h2>
+        <p className="text-lg text-gray-700 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
+          Start your search for the perfect home in <strong>Bravado</strong> or throughout North Las Vegas. 
+          Get expert guidance from <strong>Dr. Janet Duffy</strong>.
+        </p>
+            
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8">
+              <h3 className="text-2xl font-bold text-white mb-4">Quick Property Search</h3>
+              <p className="text-white mb-6 opacity-90">Enter your criteria to find available homes</p>
+              <div className="max-w-2xl mx-auto">
+                <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-blue-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">🏡</div>
+                <h4 className="font-bold text-gray-900 mb-2">Bravado Homes</h4>
+                <p className="text-sm text-gray-700">New construction homes starting at $459K</p>
+                <a href="/floor-plans" className="text-blue-600 font-medium hover:underline">View Floor Plans</a>
+              </div>
+              <div className="bg-purple-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">🏗️</div>
+                <h4 className="font-bold text-gray-900 mb-2">New Construction</h4>
+                <p className="text-sm text-gray-700">Expert guidance through the build process</p>
+                <a href="/services" className="text-blue-600 font-medium hover:underline">Learn More</a>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg text-center">
+                <div className="text-3xl mb-2">💰</div>
+                <h4 className="font-bold text-gray-900 mb-2">Market Value</h4>
+                <p className="text-sm text-gray-700">Get instant home valuations</p>
+                <a href="/services" className="text-blue-600 font-medium hover:underline">Get Valuation</a>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="/services" className="cta-button inline-block">
+                Explore All Services & Tools
+              </a>
+            </div>
+      </div>
+
+      {/* About Bravado Section */}
+      <div className="about-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          About Bravado by Century Communities
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, is proud to represent <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado in North Las Vegas, NV</strong>. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative <strong>Century Connect® smart home package</strong>, modern design elements, and premium finishes that define luxury living in the 89031 zip code.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. Residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, world-class golf courses, and convenient access to <strong>Nellis AFB</strong>. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
+        </p>
+        
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="text-center">
+            <a href="/community" className="cta-button w-full text-center">
+              🏘️ Community Features
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="/amenities" className="cta-button w-full text-center">
+              🌳 Amenities & Lifestyle
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="/smart-home-technology" className="cta-button w-full text-center">
+              🏠 Smart Home Tech
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      {/* VIP Partnership Section - Move up for credibility */}
+      <div className="vip-partnership mb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="vip-badge mb-6">
+            ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
+          </div>
+          <h2 className="text-3xl font-bold mb-6">
+            Elite Builder Relationship = Your Advantage
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Dr. Janet Duffy's VIP Century Communities partnership delivers exclusive access, priority lot selection, and expert negotiation backed by premier relationships.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="feature-icon mx-auto">🚀</div>
+              <h3 className="text-xl font-bold mb-3">Early Phase Access</h3>
+              <p className="opacity-90">First access to new phases before public release</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="feature-icon mx-auto">⚡</div>
+              <h3 className="text-xl font-bold mb-3">Priority Treatment</h3>
+              <p className="opacity-90">VIP status throughout the entire process</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="feature-icon mx-auto">🎯</div>
+              <h3 className="text-xl font-bold mb-3">Expert Negotiation</h3>
+              <p className="opacity-90">Premier relationship-backed negotiation power</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <a href="/contact" className="cta-button">
+              Learn More About VIP Partnership
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* North Las Vegas Location Section */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          North Las Vegas Location
+          Prime North Las Vegas Location
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -402,47 +478,6 @@ export default function Page() {
               <li>• Northstar Bar & Grill, Chili's</li>
               <li>• Pier 88 Boiling Seafood & Bar</li>
             </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* VIP Partnership Section */}
-      <div className="vip-partnership mb-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="vip-badge mb-6">
-            ⭐ VIP CENTURY COMMUNITIES PARTNERSHIP ⭐
-          </div>
-          <h2 className="text-3xl font-bold mb-6">
-            Elite Builder Relationship = Your Advantage
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Dr. Janet Duffy's VIP Century Communities partnership delivers exclusive access, priority lot selection, and expert negotiation backed by premier relationships.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="feature-icon mx-auto">🚀</div>
-              <h3 className="text-xl font-bold mb-3">Early Phase Access</h3>
-              <p className="opacity-90">First access to new phases before public release</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="feature-icon mx-auto">⚡</div>
-              <h3 className="text-xl font-bold mb-3">Priority Treatment</h3>
-              <p className="opacity-90">VIP status throughout the entire process</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="feature-icon mx-auto">🎯</div>
-              <h3 className="text-xl font-bold mb-3">Expert Negotiation</h3>
-              <p className="opacity-90">Premier relationship-backed negotiation power</p>
-            </div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <a href="/contact" className="cta-button">
-              Learn More About VIP Partnership
-            </a>
           </div>
         </div>
       </div>
@@ -488,24 +523,43 @@ export default function Page() {
         <KCMRSSFeed />
       </div>
 
-      {/* Ready to Explore Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
-        <h2 className="text-3xl font-bold mb-6">
-          Ready to Explore Bravado?
+      {/* Final Urgency CTA Section */}
+      <div className="bg-gradient-to-r from-red-600 to-purple-600 text-white p-12 rounded-lg text-center mb-8">
+        <h2 className="text-4xl font-bold mb-6">
+          🚨 DON'T MISS OUT - BRAVADO IS SELLING FAST!
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Call or email Dr. Janet Duffy today for a private tour and expert guidance on your Bravado home purchase
+          <strong>Only 3 floor plans remaining!</strong> Get VIP access to Bravado with Dr. Janet Duffy's expert guidance. 
+          Schedule your private tour today before these luxury homes are gone forever.
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-8">
-          <a href="tel:+17025001955" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
-            CALL NOW<br />
+          <a href="tel:+17025001955" className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+            📞 SECURE YOUR HOME NOW<br />
             <span className="text-2xl">(702) 500-1955</span>
           </a>
-          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
-            EMAIL<br />
+          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition-colors">
+            📧 EMAIL DR. JANET<br />
             DrJanSells@BravadoHomes.com
           </a>
+        </div>
+        
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8">
+          <h3 className="text-2xl font-bold mb-4">⚡ LIMITED TIME BONUSES!</h3>
+          <div className="grid md:grid-cols-3 gap-4 text-left">
+            <div className="flex items-center">
+              <span className="text-2xl mr-3">🎁</span>
+              <span>FREE VIP Tour with Dr. Janet Duffy</span>
+            </div>
+            <div className="flex items-center">
+              <span className="text-2xl mr-3">💰</span>
+              <span>Expert Negotiation & Market Analysis</span>
+            </div>
+            <div className="flex items-center">
+              <span className="text-2xl mr-3">🏆</span>
+              <span>Priority Access to Best Lots</span>
+            </div>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 text-left">
