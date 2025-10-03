@@ -101,8 +101,6 @@ export default function Page() {
                 Explore All Services & Tools
               </a>
             </div>
-          </div>
-        </div>
       </div>
 
       {/* Photo Gallery Section */}
@@ -542,7 +540,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-    </section>
+      </section>
     </>
   )
 }
