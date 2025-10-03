@@ -70,9 +70,31 @@ export async function GET() {
       
       // If no image found, try to extract from description HTML
       if (!image && description) {
-        const imgMatch = description.match(/<img[^>]+src="([^"]+)"/i)
-        if (imgMatch) {
-          image = imgMatch[1]
+        // Try multiple image extraction patterns
+        const imgPatterns = [
+          /<img[^>]+src="([^"]+)"/i,
+          /<img[^>]+src='([^']+)'/i,
+          /background-image:\s*url\(['"]?([^'"]+)['"]?\)/i,
+          /<figure[^>]*>[\s\S]*?<img[^>]+src="([^"]+)"/i
+        ]
+        
+        for (const pattern of imgPatterns) {
+          const match = description.match(pattern)
+          if (match && match[1]) {
+            image = match[1]
+            break
+          }
+        }
+      }
+      
+      // If still no image, try to extract from content field
+      if (!image && itemXml.includes('<content:')) {
+        const content = extractXmlContent(itemXml, 'content:encoded') || extractXmlContent(itemXml, 'content')
+        if (content) {
+          const imgMatch = content.match(/<img[^>]+src="([^"]+)"/i)
+          if (imgMatch) {
+            image = imgMatch[1]
+          }
         }
       }
       
@@ -82,6 +104,10 @@ export async function GET() {
         image = image.replace(/<[^>]*>/g, '').trim()
         // Remove any CDATA wrappers
         image = image.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim()
+        // Ensure it's a valid URL
+        if (!image.startsWith('http')) {
+          image = null
+        }
       }
       
       // Extract categories
