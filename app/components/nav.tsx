@@ -4,11 +4,11 @@ const navItems = {
   '/': {
     name: 'Home',
   },
-  '/community': {
-    name: 'Community',
-  },
   '/floor-plans': {
     name: 'Floor Plans',
+  },
+  '/community': {
+    name: 'Community',
   },
   '/location': {
     name: 'Location',
@@ -20,27 +20,41 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
-                <Link
-                  key={path}
-                  href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-                >
-                  {name}
-                </Link>
-              )
-            })}
+    <nav className="bg-white shadow-lg border-b border-gray-200 mb-8">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/" className="text-2xl font-bold text-blue-600">
+              Bravado Homes
+            </Link>
           </div>
-        </nav>
+          
+          <div className="hidden md:block">
+            <div className="flex items-center space-x-8">
+              {Object.entries(navItems).map(([path, { name }]) => {
+                return (
+                  <Link
+                    key={path}
+                    href={path}
+                    className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  >
+                    {name}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+          
+          <div className="flex items-center space-x-4">
+            <a href="tel:+17021234567" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
+              Call: (702) 123-4567
+            </a>
+            <a href="mailto:janet@bravadohomes.com" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+              Email Dr. Janet
+            </a>
+          </div>
+        </div>
       </div>
-    </aside>
+    </nav>
   )
 }
