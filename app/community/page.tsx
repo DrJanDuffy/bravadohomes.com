@@ -122,10 +122,74 @@ export default function CommunityPage() {
             <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
               🏡 Available Bravado Homes - $500K-$600K Range
             </h2>
-            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-700 text-center mb-6 max-w-4xl mx-auto">
               Discover available homes in the Bravado community within the $500,000 to $600,000 price range. 
               These premium properties offer exceptional value with Century Communities' quality construction and smart home features.
             </p>
+            <p className="text-base text-gray-600 text-center mb-8 max-w-4xl mx-auto">
+              <strong>These are current listings near the Bravado area to give you more options and market insights.</strong> 
+              Dr. Janet Duffy provides expert guidance on all North Las Vegas properties, helping you find the perfect home 
+              whether it's in Bravado or the surrounding communities.
+            </p>
+            
+            {/* Market Insights Section */}
+            <div className="grid md:grid-cols-4 gap-6 mb-8">
+              <div className="bg-blue-50 p-6 rounded-lg text-center border border-blue-200">
+                <div className="text-3xl font-bold text-blue-600 mb-2">12+</div>
+                <div className="text-gray-700 font-semibold mb-1">Active Listings</div>
+                <div className="text-sm text-gray-600">Near Bravado area</div>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg text-center border border-green-200">
+                <div className="text-3xl font-bold text-green-600 mb-2">$520K</div>
+                <div className="text-gray-700 font-semibold mb-1">Average Price</div>
+                <div className="text-sm text-gray-600">In this range</div>
+              </div>
+              <div className="bg-purple-50 p-6 rounded-lg text-center border border-purple-200">
+                <div className="text-3xl font-bold text-purple-600 mb-2">3-4</div>
+                <div className="text-gray-700 font-semibold mb-1">Bedrooms</div>
+                <div className="text-sm text-gray-600">Most common</div>
+              </div>
+              <div className="bg-orange-50 p-6 rounded-lg text-center border border-orange-200">
+                <div className="text-3xl font-bold text-orange-600 mb-2">2.5</div>
+                <div className="text-gray-700 font-semibold mb-1">Bathrooms</div>
+                <div className="text-sm text-gray-600">Typical layout</div>
+              </div>
+            </div>
+            
+            {/* Why Explore Nearby Properties */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Why Explore Properties Near Bravado?</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">🏘️ More Options</h4>
+                  <p className="text-gray-700 text-sm">
+                    Expand your search to nearby communities for more floor plans, 
+                    price points, and availability options.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">📈 Market Insights</h4>
+                  <p className="text-gray-700 text-sm">
+                    Compare values and features across the North Las Vegas market 
+                    to make informed decisions.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">🚗 Same Location Benefits</h4>
+                  <p className="text-gray-700 text-sm">
+                    Enjoy the same proximity to Craig Ranch Park, I-15, and 
+                    downtown Las Vegas.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">💡 Investment Potential</h4>
+                  <p className="text-gray-700 text-sm">
+                    Properties near Bravado offer excellent appreciation potential 
+                    and rental income opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <RealScoutListings
@@ -136,6 +200,21 @@ export default function CommunityPage() {
                 priceMin="500000"
                 priceMax="600000"
               />
+            </div>
+            
+            <div className="mt-6 text-center">
+              <p className="text-gray-600 text-sm mb-4">
+                💡 <strong>Expert Tip:</strong> Dr. Janet Duffy has insider knowledge of the entire North Las Vegas market. 
+                Contact her for exclusive access to off-market properties and pre-construction opportunities.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="tel:+17025001955" className="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition-colors">
+                  Call Dr. Janet: (702) 500-1955
+                </a>
+                <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-white border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-lg font-bold hover:bg-blue-50 transition-colors">
+                  Email for Market Report
+                </a>
+              </div>
             </div>
           </div>
         </div>

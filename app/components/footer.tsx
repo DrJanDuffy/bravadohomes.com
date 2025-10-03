@@ -62,9 +62,30 @@ export default function Footer() {
             <h4 className="text-xl font-bold mb-4 text-center text-white">
               🏡 Search Available Bravado Homes ($500K-$600K)
             </h4>
-            <p className="text-white/90 text-center mb-6 text-sm">
+            <p className="text-white/90 text-center mb-4 text-sm">
               Browse current listings in the Bravado community with Dr. Janet Duffy's expert guidance
             </p>
+            <p className="text-white/80 text-center mb-6 text-xs">
+              These are current listings near the Bravado area to give you more options and market insights. 
+              Dr. Janet Duffy provides expert guidance on all North Las Vegas properties.
+            </p>
+            
+            {/* Market Insights Cards */}
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg text-center">
+                <div className="text-white font-bold text-lg">12+</div>
+                <div className="text-white/90 text-xs">Active Listings</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg text-center">
+                <div className="text-white font-bold text-lg">$520K</div>
+                <div className="text-white/90 text-xs">Avg. Price</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg text-center">
+                <div className="text-white font-bold text-lg">3-4</div>
+                <div className="text-white/90 text-xs">Bedrooms</div>
+              </div>
+            </div>
+            
             <div className="bg-white p-4 rounded-lg">
               <RealScoutListings
                 agentEncodedId="QWdlbnQtMjI1MDUw"
@@ -74,6 +95,13 @@ export default function Footer() {
                 priceMin="500000"
                 priceMax="600000"
               />
+            </div>
+            
+            <div className="mt-4 text-center">
+              <p className="text-white/80 text-xs">
+                💡 <strong>Pro Tip:</strong> Properties near Bravado offer excellent value and investment potential. 
+                Contact Dr. Janet Duffy for exclusive market insights and early access to new listings.
+              </p>
             </div>
           </div>
         </div>
