@@ -1,9 +1,21 @@
+import Image from 'next/image'
+
 export default function Page() {
   return (
     <section>
       {/* Hero Section */}
-      <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
-        <div className="max-w-6xl mx-auto text-center">
+      <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/bravado/exterior/community-hero.jpg"
+            alt="Bravado Community Exterior"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="vip-badge">
             ⭐ VIP ACCESS
           </div>
@@ -55,10 +67,19 @@ export default function Page() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Residence 1792 */}
           <div className="floor-plan-card card-hover relative">
-            <div className="text-center mb-6">
-              <div className="text-4xl mb-4">🏡</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1792</h3>
-              <p className="price-highlight">From $459,990</p>
+            <div className="mb-6">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/bravado/interior/residence-1792-kitchen.jpg"
+                  alt="Residence 1792 Kitchen"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1792</h3>
+                <p className="price-highlight">From $459,990</p>
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -108,10 +129,19 @@ export default function Page() {
           {/* Residence 1943 */}
           <div className="floor-plan-card card-hover relative">
             <div className="most-popular-badge">MOST POPULAR</div>
-            <div className="text-center mb-6">
-              <div className="text-4xl mb-4">🏰</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1943</h3>
-              <p className="price-highlight">From $469,990</p>
+            <div className="mb-6">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/bravado/interior/residence-1943-living.jpg"
+                  alt="Residence 1943 Living Room"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 1943</h3>
+                <p className="price-highlight">From $469,990</p>
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -160,10 +190,19 @@ export default function Page() {
 
           {/* Residence 2119 */}
           <div className="floor-plan-card card-hover relative">
-            <div className="text-center mb-6">
-              <div className="text-4xl mb-4">🏠</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 2119</h3>
-              <p className="price-highlight">From $479,990</p>
+            <div className="mb-6">
+              <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/bravado/interior/residence-2119-master.jpg"
+                  alt="Residence 2119 Master Suite"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Residence 2119</h3>
+                <p className="price-highlight">From $479,990</p>
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-4 mb-6">
