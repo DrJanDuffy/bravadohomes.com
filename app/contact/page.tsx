@@ -1,144 +1,252 @@
 export default function ContactPage() {
   return (
     <section>
-      <div className="hero-section mb-12 p-8 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg">
-        <h1 className="mb-6 text-4xl font-bold tracking-tighter text-gray-900">
-          Contact Dr. Janet Duffy - Your Bravado Home Specialist
-        </h1>
-        <p className="mb-6 text-xl text-gray-700 leading-relaxed">
+      {/* Hero Section */}
+      <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="vip-badge">
+            ⭐ FEATURED NEW HOME CONSTRUCTION & BUYER REPRESENTATION ⭐
+          </div>
+          <h1 className="text-5xl font-bold mb-6">
+            Contact Dr. Janet Duffy
+          </h1>
+          <p className="text-2xl mb-4">
+            Your Featured Century Communities Partner
+          </p>
+          <p className="text-xl mb-8 opacity-90">
+            Expert Guidance for New Home Construction & Buyer Representation in North Las Vegas
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+              📞 Call: (702) 123-4567
+            </a>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+              📧 Email Dr. Janet
+            </a>
+          </div>
+          <p className="text-lg">
+            5060 Wind Springs Street, North Las Vegas, NV 89031
+          </p>
+        </div>
+      </div>
+
+      {/* About Dr. Janet Duffy Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          About Dr. Janet Duffy
+        </h2>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
           Ready to make Bravado your new home? Dr. Janet Duffy, featured partner with 
           Century Communities, is here to guide you through every step of your home 
-          buying journey. Schedule your personal tour today and discover why so many 
-          families are choosing Bravado in North Las Vegas.
+          buying journey. As a <strong>Featured New Home Construction and Buyer Representation specialist</strong>, she provides expert guidance throughout the entire new home construction process.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          As a featured partner with <strong>Century Communities</strong>—one of America's Most Trusted Homebuilders for 3 years running—Dr. Duffy provides exclusive access to new home construction opportunities and expert buyer representation throughout the entire process.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-12">
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-            Get in Touch with Dr. Janet Duffy
-          </h2>
-          <p className="mb-6 text-gray-700 leading-relaxed">
-            As a featured partner with Century Communities, Dr. Janet Duffy brings 
-            unparalleled expertise and personalized service to your home buying experience. 
-            With years of experience in the Las Vegas real estate market, Dr. Duffy 
-            understands the unique needs of each family and is committed to helping you 
-            find the perfect home at Bravado.
-          </p>
+      {/* Contact Options Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Get in Touch with Dr. Janet Duffy
+        </h2>
+        
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">🏠</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Schedule a Model Home Tour</h3>
+            <p className="text-gray-700 mb-6">
+              Experience the quality and features of Bravado homes firsthand with a 
+              personal tour of our model homes. See the Century Connect® smart home 
+              technology, premium finishes, and thoughtful design details that make 
+              each home special.
+            </p>
+            <a href="tel:+17021234567" className="cta-button w-full text-center">
+              Call (702) 123-4567
+            </a>
+          </div>
           
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900">Schedule a Model Home Tour</h3>
-              <p className="text-gray-700 mb-4">
-                Experience the quality and features of Bravado homes firsthand with a 
-                personal tour of our model homes. See the Century Connect® smart home 
-                technology, premium finishes, and thoughtful design details that make 
-                each home special.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a href="tel:+17021234567" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Call (702) 123-4567
-                </a>
-                <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-white text-blue-600 border-2 border-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                  Email Dr. Duffy
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900">Virtual Consultation</h3>
-              <p className="text-gray-700 mb-4">
-                Can't visit in person right away? Dr. Duffy offers virtual consultations 
-                to discuss your needs, show you available floor plans, and answer all 
-                your questions about life at Bravado.
-              </p>
-              <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-                Schedule Virtual Meeting
-              </a>
-            </div>
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">💻</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Virtual Consultation</h3>
+            <p className="text-gray-700 mb-6">
+              Can't visit in person right away? Dr. Duffy offers virtual consultations 
+              to discuss your needs, show you available floor plans, and answer all 
+              your questions about life at Bravado.
+            </p>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="cta-button w-full text-center">
+              Schedule Virtual Meeting
+            </a>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">📧</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Email Consultation</h3>
+            <p className="text-gray-700 mb-6">
+              Get detailed information about available homes, floor plans, pricing, 
+              and community amenities. Dr. Duffy responds promptly to all inquiries 
+              with personalized guidance.
+            </p>
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="cta-button w-full text-center">
+              Email Dr. Duffy
+            </a>
           </div>
         </div>
+      </div>
 
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-            Contact Information & Hours
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900">Dr. Janet Duffy</h3>
-              <p className="text-gray-700 mb-2">
-                <strong>Featured Partner</strong><br />
-                Century Communities - Bravado
-              </p>
-              <p className="text-gray-700 mb-2">
-                <strong>Phone:</strong> (702) 123-4567<br />
-                <strong>Email:</strong> DrJanSells@BravadoHomes.com
-              </p>
-              <p className="text-gray-700">
-                <strong>Specialty:</strong> New Home Sales<br />
-                <strong>Areas Served:</strong> North Las Vegas, Las Vegas Metro
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900">Model Home Hours</h3>
-              <div className="space-y-2 text-gray-700">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>10:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 5:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>12:00 PM - 5:00 PM</span>
-                </div>
+      {/* Current Bravado Information Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Current Bravado Information
+        </h2>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Available Floor Plans</h3>
+            <div className="space-y-4">
+              <div className="border-l-4 border-blue-600 pl-4">
+                <h4 className="font-bold text-gray-900">Residence 1792</h4>
+                <p className="text-gray-700">From $459,990 • 1,792 sq ft • 3 bed • 2.5 bath • 2 car garage</p>
+                <p className="text-sm text-gray-600">Features: Covered Patio, Vaulted Entry</p>
               </div>
-              <p className="text-sm text-gray-600 mt-3">
-                *Extended hours available by appointment
-              </p>
+              <div className="border-l-4 border-green-600 pl-4">
+                <h4 className="font-bold text-gray-900">Residence 1943</h4>
+                <p className="text-gray-700">From $469,990 • 1,943 sq ft • 3 bed • 2.5 bath • 2 car garage</p>
+                <p className="text-sm text-gray-600">Features: Model Now Open, Expansive Primary Suite</p>
+              </div>
+              <div className="border-l-4 border-purple-600 pl-4">
+                <h4 className="font-bold text-gray-900">Residence 2119</h4>
+                <p className="text-gray-700">From $479,990 • 2,119 sq ft • 3 bed • 2.5 bath • 2 car garage</p>
+                <p className="text-sm text-gray-600">Features: Modeled Downstairs Den</p>
+              </div>
             </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900">Bravado Community Address</h3>
-              <p className="text-gray-700">
-                5060 Wind Springs Street<br />
-                North Las Vegas, NV 89031<br />
-                <span className="text-sm text-gray-600">Near Craig Ranch Regional Park</span>
-              </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Community Features</h3>
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Gated Community</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Community park with grass area</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Walking paths</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Century Connect® smart home package</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Near Craig Ranch Regional Park</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-green-500 mr-3">✓</span>
+                <span className="text-gray-700">Easy access to I-15</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-          Why Choose Dr. Janet Duffy as Your Home Specialist?
+      {/* Contact Information & Hours Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Contact Information & Hours
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-sm border">
-            <h3 className="text-lg font-semibold mb-3 text-gray-900">Featured Partnership</h3>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">👩‍💼</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Dr. Janet Duffy</h3>
+            <p className="text-gray-700 mb-2">
+              <strong>Featured New Home Construction<br />
+              & Buyer Representation Specialist</strong><br />
+              Century Communities - Bravado
+            </p>
+            <p className="text-gray-700 mb-2">
+              <strong>Phone:</strong> (702) 123-4567<br />
+              <strong>Email:</strong> DrJanSells@BravadoHomes.com
+            </p>
             <p className="text-gray-700">
-              As a featured partner with Century Communities, Dr. Duffy has exclusive 
-              access to the latest inventory, pricing, and incentives at Bravado.
+              <strong>Nevada License:</strong> S.0197614<br />
+              <strong>Areas Served:</strong> North Las Vegas, Las Vegas Metro
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm border">
-            <h3 className="text-lg font-semibold mb-3 text-gray-900">Local Expertise</h3>
-            <p className="text-gray-700">
-              Deep knowledge of the North Las Vegas market, schools, amenities, and 
-              community features that matter most to families.
+
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">🕒</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Model Home Hours</h3>
+            <div className="space-y-2 text-gray-700 mb-4">
+              <div className="flex justify-between">
+                <span>Monday - Sunday</span>
+                <span>10:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600">
+              *Extended hours available by appointment<br />
+              *Two stunning models available for tour
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm border">
-            <h3 className="text-lg font-semibold mb-3 text-gray-900">Personalized Service</h3>
+
+          <div className="bg-white p-8 rounded-lg shadow-sm border card-hover text-center">
+            <div className="feature-icon mx-auto mb-4">📍</div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Bravado Community</h3>
             <p className="text-gray-700">
-              Dedicated to understanding your unique needs and guiding you through 
-              every step of the home buying process with care and attention.
+              5060 Wind Springs Street<br />
+              North Las Vegas, NV 89031<br />
+              <span className="text-sm text-gray-600">Near Craig Ranch Regional Park</span>
             </p>
+            <p className="text-sm text-gray-600 mt-2">
+              <strong>Gated Community</strong><br />
+              Easy access to I-15
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Featured New Home Construction & Buyer Representation Section */}
+      <div className="vip-partnership mb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="vip-badge mb-6">
+            ⭐ FEATURED NEW HOME CONSTRUCTION & BUYER REPRESENTATION ⭐
+          </div>
+          <h2 className="text-3xl font-bold mb-6">
+            Why Choose Dr. Janet Duffy as Your Home Specialist?
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Dr. Janet Duffy serves as a Featured New Home Construction and Buyer Representation specialist for Century Communities, providing expert guidance throughout your entire new home journey while protecting your interests.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="feature-icon mx-auto">🤝</div>
+              <h3 className="text-xl font-bold mb-3">Featured Partnership</h3>
+              <p className="opacity-90">Exclusive access to Century Communities inventory, pricing, and incentives at Bravado</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="feature-icon mx-auto">🏠</div>
+              <h3 className="text-xl font-bold mb-3">New Construction Expertise</h3>
+              <p className="opacity-90">Specialized knowledge in new home construction process, timelines, and quality standards</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="feature-icon mx-auto">🛡️</div>
+              <h3 className="text-xl font-bold mb-3">Buyer Representation</h3>
+              <p className="opacity-90">Your advocate throughout the process, ensuring your interests are always protected</p>
+            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <a href="/contact" className="cta-button">
+              Get Expert Home Buying Guidance
+            </a>
           </div>
         </div>
       </div>
@@ -235,25 +343,56 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-6">
+      {/* Ready to Explore Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
+        <h2 className="text-3xl font-bold mb-6">
           Ready to Start Your Bravado Journey?
         </h2>
-        <p className="mb-6 text-lg opacity-90">
+        <p className="text-xl mb-8 opacity-90">
           Don't wait to secure your dream home at Bravado. With limited inventory available 
           and high demand for these exceptional homes, now is the perfect time to schedule 
-          your personal tour with Dr. Janet Duffy.
+          your personal tour with Dr. Janet Duffy, your Featured New Home Construction and Buyer Representation specialist.
         </p>
-        <div className="flex flex-wrap gap-4">
-          <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Call Now: (702) 123-4567
+        
+        <div className="flex flex-wrap justify-center gap-6 mb-8">
+          <a href="tel:+17021234567" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+            CALL NOW<br />
+            <span className="text-2xl">(702) 123-4567</span>
           </a>
-          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-            Send Email
+          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+            EMAIL<br />
+            DrJanSells@BravadoHomes.com
           </a>
-          <a href="/floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-            View Floor Plans
-          </a>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 text-left">
+          <div className="contact-info">
+            <h3 className="text-xl font-bold mb-3">Bravado North Las Vegas</h3>
+            <p>5060 Wind Springs Street<br />
+            North Las Vegas, NV 89031<br />
+            (702) 123-4567</p>
+          </div>
+          
+          <div className="contact-info">
+            <h3 className="text-xl font-bold mb-3">Dr. Janet Duffy</h3>
+            <p>Featured New Home Construction<br />
+            & Buyer Representation Specialist<br />
+            Nevada License: S.0197614</p>
+          </div>
+          
+          <div className="contact-info">
+            <h3 className="text-xl font-bold mb-3">Century Communities</h3>
+            <p>One of America's Most Trusted Homebuilders<br />
+            (3 Years Running)<br />
+            Model Home Hours: 10:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+        
+        <div className="mt-8 pt-8 border-t border-white/20">
+          <p className="text-sm opacity-75">
+            © 2025 Bravado | Homes by Dr Janet Duffy. All rights reserved.<br />
+            Independent real estate resource. Not affiliated with or endorsed by Century Communities. Dr. Janet Duffy is an independent real estate agent providing expert guidance to home buyers.
+          </p>
         </div>
       </div>
     </section>
