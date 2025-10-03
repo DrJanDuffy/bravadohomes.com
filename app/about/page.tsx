@@ -242,22 +242,21 @@ export default function AboutPage() {
           Dr. Janet Duffy provides access to <strong>advanced RealScout technology</strong> for comprehensive market analysis and property search
         </p>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Property Valuation</h3>
-              <p className="text-gray-700 mb-4">
-                Get instant property valuations with Dr. Janet Duffy's RealScout system
-              </p>
-              <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Advanced Search</h3>
-              <p className="text-gray-700 mb-4">
-                Use powerful search tools to find your perfect home
-              </p>
-              <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
-            </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Property Valuation</h3>
+            <p className="text-gray-700 mb-4">
+              Get instant property valuations with Dr. Janet Duffy's RealScout system
+            </p>
+            <RealScoutHomeValue agentEncodedId="QWdlbnQtMjI1MDUw" />
+          </div>
+          
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Advanced Search</h3>
+            <p className="text-gray-700 mb-4">
+              Use powerful search tools to find your perfect home
+            </p>
+            <RealScoutAdvancedSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
           </div>
         </div>
       </div>
