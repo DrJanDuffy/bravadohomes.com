@@ -12,10 +12,10 @@ export default function Page() {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 flex items-center justify-center">
-            <div className="text-center text-white opacity-60">
+            <div className="text-center text-white opacity-80">
               <div className="text-6xl mb-4">🏡</div>
-              <p className="text-xl font-semibold">Bravado Community</p>
-              <p className="text-sm">Add community-hero.jpg to see beautiful exterior</p>
+              <p className="text-xl font-semibold text-white drop-shadow-lg">Bravado Community</p>
+              <p className="text-sm text-gray-200 bg-black/30 px-3 py-1 rounded-lg inline-block backdrop-blur-sm">Add community-hero.jpg to see beautiful exterior</p>
             </div>
           </div>
           {/* Uncomment when you add the image:
@@ -32,13 +32,13 @@ export default function Page() {
           <div className="vip-badge">
             ⭐ VIP ACCESS
           </div>
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">
             Bravado North Las Vegas
       </h1>
-          <p className="text-2xl mb-4">
+          <p className="text-2xl mb-4 text-white drop-shadow-md font-semibold">
             $459K+ Luxury Homes in Gated Community
           </p>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb-8 text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm">
             Expert Guidance from Dr. Janet Duffy | Century Communities Partnership
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -52,7 +52,7 @@ export default function Page() {
               🔍 Search Properties
             </a>
           </div>
-          <p className="text-lg">
+          <p className="text-lg text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm inline-block">
             5060 Wind Springs Street, North Las Vegas, NV 89031
           </p>
         </div>
