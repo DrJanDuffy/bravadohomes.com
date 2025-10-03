@@ -51,7 +51,7 @@ export default function FloorPlansPage() {
           About Bravado Floor Plans
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          From <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—<strong>Bravado</strong> offers exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
+          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, represents <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado</strong>, offering exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
           Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
