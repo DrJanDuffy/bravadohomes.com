@@ -13,66 +13,66 @@ interface GalleryImage {
 export default function PhotoGallery() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
-  // High-quality placeholder images that work immediately
+  // Diverse, high-quality images with proper framing
   const galleryImages: GalleryImage[] = [
     {
-      src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
-      alt: "Residence 2119 Exterior Front View - Modern Luxury Home",
-      thumbnail: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&h=1382&q=80",
+      alt: "Residence 2119 Exterior - Modern Contemporary Luxury Home",
+      thumbnail: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 0
     },
     {
-      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80",
-      alt: "Residence 2119 Exterior Front Entry - Elegant Design",
-      thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&h=1369&q=80",
+      alt: "Residence 2119 Entry - Elegant Mediterranean Style",
+      thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 1
     },
     {
-      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 1943 Exterior Front View - Contemporary Style",
-      thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Residence 1943 Exterior - Spanish Mission Architecture",
+      thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 2
     },
     {
-      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 1943 Exterior Front Entry - Premium Finish",
-      thumbnail: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Residence 1943 Entry - Traditional Two-Story Design",
+      thumbnail: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 3
     },
     {
-      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 2119 Modern Kitchen - Gourmet Design",
-      thumbnail: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Modern Kitchen - Gourmet Design with Premium Appliances",
+      thumbnail: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 4
     },
     {
-      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 1943 Modern Kitchen - Premium Appliances",
-      thumbnail: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2058&h=1372&q=80",
+      alt: "Spacious Living Room - Open Concept Design",
+      thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 5
     },
     {
-      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
-      alt: "Residence 2119 Spacious Living Room - Open Concept",
-      thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Master Bedroom - Luxury Primary Suite",
+      thumbnail: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 6
     },
     {
-      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
-      alt: "Residence 1943 Open Living Room - Modern Design",
-      thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Luxury Bathroom - Modern Spa-Like Design",
+      thumbnail: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 7
     },
     {
-      src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 2119 Primary Bedroom - Master Suite",
-      thumbnail: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Backyard Patio - Outdoor Living Space",
+      thumbnail: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 8
     },
     {
-      src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Residence 1943 Primary Bedroom - Luxury Suite",
-      thumbnail: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      src: "https://images.unsplash.com/photo-1600585152915-d208bec867a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380&q=80",
+      alt: "Community Aerial View - Bravado Neighborhood",
+      thumbnail: "https://images.unsplash.com/photo-1600585152915-d208bec867a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80",
       index: 9
     }
   ]
@@ -149,7 +149,7 @@ export default function PhotoGallery() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority={index === 0}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                 />
@@ -177,7 +177,7 @@ export default function PhotoGallery() {
                   src={image.thumbnail}
                   alt={`${image.alt} thumbnail`}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   sizes="80px"
                 />
               </div>

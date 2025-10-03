@@ -345,14 +345,38 @@ table {
 
 .thumbnail {
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .thumbnail:hover {
   transform: scale(1.1);
+  border-color: #3b82f6;
 }
 
 .thumbnail.active {
   transform: scale(1.1);
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.2);
+}
+
+/* Improved Image Framing */
+.floor-plan-card .relative img,
+.photo-gallery .carousel-item img {
+  transition: transform 0.3s ease;
+}
+
+.floor-plan-card:hover img,
+.photo-gallery .carousel-item img:hover {
+  transform: scale(1.02);
+}
+
+/* Better Image Aspect Ratios */
+.floor-plan-card .relative {
+  aspect-ratio: 4/3;
+}
+
+.photo-gallery .carousel-item .relative {
+  aspect-ratio: 16/10;
 }
 
 /* RealScout Widget Styling */
