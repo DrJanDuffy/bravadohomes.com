@@ -17,8 +17,8 @@ export default function LocationPage() {
             Expert Location Guidance from Dr. Janet Duffy | Century Communities Featured Partner
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 123-4567
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+              📞 Call: (702) 500-1955
             </a>
             <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
@@ -397,9 +397,9 @@ export default function LocationPage() {
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-8">
-          <a href="tel:+17021234567" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+          <a href="tel:+17025001955" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
             CALL NOW<br />
-            <span className="text-2xl">(702) 123-4567</span>
+            <span className="text-2xl">(702) 500-1955</span>
           </a>
           <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
@@ -412,7 +412,7 @@ export default function LocationPage() {
             <h3 className="text-xl font-bold mb-3">Bravado North Las Vegas</h3>
             <p>5060 Wind Springs Street<br />
             North Las Vegas, NV 89031<br />
-            (702) 123-4567</p>
+            (702) 500-1955</p>
           </div>
           
           <div className="contact-info">

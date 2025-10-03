@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="opacity-90">
               5060 Wind Springs Street<br />
               North Las Vegas, NV 89031<br />
-              (702) 123-4567
+              (702) 500-1955
             </p>
           </div>
           
@@ -30,9 +30,15 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Contact Dr. Janet Duffy</h4>
             <div className="space-y-2 opacity-90">
               <p>
-                <strong>Phone:</strong><br />
-                <a href="tel:+17021234567" className="hover:text-blue-200 transition-colors">
-                  (702) 123-4567
+                <strong>Primary Phone:</strong><br />
+                <a href="tel:+17025001955" className="hover:text-blue-200 transition-colors">
+                  (702) 500-1955
+                </a>
+              </p>
+              <p>
+                <strong>Urgent/Marketing:</strong><br />
+                <a href="tel:+17022221964" className="hover:text-blue-200 transition-colors">
+                  (702) 222-1964
                 </a>
               </p>
               <p>

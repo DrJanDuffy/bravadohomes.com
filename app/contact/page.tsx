@@ -17,11 +17,14 @@ export default function ContactPage() {
             Expert Guidance for New Home Construction & Buyer Representation in North Las Vegas
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17021234567" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 123-4567
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+              📞 Call: (702) 500-1955
             </a>
             <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
+            </a>
+            <a href="tel:+17022221964" className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">
+              🚨 Urgent: (702) 222-1964
             </a>
           </div>
           <p className="text-lg">
@@ -61,8 +64,8 @@ export default function ContactPage() {
               technology, premium finishes, and thoughtful design details that make 
               each home special.
             </p>
-            <a href="tel:+17021234567" className="cta-button w-full text-center">
-              Call (702) 123-4567
+            <a href="tel:+17025001955" className="cta-button w-full text-center">
+              Call (702) 500-1955
             </a>
           </div>
           
@@ -170,7 +173,8 @@ export default function ContactPage() {
               Century Communities - Bravado
             </p>
             <p className="text-gray-700 mb-2">
-              <strong>Phone:</strong> (702) 123-4567<br />
+              <strong>Phone:</strong> (702) 500-1955<br />
+              <strong>Urgent/Marketing:</strong> (702) 222-1964<br />
               <strong>Email:</strong> DrJanSells@BravadoHomes.com
             </p>
             <p className="text-gray-700">
@@ -355,13 +359,17 @@ export default function ContactPage() {
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-8">
-          <a href="tel:+17021234567" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+          <a href="tel:+17025001955" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
             CALL NOW<br />
-            <span className="text-2xl">(702) 123-4567</span>
+            <span className="text-2xl">(702) 500-1955</span>
           </a>
           <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
             DrJanSells@BravadoHomes.com
+          </a>
+          <a href="tel:+17022221964" className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors">
+            URGENT<br />
+            <span className="text-2xl">(702) 222-1964</span>
           </a>
         </div>
         
@@ -370,7 +378,7 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold mb-3">Bravado North Las Vegas</h3>
             <p>5060 Wind Springs Street<br />
             North Las Vegas, NV 89031<br />
-            (702) 123-4567</p>
+            (702) 500-1955</p>
           </div>
           
           <div className="contact-info">

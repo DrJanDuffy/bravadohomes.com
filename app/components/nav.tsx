@@ -46,8 +46,8 @@ export function Navbar() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <a href="tel:+17021234567" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
-              Call: (702) 123-4567
+            <a href="tel:+17025001955" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
+              Call: (702) 500-1955
             </a>
             <a href="mailto:DrJanSells@BravadoHomes.com" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
               Email Dr. Janet
