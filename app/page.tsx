@@ -16,8 +16,8 @@ export default function Page() {
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/bravado/exterior/community-hero.svg"
-            alt="Bravado Community Exterior"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80"
+            alt="Bravado Community Exterior - Luxury New Homes in North Las Vegas"
             fill
             className="object-cover opacity-30"
             priority
@@ -230,8 +230,8 @@ export default function Page() {
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/bravado/floor-plans/residence-1792.svg"
-                  alt="Residence 1792 Floor Plan"
+                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
+                  alt="Residence 1792 Floor Plan - Modern Two-Story Home"
                   fill
                   className="object-cover"
                 />
@@ -300,8 +300,8 @@ export default function Page() {
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/bravado/floor-plans/residence-1943.svg"
-                  alt="Residence 1943 Floor Plan"
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
+                  alt="Residence 1943 Floor Plan - Most Popular Model"
                   fill
                   className="object-cover"
                 />
@@ -361,8 +361,8 @@ export default function Page() {
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/bravado/floor-plans/residence-2119.svg"
-                  alt="Residence 2119 Floor Plan"
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
+                  alt="Residence 2119 Floor Plan - Largest Model"
                   fill
                   className="object-cover"
                 />

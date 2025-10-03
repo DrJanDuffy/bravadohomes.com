@@ -13,66 +13,66 @@ interface GalleryImage {
 export default function PhotoGallery() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
-  // Official Century Communities Bravado images
+  // High-quality placeholder images that work immediately
   const galleryImages: GalleryImage[] = [
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg",
-      alt: "Residence 2119 Exterior Front View",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
+      alt: "Residence 2119 Exterior Front View - Modern Luxury Home",
+      thumbnail: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 0
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---007---04-exterior-front-entry.jpg",
-      alt: "Residence 2119 Exterior Front Entry",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---007---04-exterior-front-entry.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80",
+      alt: "Residence 2119 Exterior Front Entry - Elegant Design",
+      thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 1
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---004---02-exterior-front.jpg",
-      alt: "Residence 1943 Exterior Front View",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---004---02-exterior-front.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 1943 Exterior Front View - Contemporary Style",
+      thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 2
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---001---01-exterior-front.jpg",
-      alt: "Residence 1943 Exterior Front Entry",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---001---01-exterior-front.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 1943 Exterior Front Entry - Premium Finish",
+      thumbnail: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 3
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---014---11-kitchen.jpg",
-      alt: "Residence 2119 Modern Kitchen",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---014---11-kitchen.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 2119 Modern Kitchen - Gourmet Design",
+      thumbnail: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 4
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---016---15-kitchen.jpg",
-      alt: "Residence 1943 Modern Kitchen",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---016---15-kitchen.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 1943 Modern Kitchen - Premium Appliances",
+      thumbnail: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 5
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---010---07-living-room.jpg",
-      alt: "Residence 2119 Spacious Living Room",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---010---07-living-room.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
+      alt: "Residence 2119 Spacious Living Room - Open Concept",
+      thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 6
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---012---11-living-room.jpg",
-      alt: "Residence 1943 Open Living Room",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---012---11-living-room.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
+      alt: "Residence 1943 Open Living Room - Modern Design",
+      thumbnail: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 7
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---023---22-2nd-floor-primary-bedroom.jpg",
-      alt: "Residence 2119 Primary Bedroom",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---023---22-2nd-floor-primary-bedroom.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 2119 Primary Bedroom - Master Suite",
+      thumbnail: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 8
     },
     {
-      src: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---023---26-2nd-floor-primary-bedroom.jpg",
-      alt: "Residence 1943 Primary Bedroom",
-      thumbnail: "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/1943/5056-wind-spgs-st---web-quality---023---26-2nd-floor-primary-bedroom.jpg?width=100&height=100&rmode=crop&rsampler=bicubic&compand=true",
+      src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Residence 1943 Primary Bedroom - Luxury Suite",
+      thumbnail: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
       index: 9
     }
   ]
