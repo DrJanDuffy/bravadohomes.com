@@ -1,3 +1,5 @@
+import RealScoutListings from '../components/realscout-listings'
+
 export default function ContactPage() {
   return (
     <section>
@@ -90,12 +92,14 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Sign Up for Dr. Janet Duffy's Alerts</h3>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-center text-gray-500 py-8">
-                  <div className="text-4xl mb-4">📧</div>
-                  <p className="font-semibold text-gray-700">RealScout Lead Capture Widget</p>
-                  <p className="text-sm text-gray-600">Advanced lead capture with property preferences</p>
-                  <p className="text-xs mt-2">Configure with your RealScout agent ID and CRM integration</p>
-                </div>
+                <RealScoutListings
+                  agentEncodedId="QWdlbnQtMjI1MDUw"
+                  sortOrder="PRICE_LOW"
+                  listingStatus="For Sale"
+                  propertyTypes=",SFR,OTHER"
+                  priceMin="450000"
+                  priceMax="600000"
+                />
               </div>
             </div>
           </div>

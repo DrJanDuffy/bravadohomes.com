@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import RealScoutListings from './components/realscout-listings'
 
 export default function Page() {
   return (
@@ -76,12 +77,14 @@ export default function Page() {
                     floor plans, and pricing information.
                   </p>
                   <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <div className="text-center text-gray-500 py-8">
-                      <div className="text-4xl mb-4">🏠</div>
-                      <p className="font-semibold">RealScout Bravado Search Widget</p>
-                      <p className="text-sm">Interactive property search for Bravado homes</p>
-                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
-                    </div>
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="500000"
+                      priceMax="600000"
+                    />
                   </div>
                 </div>
                 
@@ -92,12 +95,14 @@ export default function Page() {
                     for price, size, features, and location.
                   </p>
                   <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <div className="text-center text-gray-500 py-8">
-                      <div className="text-4xl mb-4">📊</div>
-                      <p className="font-semibold">RealScout Market Search Widget</p>
-                      <p className="text-sm">Comprehensive North Las Vegas property search</p>
-                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
-                    </div>
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="450000"
+                      priceMax="700000"
+                    />
                   </div>
                 </div>
               </div>

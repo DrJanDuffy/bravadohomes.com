@@ -1,3 +1,5 @@
+import RealScoutListings from '../components/realscout-listings'
+
 export default function LocationPage() {
   return (
     <section>
@@ -44,6 +46,41 @@ export default function LocationPage() {
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
           As a <strong>Featured New Home Construction and Buyer Representation specialist</strong>, Dr. Janet Duffy provides expert guidance on location benefits, local amenities, and investment potential in North Las Vegas.
         </p>
+      </div>
+
+      {/* RealScout Location-Based Listings */}
+      <div className="mb-16">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+              🏠 Homes Near Bravado Location
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+              Explore homes in the North Las Vegas area near Bravado's prime location at 5060 Wind Springs Street. 
+              Find the perfect home with easy access to I-15, Craig Ranch Regional Park, and all the amenities you love.
+            </p>
+            
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 text-center">
+                North Las Vegas Properties Near Bravado
+              </h3>
+              <RealScoutListings
+                agentEncodedId="QWdlbnQtMjI1MDUw"
+                sortOrder="PRICE_LOW"
+                listingStatus="For Sale"
+                propertyTypes=",SFR,OTHER"
+                priceMin="400000"
+                priceMax="750000"
+              />
+            </div>
+
+            <div className="text-center mt-8">
+              <a href="/contact" className="cta-button inline-block">
+                Get Personalized Location Guidance from Dr. Janet Duffy
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="mb-12">

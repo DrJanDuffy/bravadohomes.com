@@ -1,3 +1,5 @@
+import RealScoutListings from '../components/realscout-listings'
+
 export default function FloorPlansPage() {
   return (
     <section>
@@ -65,12 +67,14 @@ export default function FloorPlansPage() {
                     Perfect for buyers who want to move quickly.
                   </p>
                   <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <div className="text-center text-gray-500 py-8">
-                      <div className="text-4xl mb-4">🚚</div>
-                      <p className="font-semibold">RealScout Quick Move-In Widget</p>
-                      <p className="text-sm">Available homes ready for immediate purchase</p>
-                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
-                    </div>
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="459990"
+                      priceMax="479990"
+                    />
                   </div>
                 </div>
                 
@@ -81,12 +85,14 @@ export default function FloorPlansPage() {
                     completion dates and customization options.
                   </p>
                   <div className="bg-white p-4 rounded-lg border border-gray-200">
-                    <div className="text-center text-gray-500 py-8">
-                      <div className="text-4xl mb-4">🔨</div>
-                      <p className="font-semibold">RealScout New Construction Widget</p>
-                      <p className="text-sm">Homes in various stages of construction</p>
-                      <p className="text-xs mt-2">Configure with your RealScout agent ID</p>
-                    </div>
+                    <RealScoutListings
+                      agentEncodedId="QWdlbnQtMjI1MDUw"
+                      sortOrder="PRICE_LOW"
+                      listingStatus="For Sale"
+                      propertyTypes=",SFR,OTHER"
+                      priceMin="450000"
+                      priceMax="650000"
+                    />
                   </div>
                 </div>
               </div>
