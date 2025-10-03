@@ -214,7 +214,7 @@ export default function Page() {
                 <p className="text-sm text-gray-600">Square Feet</p>
               </div>
               <div className="text-center p-3 bg-gray-50 rounded-lg">
-                <p className="text-2xl font-bold text-gray-900">3</p>
+                <p className="text-2xl font-bold text-gray-900">3-4</p>
                 <p className="text-sm text-gray-600">Bedrooms</p>
               </div>
               <div className="text-center p-3 bg-gray-50 rounded-lg">
@@ -231,19 +231,27 @@ export default function Page() {
             <ul className="space-y-2 text-gray-700 mb-6">
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Covered Patio for outdoor living
+                Two-story foyer with courtyard entrance
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Vaulted Entry creating impressive first impression
+                Wide-open great room and well-appointed kitchen
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Open concept living and dining areas
+                Spacious center island and large walk-in pantry
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
-                Modern kitchen with island seating
+                Charming dining area with direct patio access
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Expansive loft and convenient laundry room
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Private primary suite with deluxe bath
               </li>
             </ul>
             
@@ -538,7 +546,8 @@ export default function Page() {
           
           <div className="contact-info">
             <h3 className="text-xl font-bold mb-3">Century Communities</h3>
-            <p>One of America's Top 10 Homebuilders<br /><br />
+            <p>One of America's Top 10 Homebuilders<br />
+            Sales Office: (702) 730-4300<br /><br />
             Model Home Hours<br />
             Monday-Sunday: 10:00 AM - 6:00 PM</p>
           </div>
