@@ -307,6 +307,54 @@ table {
   text-wrap: balance;
 }
 
+/* Gallery Flag Styling */
+.flag-dark-purple {
+  background: linear-gradient(135deg, #6b46c1, #8b5cf6);
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3);
+}
+
+.flag-light-purple {
+  background: linear-gradient(135deg, #a855f7, #c084fc);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.gallery_flags_icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Photo Gallery Styling */
+.photo-gallery .carousel-control-prev,
+.photo-gallery .carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-gallery:hover .carousel-control-prev,
+.photo-gallery:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.thumbnail {
+  transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.thumbnail.active {
+  transform: scale(1.1);
+}
+
 /* RealScout Widget Styling */
 .realscout-widget-wrapper {
   position: relative;

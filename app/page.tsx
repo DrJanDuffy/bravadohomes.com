@@ -4,6 +4,7 @@ import RealScoutHomeValue from './components/realscout-home-value'
 import RealScoutAdvancedSearch from './components/realscout-advanced-search'
 import RealScoutSimpleSearch from './components/realscout-simple-search'
 import SchemaMarkup from './components/schema'
+import PhotoGallery from './components/photo-gallery'
 
 export default function Page() {
   return (
@@ -169,6 +170,18 @@ export default function Page() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Photo Gallery Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          Bravado Community Gallery
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+          Explore the stunning homes and beautiful community at Bravado. From modern exteriors to luxurious interiors, 
+          discover why Bravado is the perfect place to call home in North Las Vegas.
+        </p>
+        <PhotoGallery />
       </div>
 
       {/* About Bravado Section */}
