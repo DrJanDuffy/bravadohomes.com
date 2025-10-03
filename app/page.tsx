@@ -3,10 +3,13 @@ import RealScoutListings from './components/realscout-listings'
 import RealScoutHomeValue from './components/realscout-home-value'
 import RealScoutAdvancedSearch from './components/realscout-advanced-search'
 import RealScoutSimpleSearch from './components/realscout-simple-search'
+import SchemaMarkup from './components/schema'
 
 export default function Page() {
   return (
-    <section>
+    <>
+      <SchemaMarkup />
+      <section>
       {/* Hero Section */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
         {/* Hero Background Image */}
@@ -170,15 +173,33 @@ export default function Page() {
 
       {/* About Bravado Section */}
       <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Bravado by Century Communities
         </h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
           From <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—<strong>Bravado</strong> offers exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County. Quick access to <strong>I-15 & Craig Ranch Regional Park</strong> provides easy connectivity to downtown Las Vegas, the Las Vegas Strip, and Mount Charleston.
+        <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County.
         </p>
+        
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="text-center">
+            <a href="/community" className="cta-button w-full text-center">
+              🏘️ Community Features
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="/amenities" className="cta-button w-full text-center">
+              🌳 Amenities & Lifestyle
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="/smart-home-technology" className="cta-button w-full text-center">
+              🏠 Smart Home Tech
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Floor Plans Section */}
@@ -255,8 +276,8 @@ export default function Page() {
               </li>
             </ul>
             
-            <a href="/floor-plans" className="cta-button w-full text-center">
-              Learn More About Plan 1792
+            <a href="/models/residence-1792" className="cta-button w-full text-center">
+              View Residence 1792 Details
             </a>
           </div>
 
@@ -317,8 +338,8 @@ export default function Page() {
               </li>
             </ul>
             
-            <a href="/floor-plans" className="cta-button w-full text-center">
-              Learn More About Plan 1943
+            <a href="/models/residence-1943" className="cta-button w-full text-center">
+              View Residence 1943 Details
             </a>
           </div>
 
@@ -378,8 +399,8 @@ export default function Page() {
               </li>
             </ul>
             
-            <a href="/floor-plans" className="cta-button w-full text-center">
-              Learn More About Plan 2119
+            <a href="/models/residence-2119" className="cta-button w-full text-center">
+              View Residence 2119 Details
             </a>
           </div>
         </div>
@@ -562,5 +583,6 @@ export default function Page() {
         </div>
       </div>
     </section>
+    </>
   )
 }

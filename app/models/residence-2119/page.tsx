@@ -1,6 +1,40 @@
 import RealScoutListings from '../../components/realscout-listings'
 import RealScoutAdvancedSearch from '../../components/realscout-advanced-search'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Residence 2119 - Largest Bravado Home | Dr. Janet Duffy',
+  description: 'Discover Residence 2119 at Bravado in North Las Vegas. 2,119 sq ft, 3-4 bedrooms, 2.5 baths, from $479,990. Largest model with luxury features and expert guidance from Dr. Janet Duffy, Century Communities Featured Partner.',
+  keywords: [
+    'Residence 2119',
+    'Bravado North Las Vegas',
+    '2119 sq ft homes',
+    'largest home model',
+    'North Las Vegas new homes',
+    'Century Communities',
+    'Dr. Janet Duffy',
+    'new construction',
+    '89031',
+    'luxury homes Las Vegas'
+  ],
+  openGraph: {
+    title: 'Residence 2119 - Largest Bravado Home | Dr. Janet Duffy',
+    description: 'Discover Residence 2119 at Bravado in North Las Vegas. 2,119 sq ft, 3-4 bedrooms, 2.5 baths, from $479,990. Largest model with luxury features.',
+    type: 'website',
+    images: [
+      {
+        url: '/images/bravado/floor-plans/residence-2119.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Residence 2119 Floor Plan - Largest Bravado Home',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/models/residence-2119',
+  },
+}
 
 export default function Residence2119Page() {
   return (

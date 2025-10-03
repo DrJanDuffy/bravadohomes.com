@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const baseUrl = 'https://bravadohomes.com'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
@@ -8,10 +8,43 @@ export default async function sitemap() {
     lastModified: post.metadata.publishedAt,
   }))
 
-  let routes = ['', '/blog'].map((route) => ({
+  // All main pages with priority and change frequency
+  let routes = [
+    // Core pages (high priority)
+    { route: '', priority: 1.0, changefreq: 'daily' },
+    { route: '/floor-plans', priority: 0.9, changefreq: 'weekly' },
+    { route: '/community', priority: 0.9, changefreq: 'weekly' },
+    { route: '/location', priority: 0.8, changefreq: 'weekly' },
+    { route: '/contact', priority: 0.8, changefreq: 'monthly' },
+    
+    // Model pages (high priority)
+    { route: '/models/residence-1792', priority: 0.9, changefreq: 'weekly' },
+    { route: '/models/residence-1943', priority: 0.9, changefreq: 'weekly' },
+    { route: '/models/residence-2119', priority: 0.9, changefreq: 'weekly' },
+    
+    // Service pages (medium-high priority)
+    { route: '/about', priority: 0.8, changefreq: 'monthly' },
+    { route: '/new-home-construction', priority: 0.8, changefreq: 'monthly' },
+    { route: '/buyer-representation', priority: 0.8, changefreq: 'monthly' },
+    { route: '/amenities', priority: 0.7, changefreq: 'monthly' },
+    { route: '/smart-home-technology', priority: 0.7, changefreq: 'monthly' },
+    { route: '/financing-incentives', priority: 0.7, changefreq: 'monthly' },
+    
+    // Blog pages (medium priority)
+    { route: '/blog', priority: 0.6, changefreq: 'weekly' },
+  ].map(({ route, priority, changefreq }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
+    priority,
+    changefreq,
   }))
 
-  return [...routes, ...blogs]
+  // Add blog posts with lower priority
+  let blogPosts = blogs.map((blog) => ({
+    ...blog,
+    priority: 0.5,
+    changefreq: 'monthly',
+  }))
+
+  return [...routes, ...blogPosts]
 }

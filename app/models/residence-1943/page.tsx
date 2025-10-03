@@ -1,6 +1,40 @@
 import RealScoutListings from '../../components/realscout-listings'
 import RealScoutAdvancedSearch from '../../components/realscout-advanced-search'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Residence 1943 - Most Popular Bravado Home | Dr. Janet Duffy',
+  description: 'Discover Residence 1943 at Bravado in North Las Vegas. 1,943 sq ft, 3-4 bedrooms, 2.5 baths, from $469,990. Most popular model with expert guidance from Dr. Janet Duffy, Century Communities Featured Partner.',
+  keywords: [
+    'Residence 1943',
+    'Bravado North Las Vegas',
+    '1943 sq ft homes',
+    'most popular home',
+    'North Las Vegas new homes',
+    'Century Communities',
+    'Dr. Janet Duffy',
+    'new construction',
+    '89031',
+    'luxury homes Las Vegas'
+  ],
+  openGraph: {
+    title: 'Residence 1943 - Most Popular Bravado Home | Dr. Janet Duffy',
+    description: 'Discover Residence 1943 at Bravado in North Las Vegas. 1,943 sq ft, 3-4 bedrooms, 2.5 baths, from $469,990. Most popular model.',
+    type: 'website',
+    images: [
+      {
+        url: '/images/bravado/floor-plans/residence-1943.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Residence 1943 Floor Plan - Most Popular Bravado Home',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/models/residence-1943',
+  },
+}
 
 export default function Residence1943Page() {
   return (

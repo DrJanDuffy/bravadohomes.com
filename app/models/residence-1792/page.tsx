@@ -1,6 +1,39 @@
 import RealScoutListings from '../../components/realscout-listings'
 import RealScoutAdvancedSearch from '../../components/realscout-advanced-search'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Residence 1792 - Bravado North Las Vegas | Dr. Janet Duffy',
+  description: 'Discover Residence 1792 at Bravado in North Las Vegas. 1,792 sq ft, 3-4 bedrooms, 2.5 baths, from $459,990. Expert guidance from Dr. Janet Duffy, Century Communities Featured Partner.',
+  keywords: [
+    'Residence 1792',
+    'Bravado North Las Vegas',
+    '1792 sq ft homes',
+    'North Las Vegas new homes',
+    'Century Communities',
+    'Dr. Janet Duffy',
+    'new construction',
+    '89031',
+    'luxury homes Las Vegas'
+  ],
+  openGraph: {
+    title: 'Residence 1792 - Bravado North Las Vegas | Dr. Janet Duffy',
+    description: 'Discover Residence 1792 at Bravado in North Las Vegas. 1,792 sq ft, 3-4 bedrooms, 2.5 baths, from $459,990.',
+    type: 'website',
+    images: [
+      {
+        url: '/images/bravado/floor-plans/residence-1792.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Residence 1792 Floor Plan - Bravado North Las Vegas',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/models/residence-1792',
+  },
+}
 
 export default function Residence1792Page() {
   return (

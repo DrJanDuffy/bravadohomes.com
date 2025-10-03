@@ -1,5 +1,37 @@
 import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Dr. Janet Duffy - Century Communities Expert | Bravado Homes',
+  description: 'Meet Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities. Expert guidance for Bravado homes in North Las Vegas with Nevada License S.0197614.',
+  keywords: [
+    'Dr. Janet Duffy',
+    'Century Communities expert',
+    'new home construction specialist',
+    'buyer representation',
+    'North Las Vegas real estate',
+    'Nevada real estate license',
+    'Bravado homes expert',
+    '89031 real estate agent'
+  ],
+  openGraph: {
+    title: 'About Dr. Janet Duffy - Century Communities Expert',
+    description: 'Meet Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities. Expert guidance for Bravado homes.',
+    type: 'profile',
+    images: [
+      {
+        url: '/images/bravado/about/dr-janet-duffy.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Dr. Janet Duffy - Century Communities Expert',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/about',
+  },
+}
 
 export default function AboutPage() {
   return (
