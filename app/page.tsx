@@ -545,9 +545,10 @@ export default function Page() {
           </div>
           
           <div className="contact-info">
-            <h3 className="text-xl font-bold mb-3">Century Communities</h3>
-            <p>One of America's Top 10 Homebuilders<br />
-            Sales Office: (702) 730-4300<br /><br />
+            <h3 className="text-xl font-bold mb-3">Bravado Sales Office</h3>
+            <p>Dr. Janet Duffy - Featured Partner<br />
+            Primary: (702) 500-1955<br />
+            Urgent: (702) 222-1964<br /><br />
             Model Home Hours<br />
             Monday-Sunday: 10:00 AM - 6:00 PM</p>
           </div>
