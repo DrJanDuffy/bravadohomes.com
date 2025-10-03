@@ -607,6 +607,7 @@ table {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
 }
 
@@ -739,6 +740,99 @@ table {
   .content-section p {
     font-size: 1rem;
     text-align: left;
+  }
+}
+
+/* Luxury Community Section Enhancements */
+.luxury-community-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin: 2rem 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-community-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed, #059669);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.luxury-community-section h2 {
+  color: #1e293b;
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.luxury-community-section p {
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: none;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+.luxury-community-section strong {
+  color: #1e40af;
+  font-weight: 700;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin: 0 0.125rem;
+  box-shadow: 0 1px 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Enhanced Visual Elements */
+.luxury-highlight {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(245, 158, 11, 0.1);
+}
+
+.luxury-highlight p {
+  margin: 0;
+  color: #92400e;
+  font-weight: 500;
+}
+
+/* Mobile Responsive for Luxury Community */
+@media (max-width: 768px) {
+  .luxury-community-section {
+    padding: 2rem 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .luxury-community-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .luxury-community-section p {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 }
 

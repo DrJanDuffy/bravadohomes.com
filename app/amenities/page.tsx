@@ -35,21 +35,23 @@ export default function AmenitiesPage() {
       </div>
 
       {/* Community Overview */}
-      <div className="mb-16">
+      <div className="luxury-community-section">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Luxury Community Living at Bravado
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Bravado</strong> offers residents a premium lifestyle with carefully designed amenities and features that enhance daily living. This gated community in North Las Vegas combines luxury, convenience, and security to create the perfect environment for modern families.
+              <strong>Bravado</strong> offers residents a <strong>premium lifestyle</strong> with carefully designed amenities and features that enhance daily living. This gated community in North Las Vegas combines <strong>luxury, convenience, and security</strong> to create the perfect environment for modern families.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado provides easy access to I-15, Craig Ranch Regional Park, and all the amenities that make North Las Vegas an exceptional place to call home.
+              Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado provides easy access to <strong>I-15, Craig Ranch Regional Park</strong>, and all the amenities that make North Las Vegas an exceptional place to call home.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              <strong>Dr. Janet Duffy</strong>, as a Featured New Home Construction & Buyer Representation Specialist, can help you understand all the community benefits and amenities that make Bravado the perfect choice for your new home.
-            </p>
+            <div className="luxury-highlight">
+              <p>
+                <strong>Dr. Janet Duffy</strong>, as a Featured New Home Construction & Buyer Representation Specialist, can help you understand all the <strong>community benefits and amenities</strong> that make Bravado the perfect choice for your new home.
+              </p>
+            </div>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-lg border">
