@@ -9,7 +9,7 @@ export default function ContactPage() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
           <div className="vip-badge">
-            ⭐ FEATURED NEW HOME CONSTRUCTION & BUYER REPRESENTATION ⭐
+            ⭐ LIMITED TIME: VIP ACCESS TO BRAVADO HOMES ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6">
             Contact Dr. Janet Duffy
@@ -21,13 +21,13 @@ export default function ContactPage() {
             Expert Guidance for New Home Construction & Buyer Representation in North Las Vegas
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
-            <a href="tel:+17022221964" className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">
+            <a href="tel:+17022221964" className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors text-lg">
               🚨 Urgent: (702) 222-1964
             </a>
           </div>

@@ -9,7 +9,7 @@ export default function LocationPage() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
           <div className="vip-badge">
-            ⭐ FEATURED NEW HOME CONSTRUCTION & BUYER REPRESENTATION ⭐
+            ⭐ LIMITED TIME: VIP ACCESS TO BRAVADO LOCATION ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6">
             Prime Location in North Las Vegas
@@ -21,11 +21,14 @@ export default function LocationPage() {
             Expert Location Guidance from Dr. Janet Duffy | Century Communities Featured Partner
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
+            </a>
+            <a href="/floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+              🏠 View Floor Plans
             </a>
           </div>
           <p className="text-lg">

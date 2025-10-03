@@ -7,7 +7,7 @@ export default function CommunityPage() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
           <div className="vip-badge">
-            ⭐ FEATURED NEW HOME CONSTRUCTION & BUYER REPRESENTATION ⭐
+            ⭐ LIMITED TIME: VIP ACCESS TO BRAVADO COMMUNITY ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6">
             Bravado Community Lifestyle
@@ -19,16 +19,36 @@ export default function CommunityPage() {
             Expert Guidance from Dr. Janet Duffy | Century Communities Featured Partner
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-              📞 Call: (702) 500-1955
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
+            </a>
+            <a href="/floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+              🏠 View Floor Plans
             </a>
           </div>
           <p className="text-lg">
             5060 Wind Springs Street, North Las Vegas, NV 89031
           </p>
+        </div>
+      </div>
+
+      {/* Urgency Banner */}
+      <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg mb-12 text-center">
+        <h2 className="text-2xl font-bold mb-4">🚨 ACT FAST - BRAVADO COMMUNITY SELLING OUT!</h2>
+        <p className="text-lg mb-4">
+          <strong>Only 3 floor plans remaining!</strong> This exclusive gated community is selling fast. 
+          Get your VIP tour with Dr. Janet Duffy before these luxury homes are gone forever.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="tel:+17025001955" className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            📞 SECURE YOUR HOME: (702) 500-1955
+          </a>
+          <a href="/floor-plans" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-red-600 transition-colors">
+            👀 VIEW FLOOR PLANS NOW
+          </a>
         </div>
       </div>
 
