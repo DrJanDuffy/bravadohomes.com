@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import OptimizedImage, { FALLBACK_IMAGES } from './components/optimized-image'
 import RealScoutListings from './components/realscout-listings'
 import RealScoutHomeValue from './components/realscout-home-value'
 import RealScoutAdvancedSearch from './components/realscout-advanced-search'
@@ -16,12 +16,14 @@ export default function Page() {
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80"
+          <OptimizedImage
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80"
             alt="Bravado Community Exterior - Luxury New Homes in North Las Vegas"
             fill
             className="object-cover opacity-30"
             priority
+            sizes="100vw"
+            fallbackSrc={FALLBACK_IMAGES.exterior}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-purple-900/80"></div>
         </div>
@@ -165,12 +167,13 @@ export default function Page() {
           <div className="floor-plan-card card-hover relative">
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80"
-                  alt="Residence 1792 - Modern Contemporary Two-Story Home"
+                <OptimizedImage
+                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=480&q=80"
+                  alt="Residence 1792 - Modern Contemporary Two-Story Home with Premium Features"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
               <div className="text-center">
@@ -236,12 +239,13 @@ export default function Page() {
             <div className="most-popular-badge">MOST POPULAR</div>
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80"
-                  alt="Residence 1943 - Spanish Mission Style Two-Story Home"
+                <OptimizedImage
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=480&q=80"
+                  alt="Residence 1943 - Spanish Mission Style Two-Story Home with Luxury Amenities"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
               <div className="text-center">
@@ -298,12 +302,13 @@ export default function Page() {
           <div className="floor-plan-card card-hover relative">
             <div className="mb-6">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80"
-                  alt="Residence 2119 - Mediterranean Style Luxury Two-Story Home"
+                <OptimizedImage
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=480&q=80"
+                  alt="Residence 2119 - Mediterranean Style Luxury Two-Story Home with Smart Features"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  fallbackSrc={FALLBACK_IMAGES.exterior}
                 />
               </div>
               <div className="text-center">
