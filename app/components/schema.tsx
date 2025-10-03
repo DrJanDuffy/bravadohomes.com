@@ -3,6 +3,138 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://bravadohomes.com/#business",
+        "name": "Bravado",
+        "description": "Century Communities is proud to offer new homes in North Las Vegas, at Bravado. This gated community is located in the bustling town of North Las Vegas, and showcases two-story floor plans with up to 5 bedrooms and 2,119 square feet. Boasting homes with modern design, contemporary open layouts, and exciting included features like the Century Connect® smart home package, Bravado has a floor plan for every taste. Located near Craig Ranch Regional Park, this beautiful community offers easy access to shopping, dining, golf courses, and I-15.",
+        "image": "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg",
+        "url": "https://bravadohomes.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US",
+          "addressLocality": "North Las Vegas",
+          "addressRegion": "NV",
+          "postalCode": "89031",
+          "streetAddress": "5060 Wind Springs Street"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "36.253435600755466",
+          "longitude": "-115.13597331838079"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Monday",
+            "opens": "10:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Tuesday",
+            "opens": "10:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Wednesday",
+            "opens": "10:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Thursday",
+            "opens": "10:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Friday",
+            "opens": "12:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Saturday",
+            "opens": "10:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "closes": "18:00:00",
+            "dayOfWeek": "https://schema.org/Sunday",
+            "opens": "10:00:00"
+          }
+        ],
+        "telephone": "+17025001955",
+        "email": "DrJanSells@BravadoHomes.com",
+        "foundingDate": "2024",
+        "areaServed": {
+          "@type": "City",
+          "name": "North Las Vegas",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Nevada"
+          }
+        },
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.253435600755466",
+            "longitude": "-115.13597331838079"
+          },
+          "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Bravado Home Models",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Residence 1792",
+                "description": "1,792 sq ft, 3-4 bedrooms, 2.5 bathrooms",
+                "category": "New Home Construction"
+              },
+              "price": "459990",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Residence 1943",
+                "description": "1,943 sq ft, 3-4 bedrooms, 2.5 bathrooms",
+                "category": "New Home Construction"
+              },
+              "price": "469990",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Residence 2119",
+                "description": "2,119 sq ft, 3-4 bedrooms, 2.5 bathrooms",
+                "category": "New Home Construction"
+              },
+              "price": "479990",
+              "priceCurrency": "USD"
+            }
+          ]
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Century Communities",
+          "description": "One of America's Top 10 Homebuilders"
+        },
+        "sameAs": [
+          "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/north-las-vegas/bravado/"
+        ]
+      },
+      {
         "@type": "RealEstateAgent",
         "@id": "https://bravadohomes.com/#agent",
         "name": "Dr. Janet Duffy",
@@ -18,6 +150,11 @@ export default function SchemaMarkup() {
           "addressRegion": "NV",
           "postalCode": "89031",
           "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "36.253435600755466",
+          "longitude": "-115.13597331838079"
         },
         "licenseNumber": "S.0197614",
         "areaServed": {
@@ -43,6 +180,9 @@ export default function SchemaMarkup() {
           "@type": "Organization",
           "name": "Century Communities",
           "description": "Featured Partner"
+        },
+        "worksFor": {
+          "@id": "https://bravadohomes.com/#business"
         },
         "knowsAbout": [
           "New Home Construction",
