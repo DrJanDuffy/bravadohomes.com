@@ -12,23 +12,15 @@ export default function RealScoutLoader({ children }: RealScoutLoaderProps) {
   useEffect(() => {
     // Load RealScout resources if not already loaded
     if (typeof window !== 'undefined' && !window.realscoutLoaded) {
-      // Load CSS from Cloudflare DNS worker
-      const existingCSS = document.querySelector('link[href*="realscout-widgets.css"]')
-      if (!existingCSS) {
-        const cssLink = document.createElement('link')
-        cssLink.rel = 'stylesheet'
-        cssLink.href = 'https://widgets.realscout.com/realscout-widgets.css'
-        cssLink.type = 'text/css'
-        cssLink.crossOrigin = 'anonymous'
-        document.head.appendChild(cssLink)
-      }
+      // RealScout web components are self-contained and don't need separate CSS
+      // The styling is handled via CSS custom properties
 
       // Load main RealScout script
-      const existingScript = document.querySelector('script[src*="realscout-widgets.js"]')
+      const existingScript = document.querySelector('script[src*="realscout-web-components.umd.js"]')
       if (!existingScript) {
         const script = document.createElement('script')
-        script.src = 'https://widgets.realscout.com/realscout-widgets.js'
-        script.async = true
+        script.src = 'https://em.realscout.com/widgets/realscout-web-components.umd.js'
+        script.type = 'module'
         script.crossOrigin = 'anonymous'
         script.onload = () => {
           window.realscoutLoaded = true
