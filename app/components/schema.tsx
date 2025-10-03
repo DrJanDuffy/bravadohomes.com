@@ -6,7 +6,7 @@ export default function SchemaMarkup() {
         "@type": "HomeAndConstructionBusiness",
         "@id": "https://bravadohomes.com/#business",
         "name": "Bravado",
-        "description": "Century Communities is proud to offer new homes in North Las Vegas, at Bravado. This gated community is located in the bustling town of North Las Vegas, and showcases two-story floor plans with up to 5 bedrooms and 2,119 square feet. Boasting homes with modern design, contemporary open layouts, and exciting included features like the Century Connect® smart home package, Bravado has a floor plan for every taste. Located near Craig Ranch Regional Park, this beautiful community offers easy access to shopping, dining, golf courses, and I-15.",
+            "description": "Century Communities is proud to offer exceptional new homes at Bravado in North Las Vegas, NV. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative Century Connect® smart home package, modern design elements, and premium finishes. Strategically located at 5060 Wind Springs Street in the 89031 zip code, Bravado offers unparalleled access to Craig Ranch Regional Park (170 acres), Aliante Casino + Hotel, Las Vegas Premium Outlets North, and I-15 access for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.",
         "image": "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg",
         "url": "https://bravadohomes.com",
         "address": {

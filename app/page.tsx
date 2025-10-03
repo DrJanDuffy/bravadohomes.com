@@ -190,10 +190,13 @@ export default function Page() {
           About Bravado by Century Communities
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          From <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—<strong>Bravado</strong> offers exceptional <strong>new homes for sale in North Las Vegas, NV</strong>. This prestigious North Las Vegas community features a luxurious lineup of <strong>two-story homes</strong> with <strong>modern designs</strong>, optional smart home features, and contemporary layouts.
+          <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—is proud to offer exceptional new homes at <strong>Bravado in North Las Vegas, NV</strong>. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative <strong>Century Connect® smart home package</strong>, modern design elements, and premium finishes that define luxury living in the 89031 zip code.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+          Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. Residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-          Located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado combines luxury and convenience for the ideal home in Clark County.
+          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, and world-class golf courses. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 mb-8">
