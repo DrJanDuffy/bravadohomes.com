@@ -65,7 +65,8 @@ export async function GET() {
       // Extract image from various possible locations
       let image = extractXmlContent(itemXml, 'enclosure') || 
                   extractXmlContent(itemXml, 'media:content') ||
-                  extractXmlContent(itemXml, 'media:thumbnail')
+                  extractXmlContent(itemXml, 'media:thumbnail') ||
+                  extractXmlContent(itemXml, 'image')
       
       // If no image found, try to extract from description HTML
       if (!image && description) {
@@ -73,6 +74,14 @@ export async function GET() {
         if (imgMatch) {
           image = imgMatch[1]
         }
+      }
+      
+      // Clean up image URL if found
+      if (image) {
+        // Remove any XML tags that might be around the URL
+        image = image.replace(/<[^>]*>/g, '').trim()
+        // Remove any CDATA wrappers
+        image = image.replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim()
       }
       
       // Extract categories

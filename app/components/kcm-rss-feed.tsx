@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
+import OptimizedImage, { FALLBACK_IMAGES } from './optimized-image'
 import Link from 'next/link'
 
 interface RSSItem {
@@ -95,14 +95,22 @@ export default function KCMRSSFeed() {
   }
 
   const getLocalImage = (item: RSSItem) => {
-    // Use local Bravado images if no image provided
-    if (!item.image) {
+    // Use local Bravado images if no image provided or if image fails to load
+    if (!item.image || item.image.includes('placeholder') || item.image.includes('default')) {
       const imageOptions = [
         'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
         'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
-        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80'
+        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
+        'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80'
       ]
-      return imageOptions[Math.floor(Math.random() * imageOptions.length)]
+      // Use a consistent image based on the article title hash for better caching
+      const titleHash = item.title.split('').reduce((a, b) => {
+        a = ((a << 5) - a) + b.charCodeAt(0)
+        return a & a
+      }, 0)
+      return imageOptions[Math.abs(titleHash) % imageOptions.length]
     }
     return item.image
   }
@@ -239,12 +247,13 @@ export default function KCMRSSFeed() {
                 <article key={item.guid || index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                   {/* Article Image */}
                   <div className="relative h-48 w-full overflow-hidden">
-                    <Image
+                    <OptimizedImage
                       src={itemImage}
                       alt={localizedContent.title}
                       fill
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      fallbackSrc={FALLBACK_IMAGES.default}
                     />
                     <div className="absolute top-3 left-3">
                       <span className="inline-block bg-blue-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">
