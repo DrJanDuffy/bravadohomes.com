@@ -1,3 +1,5 @@
+import RealScoutListings from './realscout-listings'
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-8 rounded-lg mt-16">
@@ -50,6 +52,28 @@ export default function Footer() {
               <p className="text-sm">
                 Nevada License: S.0197614
               </p>
+            </div>
+          </div>
+        </div>
+        
+        {/* RealScout Listings Widget */}
+        <div className="mt-8 py-8 border-t border-white/20">
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <h4 className="text-xl font-bold mb-4 text-center text-white">
+              🏡 Search Available Bravado Homes ($500K-$600K)
+            </h4>
+            <p className="text-white/90 text-center mb-6 text-sm">
+              Browse current listings in the Bravado community with Dr. Janet Duffy's expert guidance
+            </p>
+            <div className="bg-white p-4 rounded-lg">
+              <RealScoutListings
+                agentEncodedId="QWdlbnQtMjI1MDUw"
+                sortOrder="PRICE_LOW"
+                listingStatus="For Sale"
+                propertyTypes=",SFR,OTHER"
+                priceMin="500000"
+                priceMax="600000"
+              />
             </div>
           </div>
         </div>

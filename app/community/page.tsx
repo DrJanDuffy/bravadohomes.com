@@ -1,3 +1,5 @@
+import RealScoutListings from '../components/realscout-listings'
+
 export default function CommunityPage() {
   return (
     <section>
@@ -109,6 +111,32 @@ export default function CommunityPage() {
               to enjoy a quiet afternoon in the sun or host a larger community gathering, 
               this versatile space accommodates all your outdoor lifestyle needs.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* RealScout Office Listings Section */}
+      <div className="mb-16">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+              🏡 Available Bravado Homes - $500K-$600K Range
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
+              Discover available homes in the Bravado community within the $500,000 to $600,000 price range. 
+              These premium properties offer exceptional value with Century Communities' quality construction and smart home features.
+            </p>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <RealScoutListings
+                agentEncodedId="QWdlbnQtMjI1MDUw"
+                sortOrder="PRICE_LOW"
+                listingStatus="For Sale"
+                propertyTypes=",SFR,OTHER"
+                priceMin="500000"
+                priceMax="600000"
+              />
+            </div>
           </div>
         </div>
       </div>
