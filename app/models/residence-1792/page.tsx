@@ -68,7 +68,7 @@ export default function Residence1792Page() {
       </div>
 
       {/* Model Overview Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
@@ -120,7 +120,7 @@ export default function Residence1792Page() {
       </div>
 
       {/* Key Features Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Key Features of Residence 1792
         </h2>

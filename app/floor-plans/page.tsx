@@ -46,7 +46,7 @@ export default function FloorPlansPage() {
       </div>
 
       {/* About Floor Plans Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Bravado Floor Plans
         </h2>
@@ -154,12 +154,12 @@ export default function FloorPlansPage() {
       </div>
 
       {/* Floor Plans Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Bravado Floor Plans
         </h2>
-        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto">
-          Choose from three stunning two-story home designs, each featuring expansive living spaces, premium finishes, and room for customization
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Choose from three stunning two-story home designs, each featuring <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and room for customization
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -331,7 +331,7 @@ export default function FloorPlansPage() {
       </div>
 
       {/* Standard Features Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Standard Features in Every Bravado Home
         </h2>
@@ -395,7 +395,7 @@ export default function FloorPlansPage() {
       </div>
 
       {/* Customization Options Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Customization Options & Upgrades
         </h2>

@@ -38,7 +38,7 @@ export default function ContactPage() {
       </div>
 
       {/* About Dr. Janet Duffy Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Dr. Janet Duffy
         </h2>
@@ -132,7 +132,7 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Options Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Get in Touch with Dr. Janet Duffy
         </h2>
@@ -181,7 +181,7 @@ export default function ContactPage() {
       </div>
 
       {/* Current Bravado Information Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Current Bravado Information
         </h2>
@@ -241,7 +241,7 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Information & Hours Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Contact Information & Hours
         </h2>

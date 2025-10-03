@@ -33,12 +33,12 @@ export default function CommunityPage() {
       </div>
 
       {/* About Bravado Community Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Bravado Community
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          Experience the perfect blend of modern amenities and community spirit at Bravado, 
+          Experience the perfect blend of <strong>modern amenities</strong> and community spirit at <strong>Bravado</strong>, 
           where every detail has been thoughtfully designed to enhance your quality of life. 
           From gated security to recreational facilities, discover what makes Bravado the 
           ideal place to call home in North Las Vegas.
@@ -49,7 +49,7 @@ export default function CommunityPage() {
       </div>
 
       {/* Community Features & Amenities Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Community Features & Amenities
         </h2>

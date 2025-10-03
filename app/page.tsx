@@ -58,16 +58,14 @@ export default function Page() {
       </div>
 
       {/* Quick Property Search */}
-      <div className="mb-16">
-        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">
-              🔍 Find Your Dream Home in North Las Vegas
-            </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Start your search for the perfect home in Bravado or throughout North Las Vegas. 
-              Get expert guidance from Dr. Janet Duffy.
-            </p>
+      <div className="content-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          🔍 Find Your Dream Home in North Las Vegas
+        </h2>
+        <p className="text-lg text-gray-700 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
+          Start your search for the perfect home in <strong>Bravado</strong> or throughout North Las Vegas. 
+          Get expert guidance from <strong>Dr. Janet Duffy</strong>.
+        </p>
             
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-lg mb-8">
               <h3 className="text-2xl font-bold text-white mb-4">Quick Property Search</h3>
@@ -108,19 +106,19 @@ export default function Page() {
       </div>
 
       {/* Photo Gallery Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           Bravado Community Gallery
         </h2>
-        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
-          Explore the stunning homes and beautiful community at Bravado. From modern exteriors to luxurious interiors, 
+        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto leading-relaxed">
+          Explore the stunning homes and beautiful community at <strong>Bravado</strong>. From modern exteriors to luxurious interiors, 
           discover why Bravado is the perfect place to call home in North Las Vegas.
         </p>
         <PhotoGallery />
       </div>
 
       {/* About Bravado Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Bravado by Century Communities
         </h2>
@@ -154,12 +152,12 @@ export default function Page() {
       </div>
 
       {/* Floor Plans Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Bravado Floor Plans
         </h2>
-        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto">
-          Choose from three stunning two-story home designs, each featuring expansive living spaces, premium finishes, and room for customization
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Choose from three stunning two-story home designs, each featuring <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and room for customization
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -452,7 +450,7 @@ export default function Page() {
       </div>
 
       {/* Why Work With Dr. Janet Duffy Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Why Work With Dr. Janet Duffy?
         </h2>
@@ -461,28 +459,28 @@ export default function Page() {
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="feature-icon mx-auto">🤝</div>
+          <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border border-blue-100 hover:shadow-lg transition-shadow">
+            <div className="feature-icon mx-auto text-4xl mb-4">🤝</div>
             <h3 className="text-xl font-bold mb-3 text-gray-900">Century Communities Partnership</h3>
-            <p className="text-gray-700">I work directly with Century Communities to give you insider access while representing YOUR interests, not theirs.</p>
+            <p className="text-gray-700 leading-relaxed">I work directly with Century Communities to give you insider access while representing <strong>YOUR interests</strong>, not theirs.</p>
           </div>
           
-          <div className="text-center">
-            <div className="feature-icon mx-auto">📊</div>
+          <div className="text-center p-6 bg-gradient-to-br from-green-50 to-blue-50 rounded-lg border border-green-100 hover:shadow-lg transition-shadow">
+            <div className="feature-icon mx-auto text-4xl mb-4">📊</div>
             <h3 className="text-xl font-bold mb-3 text-gray-900">Market Expertise</h3>
-            <p className="text-gray-700">I'll show you comparable communities and help you understand true market value—not just what the builder tells you.</p>
+            <p className="text-gray-700 leading-relaxed">I'll show you comparable communities and help you understand <strong>true market value</strong>—not just what the builder tells you.</p>
           </div>
           
-          <div className="text-center">
-            <div className="feature-icon mx-auto">💰</div>
+          <div className="text-center p-6 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg border border-yellow-100 hover:shadow-lg transition-shadow">
+            <div className="feature-icon mx-auto text-4xl mb-4">💰</div>
             <h3 className="text-xl font-bold mb-3 text-gray-900">Negotiation Power</h3>
-            <p className="text-gray-700">Even with new construction, there's room to negotiate. I know how to maximize your leverage and protect your interests.</p>
+            <p className="text-gray-700 leading-relaxed">Even with new construction, there's room to negotiate. I know how to <strong>maximize your leverage</strong> and protect your interests.</p>
           </div>
           
-          <div className="text-center">
-            <div className="feature-icon mx-auto">🎯</div>
+          <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-100 hover:shadow-lg transition-shadow">
+            <div className="feature-icon mx-auto text-4xl mb-4">🎯</div>
             <h3 className="text-xl font-bold mb-3 text-gray-900">Las Vegas Specialist</h3>
-            <p className="text-gray-700">Nevada License S.0197614. Deep knowledge of North Las Vegas and the entire metro area.</p>
+            <p className="text-gray-700 leading-relaxed"><strong>Nevada License S.0197614</strong>. Deep knowledge of North Las Vegas and the entire metro area.</p>
           </div>
         </div>
       </div>

@@ -198,13 +198,13 @@ export default function KCMRSSFeed() {
   return (
     <div className="kcm-rss-feed">
       {/* Header */}
-      <div className="mb-8 text-center">
+      <div className="content-section mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Latest Market Insights from Dr. Janet Duffy
         </h2>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          Stay informed with the latest real estate market trends, insights, and expert analysis 
-          from North Las Vegas and the greater Las Vegas area. Content updates weekdays only.
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Stay informed with the latest <strong>real estate market trends</strong>, insights, and expert analysis 
+          from <strong>North Las Vegas</strong> and the greater Las Vegas area. Content updates weekdays only.
         </p>
         
         {/* Display Mode Toggle */}

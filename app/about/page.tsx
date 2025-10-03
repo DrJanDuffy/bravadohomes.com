@@ -66,7 +66,7 @@ export default function AboutPage() {
       </div>
 
       {/* About Dr. Janet Duffy Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
@@ -79,7 +79,7 @@ export default function AboutPage() {
               As a <strong>Featured New Home Construction & Buyer Representation Specialist</strong>, Dr. Duffy brings a unique perspective to real estate, combining her professional background with deep market knowledge and builder relationships. Her clients benefit from her insider access to Century Communities' latest developments, priority lot selection, and exclusive incentives.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Dr. Duffy's approach is centered on being your trusted advisor, not just another sales agent. She represents your interests throughout the entire new home construction process, from initial consultation through closing and beyond.
+              Dr. Duffy's approach is centered on being your <strong>trusted advisor</strong>, not just another sales agent. She represents your interests throughout the entire new home construction process, from initial consultation through closing and beyond.
             </p>
           </div>
           
@@ -108,7 +108,7 @@ export default function AboutPage() {
       </div>
 
       {/* Expertise Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Dr. Janet Duffy's Expertise
         </h2>
@@ -182,7 +182,7 @@ export default function AboutPage() {
       </div>
 
       {/* Client Benefits Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Why Work With Dr. Janet Duffy?
         </h2>
@@ -234,14 +234,13 @@ export default function AboutPage() {
       </div>
 
       {/* RealScout Tools Section */}
-      <div className="mb-16">
-        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-            🏠 Advanced Property Tools
-          </h2>
-          <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto">
-            Dr. Janet Duffy provides access to advanced RealScout technology for comprehensive market analysis and property search
-          </p>
+      <div className="content-section">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+          🏠 Advanced Property Tools
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-8 max-w-4xl mx-auto leading-relaxed">
+          Dr. Janet Duffy provides access to <strong>advanced RealScout technology</strong> for comprehensive market analysis and property search
+        </p>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg">

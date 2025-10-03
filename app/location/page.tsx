@@ -35,7 +35,7 @@ export default function LocationPage() {
       </div>
 
       {/* About Location Section */}
-      <div className="mb-16">
+      <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
           About Bravado's Prime Location
         </h2>
@@ -173,7 +173,7 @@ export default function LocationPage() {
       </div>
 
       {/* Craig Ranch Regional Park Section */}
-      <div className="mb-16">
+      <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Craig Ranch Regional Park - Your Backyard Playground
         </h2>
