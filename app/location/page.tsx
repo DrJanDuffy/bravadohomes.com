@@ -71,8 +71,8 @@ export default function LocationPage() {
                 sortOrder="PRICE_LOW"
                 listingStatus="For Sale"
                 propertyTypes=",SFR,OTHER"
-                priceMin="400000"
-                priceMax="750000"
+                priceMin="450000"
+                priceMax="850000"
               />
             </div>
 

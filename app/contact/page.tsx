@@ -123,7 +123,7 @@ export default function ContactPage() {
                   listingStatus="For Sale"
                   propertyTypes=",SFR,OTHER"
                   priceMin="450000"
-                  priceMax="600000"
+                  priceMax="750000"
                 />
               </div>
             </div>

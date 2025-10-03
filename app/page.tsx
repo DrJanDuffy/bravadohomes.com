@@ -105,7 +105,7 @@ export default function Page() {
                       listingStatus="For Sale"
                       propertyTypes=",SFR,OTHER"
                       priceMin="450000"
-                      priceMax="700000"
+                      priceMax="800000"
                     />
                   </div>
                 </div>

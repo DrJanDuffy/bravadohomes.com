@@ -92,7 +92,7 @@ export default function FloorPlansPage() {
                       listingStatus="For Sale"
                       propertyTypes=",SFR,OTHER"
                       priceMin="450000"
-                      priceMax="650000"
+                      priceMax="750000"
                     />
                   </div>
                 </div>
