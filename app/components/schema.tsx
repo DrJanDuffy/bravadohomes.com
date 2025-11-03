@@ -75,8 +75,8 @@ export default async function SchemaMarkup() {
             "opens": "10:00:00"
           }
         ],
-        "telephone": "+17025001955",
-        "email": "DrJanSells@BravadoHomes.com",
+        "telephone": contact.phone,
+        "email": contact.email,
         "foundingDate": "2024",
         "areaServed": {
           "@type": "City",
