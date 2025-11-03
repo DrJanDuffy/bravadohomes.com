@@ -3,27 +3,28 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone()
-  const hostname = request.headers.get('host') || ''
-
-  // Redirect www to non-www (canonical URL)
-  if (hostname.startsWith('www.')) {
-    url.hostname = hostname.replace('www.', '')
-    return NextResponse.redirect(url, 301)
+  
+  // Skip middleware for static files and API routes
+  if (
+    url.pathname.startsWith('/_next/') ||
+    url.pathname.startsWith('/api/') ||
+    url.pathname.startsWith('/favicon.ico') ||
+    url.pathname.startsWith('/robots.txt') ||
+    url.pathname.startsWith('/sitemap.xml')
+  ) {
+    return NextResponse.next()
   }
 
+  // NOTE: www redirect is disabled here to avoid conflicts with Vercel/hosting redirects
+  // Configure www → non-www redirect at the Vercel domain settings level instead
+  // This prevents ERR_TOO_MANY_REDIRECTS errors
+  
   // Remove search parameters from homepage to prevent duplicate content
   // This fixes the ?s={search_term_string} issue
   if (url.pathname === '/' && url.search) {
     url.search = ''
     return NextResponse.redirect(url, 301)
   }
-
-  // Normalize trailing slashes (optional - keep consistent with your setup)
-  // You can enable this if you want to enforce no trailing slashes
-  // if (url.pathname !== '/' && url.pathname.endsWith('/')) {
-  //   url.pathname = url.pathname.slice(0, -1)
-  //   return NextResponse.redirect(url, 301)
-  // }
 
   return NextResponse.next()
 }
