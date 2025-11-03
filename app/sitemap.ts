@@ -1,7 +1,13 @@
 import { getBlogPosts } from 'app/blog/utils'
-import { baseUrl } from 'app/config'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from './utils/domain'
 
 export default async function sitemap() {
+  // Get domain-specific configuration
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  
   // Safely get blog posts with error handling
   let blogs: Array<{ url: string; lastModified: string }> = []
   try {

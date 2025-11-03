@@ -1,6 +1,11 @@
-import { baseUrl } from 'app/config'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from './utils/domain'
 
-export default function robots() {
+export default async function robots() {
+  // Get domain-specific configuration
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
   return {
     rules: [
       // Default rule for all bots

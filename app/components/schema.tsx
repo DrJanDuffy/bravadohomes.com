@@ -1,11 +1,21 @@
-export default function SchemaMarkup() {
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from '../utils/domain'
+
+export default async function SchemaMarkup() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const location = config.location
+  const contact = config.contact
+  const agent = config.realEstateAgent
+
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "HomeAndConstructionBusiness",
-        "@id": "https://bravadohomes.com/#business",
-        "name": "Bravado",
+        "@id": `${baseUrl}/#business`,
+        "name": config.businessName,
             "description": "Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist, is proud to represent Century Communities at Bravado in North Las Vegas, NV. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative Century Connect® smart home package, modern design elements, and premium finishes. Strategically located at 5060 Wind Springs Street in the 89031 zip code, Bravado offers unparalleled access to Craig Ranch Regional Park (170 acres), Aliante Casino + Hotel, Las Vegas Premium Outlets North, and I-15 access for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.",
         "image": "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg",
         "url": "https://bravadohomes.com",
@@ -142,33 +152,32 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "RealEstateAgent",
-        "@id": "https://bravadohomes.com/#agent",
-        "name": "Dr. Janet Duffy",
-        "alternateName": "Dr. Jan Duffy",
-        "description": "Featured New Home Construction & Buyer Representation Specialist for Century Communities",
-        "url": "https://bravadohomes.com",
-        "telephone": "+17025001955",
-        "email": "DrJanSells@BravadoHomes.com",
+        "@id": `${baseUrl}/#agent`,
+        "name": agent?.name || "Dr. Janet Duffy",
+        "description": "Featured New Home Construction & Buyer Representation Specialist",
+        "url": baseUrl,
+        "telephone": contact.phone,
+        "email": contact.email,
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "5060 Wind Springs Street",
-          "addressLocality": "North Las Vegas",
-          "addressRegion": "NV",
-          "postalCode": "89031",
+          "streetAddress": location.address !== 'TBD' ? location.address : '',
+          "addressLocality": location.city,
+          "addressRegion": location.state,
+          "postalCode": location.zip !== 'TBD' ? location.zip : '',
           "addressCountry": "US"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "36.253435600755466",
-          "longitude": "-115.13597331838079"
+          "latitude": location.coordinates.lat,
+          "longitude": location.coordinates.lng
         },
-        "licenseNumber": "S.0197614",
+        "licenseNumber": agent?.licenseNumber || "S.0197614",
         "areaServed": {
           "@type": "City",
-          "name": "North Las Vegas",
+          "name": location.city,
           "containedInPlace": {
             "@type": "State",
-            "name": "Nevada"
+            "name": location.state
           }
         },
         "hasCredential": [
@@ -270,7 +279,9 @@ export default function SchemaMarkup() {
           "name": "Century Communities",
           "description": "One of America's Top 10 Homebuilders"
         },
-        "hasMap": "https://maps.google.com/?q=5060+Wind+Springs+Street+North+Las+Vegas+NV+89031"
+        "hasMap": location.address !== 'TBD' && location.zip !== 'TBD' 
+          ? `https://maps.google.com/?q=${encodeURIComponent(`${location.address} ${location.city} ${location.state} ${location.zip}`)}`
+          : `https://maps.google.com/?q=${encodeURIComponent(`${location.city} ${location.state}`)}`
       },
       {
         "@type": "Organization",
@@ -286,29 +297,23 @@ export default function SchemaMarkup() {
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "telephone": "+17025001955",
+            "telephone": contact.phone,
             "contactType": "Primary Phone",
             "availableLanguage": "English"
           },
           {
             "@type": "ContactPoint",
-            "telephone": "+17022221964",
-            "contactType": "Urgent/Marketing",
-            "availableLanguage": "English"
-          },
-          {
-            "@type": "ContactPoint",
-            "email": "DrJanSells@BravadoHomes.com",
+            "email": contact.email,
             "contactType": "Email",
             "availableLanguage": "English"
           }
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "5060 Wind Springs Street",
-          "addressLocality": "North Las Vegas",
-          "addressRegion": "NV",
-          "postalCode": "89031",
+          "streetAddress": location.address !== 'TBD' ? location.address : '',
+          "addressLocality": location.city,
+          "addressRegion": location.state,
+          "postalCode": location.zip !== 'TBD' ? location.zip : '',
           "addressCountry": "US"
         },
         "founder": {
@@ -322,19 +327,19 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://bravadohomes.com/#website",
-        "url": "https://bravadohomes.com",
-        "name": "Bravado Homes by Dr. Janet Duffy",
-        "description": "Featured New Home Construction & Buyer Representation for Century Communities in North Las Vegas",
+        "@id": `${baseUrl}/#website`,
+        "url": baseUrl,
+        "name": config.businessName,
+        "description": `Featured New Home Construction & Buyer Representation in ${location.city}`,
         "publisher": {
-          "@id": "https://bravadohomes.com/#organization"
+          "@id": `${baseUrl}/#organization`
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://bravadohomes.com/?s={search_term_string}"
+              "urlTemplate": `${baseUrl}/?s={search_term_string}`
             },
             "query-input": "required name=search_term_string"
           }
@@ -343,16 +348,13 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://bravadohomes.com/#webpage",
-        "url": "https://bravadohomes.com",
-        "name": "Bravado North Las Vegas - New Homes by Dr. Janet Duffy",
+        "@id": `${baseUrl}/#webpage`,
+        "url": baseUrl,
+        "name": `${config.businessName} - New Homes in ${location.city}`,
         "isPartOf": {
-          "@id": "https://bravadohomes.com/#website"
+          "@id": `${baseUrl}/#website`
         },
-        "about": {
-          "@id": "https://bravadohomes.com/#community"
-        },
-        "description": "Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes starting at $459,790. Now selling - limited availability!",
+        "description": `Discover luxury new homes in ${location.city}. ${agent?.name || 'Dr. Janet Duffy'}, Featured New Home Construction & Buyer Representation Specialist.`,
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -360,7 +362,7 @@ export default function SchemaMarkup() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bravadohomes.com"
+              "item": baseUrl
             }
           ]
         },
