@@ -4,14 +4,21 @@ import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
 import type { Metadata } from 'next'
 
-// Static generation disabled due to React version conflicts with MDX content
-// export async function generateStaticParams() {
-//   let posts = getBlogPosts()
+// Enable static generation for blog posts to avoid serverless file system issues
+export async function generateStaticParams() {
+  try {
+    let posts = getBlogPosts()
+    return posts.map((post) => ({
+      slug: post.slug,
+    }))
+  } catch (error) {
+    console.error('Error generating static params:', error)
+    return []
+  }
+}
 
-//   return posts.map((post) => ({
-//     slug: post.slug,
-//   }))
-// }
+// Force dynamic rendering as fallback if static generation fails
+export const dynamicParams = true
 
 export async function generateMetadata({ 
   params 
