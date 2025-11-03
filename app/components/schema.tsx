@@ -284,11 +284,10 @@ export default async function SchemaMarkup() {
       },
       {
         "@type": "Organization",
-        "@id": "https://bravadohomes.com/#organization",
-        "name": "Bravado Homes by Dr. Janet Duffy",
-        "alternateName": "Bravado Homes",
-        "description": "Featured New Home Construction & Buyer Representation for Century Communities in North Las Vegas",
-        "url": "https://bravadohomes.com",
+        "@id": `${baseUrl}/#organization`,
+        "name": config.businessName,
+        "description": `Featured New Home Construction & Buyer Representation in ${location.city}`,
+        "url": baseUrl,
         "logo": `${baseUrl}/logo.png`,
         "sameAs": [
           baseUrl
