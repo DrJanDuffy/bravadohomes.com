@@ -16,9 +16,8 @@ export default async function SchemaMarkup() {
         "@type": "HomeAndConstructionBusiness",
         "@id": `${baseUrl}/#business`,
         "name": config.businessName,
-            "description": "Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist, is proud to represent Century Communities at Bravado in North Las Vegas, NV. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative Century Connect® smart home package, modern design elements, and premium finishes. Strategically located at 5060 Wind Springs Street in the 89031 zip code, Bravado offers unparalleled access to Craig Ranch Regional Park (170 acres), Aliante Casino + Hotel, Las Vegas Premium Outlets North, and I-15 access for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.",
-        "image": "https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/bravado/models/2119/5052-wind-spgs-st---web-quality---003---02-exterior-front.jpg",
-        "url": "https://bravadohomes.com",
+        "description": `${agent?.name || 'Dr. Janet Duffy'}, Featured New Home Construction & Buyer Representation Specialist. Located in ${location.city}, ${location.state}. Premium new construction homes with expert guidance.`,
+        "url": baseUrl,
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "US",
@@ -290,9 +289,9 @@ export default async function SchemaMarkup() {
         "alternateName": "Bravado Homes",
         "description": "Featured New Home Construction & Buyer Representation for Century Communities in North Las Vegas",
         "url": "https://bravadohomes.com",
-        "logo": "https://bravadohomes.com/logo.png",
+        "logo": `${baseUrl}/logo.png`,
         "sameAs": [
-          "https://bravadohomes.com"
+          baseUrl
         ],
         "contactPoint": [
           {
@@ -317,7 +316,7 @@ export default async function SchemaMarkup() {
           "addressCountry": "US"
         },
         "founder": {
-          "@id": "https://bravadohomes.com/#agent"
+          "@id": `${baseUrl}/#agent`
         },
         "memberOf": {
           "@type": "Organization",
