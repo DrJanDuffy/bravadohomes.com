@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
-import { baseUrl } from 'app/sitemap'
+import { baseUrl } from 'app/config'
 import type { Metadata } from 'next'
 
 // Enable static generation for blog posts to avoid serverless file system issues

@@ -1,6 +1,5 @@
 import { getBlogPosts } from 'app/blog/utils'
-
-export const baseUrl = 'https://bravadohomes.com'
+import { baseUrl } from 'app/config'
 
 export default async function sitemap() {
   // Safely get blog posts with error handling

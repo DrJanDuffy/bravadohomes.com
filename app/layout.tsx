@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import GoogleAnalytics from './components/google-analytics'
-import { baseUrl } from './sitemap'
+import { baseUrl } from './config'
 
 export const viewport: Viewport = {
   width: 'device-width',
