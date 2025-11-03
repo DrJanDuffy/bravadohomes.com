@@ -50,7 +50,7 @@ export const domains: Record<string, DomainConfig> = {
     },
     contact: {
       phone: '+17025001955',
-      email: 'DrJanSells@BravadoHomes.com',
+      email: 'DrDuffySellls@BravadoHomes.com',
     },
     realEstateAgent: {
       name: 'Dr. Janet Duffy',
