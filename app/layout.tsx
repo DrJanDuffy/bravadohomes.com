@@ -101,6 +101,23 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+    // Optimize for AI search engines
+    'GPTBot': {
+      index: true,
+      follow: true,
+    },
+    'ChatGPT-User': {
+      index: true,
+      follow: true,
+    },
+    'ClaudeBot': {
+      index: true,
+      follow: true,
+    },
+    'PerplexityBot': {
+      index: true,
+      follow: true,
+    },
   },
   verification: {
     // Get your verification code from: https://search.google.com/search-console

@@ -4,6 +4,7 @@ import RealScoutHomeValue from './components/realscout-home-value'
 import RealScoutAdvancedSearch from './components/realscout-advanced-search'
 import RealScoutSimpleSearch from './components/realscout-simple-search'
 import SchemaMarkup from './components/schema'
+import AIOptimizationSchema from './components/ai-optimization-schema'
 import PhotoGallery from './components/photo-gallery'
 import KCMRSSFeed from './components/kcm-rss-feed'
 import type { Metadata } from 'next'
@@ -18,6 +19,7 @@ export default function Page() {
   return (
     <>
       <SchemaMarkup />
+      <AIOptimizationSchema />
       <section>
       {/* Hero Section - Above the Fold */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12 relative overflow-hidden">
