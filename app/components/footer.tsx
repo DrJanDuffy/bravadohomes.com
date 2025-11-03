@@ -45,8 +45,8 @@ export default function Footer() {
               </p>
               <p>
                 <strong>Email:</strong><br />
-                <a href="mailto:DrJanSells@BravadoHomes.com" className="hover:text-blue-200 transition-colors">
-                  DrJanSells@BravadoHomes.com
+                <a href="mailto:DrDuffySellls@BravadoHomes.com" className="hover:text-blue-200 transition-colors">
+                  DrDuffySellls@BravadoHomes.com
                 </a>
               </p>
               <p className="text-sm">

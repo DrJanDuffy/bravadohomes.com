@@ -42,7 +42,7 @@ export default function StickyContact() {
               📞 (702) 500-1955
             </a>
             <a 
-              href="mailto:DrJanSells@BravadoHomes.com" 
+              href="mailto:DrDuffySellls@BravadoHomes.com" 
               className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-700 transition-colors flex items-center"
             >
               📧 Email Dr. Janet
