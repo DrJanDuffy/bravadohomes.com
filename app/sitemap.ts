@@ -3,10 +3,19 @@ import { getBlogPosts } from 'app/blog/utils'
 export const baseUrl = 'https://bravadohomes.com'
 
 export default async function sitemap() {
-  let blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.metadata.publishedAt,
-  }))
+  // Safely get blog posts with error handling
+  let blogs: Array<{ url: string; lastModified: string }> = []
+  try {
+    const posts = getBlogPosts()
+    blogs = posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: post.metadata.publishedAt,
+    }))
+  } catch (error) {
+    // If blog posts can't be loaded, continue without them
+    // This prevents the sitemap from crashing the entire site
+    console.error('Error loading blog posts for sitemap:', error)
+  }
 
   // All main pages with priority and change frequency - optimized for landing page structure
   let routes = [
