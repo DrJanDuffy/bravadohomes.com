@@ -8,10 +8,22 @@ type Metadata = {
   image?: string
 }
 
+type BlogPost = {
+  metadata: Metadata
+  slug: string
+  content: string
+}
+
+// Cache blog posts to avoid repeated file system reads
+let blogPostsCache: BlogPost[] | null = null
+
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/
   let match = frontmatterRegex.exec(fileContent)
-  let frontMatterBlock = match![1]
+  if (!match || !match[1]) {
+    throw new Error('Invalid frontmatter format')
+  }
+  let frontMatterBlock = match[1]
   let content = fileContent.replace(frontmatterRegex, '').trim()
   let frontMatterLines = frontMatterBlock.trim().split('\n')
   let metadata: Partial<Metadata> = {}
@@ -26,31 +38,79 @@ function parseFrontmatter(fileContent: string) {
   return { metadata: metadata as Metadata, content }
 }
 
-function getMDXFiles(dir) {
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx')
-}
-
-function readMDXFile(filePath) {
-  let rawContent = fs.readFileSync(filePath, 'utf-8')
-  return parseFrontmatter(rawContent)
-}
-
-function getMDXData(dir) {
-  let mdxFiles = getMDXFiles(dir)
-  return mdxFiles.map((file) => {
-    let { metadata, content } = readMDXFile(path.join(dir, file))
-    let slug = path.basename(file, path.extname(file))
-
-    return {
-      metadata,
-      slug,
-      content,
+function getMDXFiles(dir: string): string[] {
+  try {
+    if (!fs.existsSync(dir)) {
+      return []
     }
-  })
+    return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx')
+  } catch (error) {
+    return []
+  }
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'app', 'blog', 'posts'))
+function readMDXFile(filePath: string) {
+  try {
+    if (!fs.existsSync(filePath)) {
+      throw new Error(`File not found: ${filePath}`)
+    }
+    let rawContent = fs.readFileSync(filePath, 'utf-8')
+    return parseFrontmatter(rawContent)
+  } catch (error) {
+    throw error
+  }
+}
+
+function getMDXData(dir: string): BlogPost[] {
+  try {
+    let mdxFiles = getMDXFiles(dir)
+    return mdxFiles.map((file) => {
+      try {
+        let { metadata, content } = readMDXFile(path.join(dir, file))
+        let slug = path.basename(file, path.extname(file))
+
+        return {
+          metadata,
+          slug,
+          content,
+        }
+      } catch (error) {
+        console.error(`Error processing file ${file}:`, error)
+        return null
+      }
+    }).filter((post): post is BlogPost => post !== null)
+  } catch (error) {
+    console.error(`Error getting MDX data from ${dir}:`, error)
+    return []
+  }
+}
+
+export function getBlogPosts(): BlogPost[] {
+  // Return cached posts if available (for serverless environments)
+  if (blogPostsCache !== null) {
+    return blogPostsCache
+  }
+
+  try {
+    const postsDir = path.join(process.cwd(), 'app', 'blog', 'posts')
+    
+    // Check if directory exists
+    if (!fs.existsSync(postsDir)) {
+      return []
+    }
+    
+    const posts = getMDXData(postsDir)
+    
+    // Cache the posts
+    blogPostsCache = posts
+    
+    return posts
+  } catch (error) {
+    // In serverless environments, fs might not be available
+    // Return empty array to prevent crashes
+    console.error('Error loading blog posts:', error)
+    return []
+  }
 }
 
 export function formatDate(date: string, includeRelative = false) {

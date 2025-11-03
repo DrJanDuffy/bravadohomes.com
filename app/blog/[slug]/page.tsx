@@ -18,14 +18,17 @@ export async function generateMetadata({
 }: { 
   params: Promise<{ slug: string }> | { slug: string } 
 }): Promise<Metadata> {
-  const resolvedParams = 'then' in params ? await params : params
-  let post = getBlogPosts().find((post) => post.slug === resolvedParams.slug)
-  
-  if (!post) {
-    return {
-      title: 'Post Not Found',
+  try {
+    const resolvedParams = 'then' in params ? await params : params
+    const posts = getBlogPosts()
+    let post = posts.find((post) => post && post.slug === resolvedParams.slug)
+    
+    if (!post) {
+      return {
+        title: 'Post Not Found',
+        description: 'The requested blog post could not be found.',
+      }
     }
-  }
 
   let {
     title,
@@ -64,6 +67,13 @@ export async function generateMetadata({
       images: [ogImage],
     },
   }
+  } catch (error) {
+    console.error('Error generating metadata:', error)
+    return {
+      title: 'Blog Post',
+      description: 'Blog post page',
+    }
+  }
 }
 
 export default async function Blog({ 
@@ -73,9 +83,19 @@ export default async function Blog({
 }) {
   try {
     const resolvedParams = 'then' in params ? await params : params
-    let post = getBlogPosts().find((post) => post.slug === resolvedParams.slug)
+    
+    // Get all posts and find the matching one
+    const posts = getBlogPosts()
+    
+    if (!posts || posts.length === 0) {
+      console.error('No blog posts found')
+      notFound()
+    }
+    
+    let post = posts.find((post) => post && post.slug === resolvedParams.slug)
 
     if (!post) {
+      console.error(`Blog post not found: ${resolvedParams.slug}`)
       notFound()
     }
 
