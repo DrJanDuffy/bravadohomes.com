@@ -2,7 +2,21 @@ import Link from 'next/link'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 
 export function BlogPosts() {
-  let allBlogs = getBlogPosts()
+  let allBlogs
+  try {
+    allBlogs = getBlogPosts()
+  } catch (error) {
+    console.error('Error loading blog posts:', error)
+    allBlogs = []
+  }
+  
+  if (!allBlogs || allBlogs.length === 0) {
+    return (
+      <div>
+        <p className="text-neutral-600 dark:text-neutral-400">No blog posts available at this time.</p>
+      </div>
+    )
+  }
 
   return (
     <div>

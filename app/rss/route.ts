@@ -2,7 +2,13 @@ import { baseUrl } from 'app/sitemap'
 import { getBlogPosts } from 'app/blog/utils'
 
 export async function GET() {
-  let allBlogs = await getBlogPosts()
+  let allBlogs
+  try {
+    allBlogs = getBlogPosts()
+  } catch (error) {
+    console.error('Error loading blog posts for RSS:', error)
+    allBlogs = []
+  }
 
   const itemsXml = allBlogs
     .sort((a, b) => {
