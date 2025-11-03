@@ -1,6 +1,22 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import RealScoutHomeValue from '../components/realscout-home-value'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Buyer Representation Services | Dr. Janet Duffy | Bravado Homes',
+  description: 'Expert buyer representation services for new home construction in North Las Vegas. Dr. Janet Duffy provides independent guidance and advocacy for Century Communities homes at Bravado.',
+  keywords: 'buyer representation, new home construction, real estate agent, North Las Vegas, Bravado, Century Communities, Dr. Janet Duffy',
+  openGraph: {
+    title: 'Buyer Representation Services | Dr. Janet Duffy | Bravado Homes',
+    description: 'Expert buyer representation services for new home construction in North Las Vegas. Dr. Janet Duffy provides independent guidance and advocacy.',
+    url: 'https://bravadohomes.com/buyer-representation',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/buyer-representation',
+  },
+}
 
 export default function BuyerRepresentationPage() {
   return (

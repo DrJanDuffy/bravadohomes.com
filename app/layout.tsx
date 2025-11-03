@@ -8,6 +8,7 @@ import StickyContact from './components/sticky-contact'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
+import GoogleAnalytics from './components/google-analytics'
 import { baseUrl } from './sitemap'
 
 export const viewport: Viewport = {
@@ -102,11 +103,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
+    // Get your verification code from: https://search.google.com/search-console
+    // Add property → Enter domain → Choose verification method → Copy code
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'your-google-verification-code',
   },
-  alternates: {
-    canonical: baseUrl,
-  },
+  // Canonical URLs should be set per-page, not globally
+  // This prevents "alternate page with proper canonical tag" errors
   category: 'Real Estate',
   classification: 'New Home Construction',
   referrer: 'origin-when-cross-origin',
@@ -151,6 +153,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <StickyContact />
+          <GoogleAnalytics />
           <Analytics />
           <SpeedInsights />
         </main>

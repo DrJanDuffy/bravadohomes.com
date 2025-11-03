@@ -1,6 +1,22 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import RealScoutHomeValue from '../components/realscout-home-value'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Financing & Incentives | Bravado Homes | Dr. Janet Duffy',
+  description: 'Explore exclusive financing options and builder incentives for Bravado new construction homes in North Las Vegas. Expert guidance from Dr. Janet Duffy, Century Communities Featured Partner.',
+  keywords: 'financing incentives, new home financing, builder incentives, Century Communities, Bravado, North Las Vegas, Dr. Janet Duffy',
+  openGraph: {
+    title: 'Financing & Incentives | Bravado Homes | Dr. Janet Duffy',
+    description: 'Explore exclusive financing options and builder incentives for Bravado new construction homes in North Las Vegas.',
+    url: 'https://bravadohomes.com/financing-incentives',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/financing-incentives',
+  },
+}
 
 export default function FinancingIncentivesPage() {
   return (

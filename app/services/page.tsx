@@ -3,7 +3,9 @@ import Link from 'next/link'
 import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutListings from '../components/realscout-listings'
 
-export const metadata = {
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
   title: 'Real Estate Services | Dr. Janet Duffy | Bravado Homes North Las Vegas',
   description: 'Expert new home construction and buyer representation services in North Las Vegas. Dr. Janet Duffy provides specialized guidance for Century Communities homes at Bravado.',
   keywords: 'new home construction, buyer representation, real estate services, North Las Vegas, Bravado, Century Communities, Dr. Janet Duffy',
@@ -12,6 +14,9 @@ export const metadata = {
     description: 'Expert new home construction and buyer representation services in North Las Vegas. Dr. Janet Duffy provides specialized guidance for Century Communities homes at Bravado.',
     url: 'https://bravadohomes.com/services',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/services',
   },
 }
 

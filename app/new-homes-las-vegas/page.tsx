@@ -4,7 +4,9 @@ import RealScoutListings from '../components/realscout-listings'
 import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 
-export const metadata = {
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
   title: 'New Homes Las Vegas | New Construction Homes | Dr. Janet Duffy',
   description: 'Find new construction homes in Las Vegas and North Las Vegas. Expert guidance from Dr. Janet Duffy for Century Communities, Bravado, and other new home communities.',
   keywords: 'new homes Las Vegas, new construction Las Vegas, new homes North Las Vegas, Century Communities Las Vegas, Bravado new homes, Dr. Janet Duffy, new construction homes Nevada',
@@ -13,6 +15,9 @@ export const metadata = {
     description: 'Find new construction homes in Las Vegas and North Las Vegas. Expert guidance from Dr. Janet Duffy for Century Communities, Bravado, and other new home communities.',
     url: 'https://bravadohomes.com/new-homes-las-vegas',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://bravadohomes.com/new-homes-las-vegas',
   },
 }
 

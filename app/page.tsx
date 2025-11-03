@@ -6,6 +6,13 @@ import RealScoutSimpleSearch from './components/realscout-simple-search'
 import SchemaMarkup from './components/schema'
 import PhotoGallery from './components/photo-gallery'
 import KCMRSSFeed from './components/kcm-rss-feed'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://bravadohomes.com',
+  },
+}
 
 export default function Page() {
   return (
