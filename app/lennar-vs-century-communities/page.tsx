@@ -115,23 +115,23 @@ export default async function LennarVsCenturyPage() {
             <tbody className="divide-y divide-gray-200">
               <tr className="hover:bg-blue-50">
                 <td className="px-6 py-4 font-semibold text-gray-900">National Ranking</td>
-                <td className="px-6 py-4 text-center text-gray-700">Top 5 Homebuilder</td>
-                <td className="px-6 py-4 text-center text-gray-700">Top 10 Homebuilder</td>
+                <td className="px-6 py-4 text-center text-gray-700">#1 or #2 Largest (73,087 closings in 2023)</td>
+                <td className="px-6 py-4 text-center text-gray-700">Top 10 Homebuilder (9,568 closings in 2023)</td>
               </tr>
               <tr className="hover:bg-blue-50">
                 <td className="px-6 py-4 font-semibold text-gray-900">Years in Business</td>
-                <td className="px-6 py-4 text-center text-gray-700">70+ years</td>
-                <td className="px-6 py-4 text-center text-gray-700">40+ years</td>
+                <td className="px-6 py-4 text-center text-gray-700">70+ years (Founded 1954)</td>
+                <td className="px-6 py-4 text-center text-gray-700">20+ years (Established 2002)</td>
               </tr>
               <tr className="hover:bg-blue-50">
                 <td className="px-6 py-4 font-semibold text-gray-900">Smart Home Technology</td>
-                <td className="px-6 py-4 text-center text-gray-700">Wi-Fi Certified® (varies by community)</td>
+                <td className="px-6 py-4 text-center text-gray-700">Everything's Included® (smart features bundled, varies by community)</td>
                 <td className="px-6 py-4 text-center text-blue-600 font-semibold">Century Connect® (standard in many communities)</td>
               </tr>
               <tr className="hover:bg-blue-50">
-                <td className="px-6 py-4 font-semibold text-gray-900">Las Vegas Communities</td>
-                <td className="px-6 py-4 text-center text-gray-700">Multiple communities</td>
-                <td className="px-6 py-4 text-center text-gray-700">Multiple communities including Bravado</td>
+                <td className="px-6 py-4 font-semibold text-gray-900">Las Vegas Market Share</td>
+                <td className="px-6 py-4 text-center text-gray-700">18.4% (1,873 closings in 2023)</td>
+                <td className="px-6 py-4 text-center text-gray-700">4.9% (499 closings in 2023)</td>
               </tr>
               <tr className="hover:bg-blue-50">
                 <td className="px-6 py-4 font-semibold text-gray-900">Pricing Approach</td>
@@ -165,19 +165,21 @@ export default async function LennarVsCenturyPage() {
               <div>
                 <h4 className="font-bold text-gray-900 mb-2">Strengths:</h4>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>One of the largest homebuilders in the U.S.</li>
-                  <li>Extensive community portfolio</li>
-                  <li>Wi-Fi Certified® smart home technology</li>
-                  <li>Long-established reputation</li>
-                  <li>Multiple floor plan options</li>
+                  <li>Largest homebuilder in the U.S. (#1 or #2 by closings)</li>
+                  <li>Extensive community portfolio (18.4% Las Vegas market share)</li>
+                  <li>"Everything's Included®" approach - bundled features</li>
+                  <li>70+ years of experience (founded 1954)</li>
+                  <li>Multiple floor plan options across price points</li>
+                  <li>Strong brand recognition and reputation</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-gray-900 mb-2">Considerations:</h4>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Smart home features may vary by community</li>
-                  <li>Typically works with builder sales team</li>
-                  <li>Pricing and availability vary by location</li>
+                  <li>Smart home features included in "Everything's Included" package (varies by community)</li>
+                  <li>Typically works with builder sales team (no independent buyer representation)</li>
+                  <li>Pricing and availability vary by community and location</li>
+                  <li>Larger builder may offer less personalized service</li>
                 </ul>
               </div>
             </div>
@@ -192,13 +194,14 @@ export default async function LennarVsCenturyPage() {
               <div>
                 <h4 className="font-bold text-gray-900 mb-2">Strengths:</h4>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li className="font-semibold">Century Connect® smart home technology standard</li>
-                  <li className="font-semibold">Expert buyer representation available</li>
-                  <li>Top 10 national homebuilder</li>
+                  <li className="font-semibold">Century Connect® smart home technology standard in many communities</li>
+                  <li className="font-semibold">Expert buyer representation available through Featured Partners</li>
+                  <li>Top 10 national homebuilder (9,568 closings in 2023)</li>
                   <li>Premium finishes and quality construction</li>
                   <li>Gated community options (like Bravado)</li>
-                  <li>40+ years of experience</li>
-                  <li>Featured partner program for enhanced service</li>
+                  <li>20+ years of experience (established 2002)</li>
+                  <li>Featured partner program for enhanced personalized service</li>
+                  <li>Focus on affordability and value for first-time and move-up buyers</li>
                 </ul>
               </div>
               <div>
