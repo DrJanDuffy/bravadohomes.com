@@ -237,7 +237,7 @@ export default async function LennarVsCenturyPage() {
             <div className="text-4xl mb-4 text-center">🏠</div>
             <h4 className="font-bold text-gray-900 mb-3 text-center">Smart Home Technology</h4>
             <p className="text-gray-700 text-center">
-              <strong>Century Connect®</strong> is standard in many Century Communities, while Lennar's Wi-Fi Certified® varies by community.
+              <strong>Century Connect®</strong> is standard in many Century Communities, while Lennar's <strong>"Everything's Included®"</strong> smart home features are bundled but may vary by community.
             </p>
           </div>
           
