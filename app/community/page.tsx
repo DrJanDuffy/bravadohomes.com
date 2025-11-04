@@ -417,6 +417,112 @@ export default async function CommunityPage() {
         </div>
       </div>
 
+      {/* Community Lifestyle Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          The Bravado Community Lifestyle: More Than Just a Place to Live
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Bravado isn't just a collection of houses—it's a true community where neighbors become friends, 
+          families thrive, and memories are made. The master-planned design creates an environment where 
+          residents enjoy both privacy and community connection, making it the perfect place to call home.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Family-Friendly Environment</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado is designed with families in mind. The gated community provides a safe environment 
+              where children can play and explore, while the proximity to Craig Ranch Regional Park offers 
+              endless recreational opportunities. The well-maintained common areas and landscaping create 
+              an attractive, welcoming atmosphere that families appreciate.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The community's location in North Las Vegas provides access to excellent schools, making 
+              it an ideal choice for families with school-age children. The combination of safety, 
+              amenities, and educational opportunities creates an environment where families can thrive 
+              and children can grow up in a supportive community setting.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Active Lifestyle Opportunities</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado residents enjoy an active lifestyle with easy access to Craig Ranch Regional Park's 
+              170 acres of recreational facilities. The park offers walking trails, sports fields, playgrounds, 
+              and picnic areas, providing endless opportunities for outdoor activities. The community's design 
+              encourages walking and outdoor recreation, promoting health and wellness.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The North Las Vegas location also provides access to golf courses, fitness centers, and other 
+              recreational facilities. Whether you enjoy hiking, sports, or simply walking in nature, Bravado's 
+              location makes it easy to maintain an active, healthy lifestyle. The combination of community 
+              amenities and nearby recreational opportunities creates a lifestyle that supports both physical 
+              and mental well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Location Benefits Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Why Bravado's Location Makes It Special
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Location is one of the most important factors in choosing a home, and Bravado's position in North 
+          Las Vegas offers exceptional advantages. The combination of proximity to amenities, employment centers, 
+          and recreational opportunities creates an ideal living environment that enhances both daily life and 
+          long-term property value.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Proximity to Major Attractions</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado's location provides easy access to Las Vegas's world-class attractions while maintaining 
+              the peaceful, residential atmosphere that makes North Las Vegas special. The I-15 access makes 
+              commuting to downtown Las Vegas, the Strip, and McCarran International Airport quick and convenient.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Whether you work in Las Vegas, enjoy entertainment and dining on the Strip, or frequently travel, 
+              Bravado's location ensures you're never far from what you need. The balance between accessibility 
+              and tranquility is one of the community's most valued features.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Shopping and Dining Convenience</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas offers excellent shopping and dining options, with major retailers, restaurants, 
+              and entertainment venues all within a short drive. The Las Vegas Premium Outlets North provides 
+              excellent shopping opportunities, while numerous dining options cater to every taste and budget.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Daily conveniences like grocery stores, pharmacies, and services are easily accessible, making 
+              everyday errands simple and convenient. The combination of major shopping centers and local 
+              businesses ensures residents have everything they need nearby while still enjoying the peaceful 
+              residential atmosphere.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Employment and Economic Growth</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas is experiencing significant economic growth, with new businesses, employment 
+              opportunities, and infrastructure improvements enhancing the area's appeal. The proximity to 
+              Nellis AFB, major employers, and the growing Las Vegas economy creates strong demand for housing 
+              in the area.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              This economic growth contributes to property value appreciation, making Bravado not just a 
+              great place to live but also a smart investment. The combination of current amenities and 
+              future growth potential positions Bravado as a community with strong long-term value.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Ready to Explore Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-6">
