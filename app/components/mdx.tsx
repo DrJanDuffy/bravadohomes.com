@@ -4,7 +4,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'
 
-function Table({ data }) {
+function Table({ data }: { data: { headers: string[], rows: string[][] } }) {
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
   ))
@@ -26,7 +26,7 @@ function Table({ data }) {
   )
 }
 
-function CustomLink(props) {
+function CustomLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) {
   let href = props.href
 
   if (href.startsWith('/')) {
@@ -44,11 +44,11 @@ function CustomLink(props) {
   return <a target="_blank" rel="noopener noreferrer" {...props} />
 }
 
-function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />
+function RoundedImage(props: React.ComponentProps<typeof Image>) {
+  return <Image alt={props.alt || ''} className="rounded-lg" {...props} />
 }
 
-function Code({ children, ...props }) {
+function Code({ children, ...props }: React.HTMLAttributes<HTMLElement> & { children: string }) {
   let codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
@@ -64,20 +64,56 @@ function slugify(str) {
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
 }
 
-function createHeading(level) {
-  const Heading = ({ children }) => {
-    let slug = slugify(children)
-    return React.createElement(
-      `h${level}`,
-      { id: slug },
-      [
-        React.createElement('a', {
-          href: `#${slug}`,
-          key: `link-${slug}`,
-          className: 'anchor',
-        }),
-      ],
-      children
+function createHeading(level: number) {
+  const Heading = ({ children }: { children: React.ReactNode }) => {
+    let slug = slugify(String(children))
+    const HeadingTag = `h${level}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+    
+    if (level === 1) {
+      return (
+        <h1 id={slug}>
+          <a href={`#${slug}`} className="anchor" />
+          {children}
+        </h1>
+      )
+    }
+    if (level === 2) {
+      return (
+        <h2 id={slug}>
+          <a href={`#${slug}`} className="anchor" />
+          {children}
+        </h2>
+      )
+    }
+    if (level === 3) {
+      return (
+        <h3 id={slug}>
+          <a href={`#${slug}`} className="anchor" />
+          {children}
+        </h3>
+      )
+    }
+    if (level === 4) {
+      return (
+        <h4 id={slug}>
+          <a href={`#${slug}`} className="anchor" />
+          {children}
+        </h4>
+      )
+    }
+    if (level === 5) {
+      return (
+        <h5 id={slug}>
+          <a href={`#${slug}`} className="anchor" />
+          {children}
+        </h5>
+      )
+    }
+    return (
+      <h6 id={slug}>
+        <a href={`#${slug}`} className="anchor" />
+        {children}
+      </h6>
     )
   }
 
@@ -99,7 +135,7 @@ let components = {
   Table,
 }
 
-export function CustomMDX(props) {
+export function CustomMDX(props: { source: string; components?: Record<string, React.ComponentType<any>> }) {
   return (
     <MDXRemote
       {...props}

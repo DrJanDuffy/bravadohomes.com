@@ -286,6 +286,154 @@ export default async function AboutPage() {
         </div>
       </div>
 
+      {/* Professional Background and Approach Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Professional Background and Approach
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Dr. Janet Duffy brings a unique combination of professional expertise, market knowledge, and builder 
+          relationships to every client interaction. Her approach is based on transparency, education, and 
+          genuine commitment to client success rather than simply making a sale.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Education-Focused Approach</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Dr. Duffy believes that informed clients make better decisions. She takes time to educate her 
+              clients about the new construction process, market conditions, and what to expect at each stage. 
+              This educational approach ensures clients understand their options, the implications of their 
+              choices, and feel confident in their decisions throughout the process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Rather than rushing clients into decisions, Dr. Duffy provides comprehensive information and 
+              guidance, allowing clients to make choices that align with their needs, preferences, and 
+              financial situation. This patient, educational approach results in higher client satisfaction 
+              and better long-term outcomes.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Builder Relationship Expertise</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Dr. Duffy's VIP partnership with Century Communities provides clients with advantages that 
+              aren't available when working directly with builder sales teams. Her relationship with Century 
+              Communities allows for early access to new phases, priority lot selection, and insider knowledge 
+              of construction timelines and processes.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              This relationship doesn't compromise her commitment to representing client interests. Instead, 
+              it enhances her ability to advocate for clients, negotiate favorable terms, and ensure quality 
+              standards are met. The combination of builder relationship and client advocacy creates the best 
+              possible experience for homebuyers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Client Success Stories Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Client Success and Satisfaction
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Dr. Janet Duffy's commitment to client success is reflected in the satisfaction of her clients and 
+          the successful outcomes they achieve. Her approach combines expert guidance, personalized service, 
+          and genuine care for each client's unique situation and goals.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Personalized Service</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Every client receives personalized attention and service tailored to their specific needs, 
+              timeline, and preferences. Dr. Duffy takes time to understand each client's situation, goals, 
+              and concerns, ensuring the guidance and recommendations are relevant and helpful.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Proven Results</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Dr. Duffy's clients consistently achieve successful outcomes, whether that's finding the perfect 
+              floor plan, securing favorable pricing, or navigating the construction process smoothly. Her 
+              expertise and advocacy ensure clients get the best possible results.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Ongoing Support</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Dr. Duffy's commitment to clients extends beyond closing. She remains available to answer 
+              questions, provide referrals, and offer ongoing support as clients settle into their new homes. 
+              This long-term relationship approach demonstrates genuine care for client success.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* What Makes Dr. Janet Different Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          What Makes Dr. Janet Duffy Different
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          In a market where many real estate agents offer similar services, Dr. Janet Duffy stands out for 
+          several key reasons. Her combination of specialization, builder relationships, and client-focused 
+          approach creates a unique value proposition for homebuyers.
+        </p>
+
+        <div className="space-y-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Specialization in New Construction</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Unlike many real estate agents who handle all types of transactions, Dr. Duffy specializes 
+              specifically in new home construction and buyer representation. This specialization means she 
+              has deep knowledge of the construction process, builder practices, quality standards, and what 
+              to expect at each stage. Her specialized expertise ensures clients receive guidance from someone 
+              who truly understands the nuances of new construction.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              This specialization also means Dr. Duffy stays current on new construction trends, builder 
+              offerings, and market conditions specific to new homes. Clients benefit from this focused 
+              expertise rather than generic real estate advice that may not apply to new construction situations.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Independent Buyer Representation</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              When working with builder sales teams directly, buyers often don't realize that the sales agent 
+              represents the builder's interests, not theirs. Dr. Duffy provides independent buyer representation, 
+              meaning she advocates solely for the buyer's interests. This independent representation ensures 
+              clients receive honest advice, fair negotiations, and protection throughout the process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              This doesn't mean adversarial relationships with builders—Dr. Duffy maintains excellent relationships 
+              with Century Communities while still advocating for client interests. The combination of builder 
+              relationship and independent representation creates the best possible outcome for homebuyers.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Comprehensive Market Knowledge</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Dr. Duffy's deep knowledge of the Las Vegas real estate market, particularly North Las Vegas and 
+              new construction communities, provides clients with valuable insights. She understands market 
+              trends, pricing patterns, and what represents good value in the current market. This market 
+              knowledge helps clients make informed decisions and avoid overpaying or making poor choices.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Her market expertise also allows her to help clients understand how their Bravado home purchase 
+              compares to other options, what to expect in terms of appreciation potential, and how the 
+              investment fits into the broader Las Vegas real estate market. This comprehensive market knowledge 
+              is invaluable for making informed real estate decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Contact Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-6">
