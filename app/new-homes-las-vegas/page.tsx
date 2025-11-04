@@ -7,42 +7,49 @@ import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'New Homes Las Vegas | New Construction Homes | Dr. Janet Duffy',
-  description: 'Find new construction homes in Las Vegas and North Las Vegas. Expert guidance from Dr. Janet Duffy for Century Communities, Bravado, and other new home communities.',
-  keywords: [
-    'new homes Las Vegas',
-    'new construction Las Vegas',
-    'new homes North Las Vegas',
-    'new construction North Las Vegas',
-    'Century Communities Las Vegas',
-    'Bravado new homes',
-    'new construction homes Las Vegas',
-    'new construction homes Nevada',
-    'new homes for sale Las Vegas',
-    'new homes Las Vegas 2025',
-    'new home communities Las Vegas',
-    'new construction communities Las Vegas',
-    agent?.name || 'Dr. Janet Duffy',
-    'Las Vegas new construction',
-    'new home builders Las Vegas',
-    'new construction homes Nevada',
-    'Las Vegas new homes',
-    'new homes Las Vegas area',
-    'new construction homes for sale',
-    'new home communities North Las Vegas',
-    'new homes Las Vegas Valley',
-    'new construction Las Vegas Valley'
-  ],
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
     title: 'New Homes Las Vegas | New Construction Homes | Dr. Janet Duffy',
     description: 'Find new construction homes in Las Vegas and North Las Vegas. Expert guidance from Dr. Janet Duffy for Century Communities, Bravado, and other new home communities.',
-    url: 'https://bravadohomes.com/new-homes-las-vegas',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://bravadohomes.com/new-homes-las-vegas',
-  },
+    keywords: [
+      'new homes Las Vegas',
+      'new construction Las Vegas',
+      'new homes North Las Vegas',
+      'new construction North Las Vegas',
+      'Century Communities Las Vegas',
+      'Bravado new homes',
+      'new construction homes Las Vegas',
+      'new construction homes Nevada',
+      'new homes for sale Las Vegas',
+      'new homes Las Vegas 2025',
+      'new home communities Las Vegas',
+      'new construction communities Las Vegas',
+      agent?.name || 'Dr. Janet Duffy',
+      'Las Vegas new construction',
+      'new home builders Las Vegas',
+      'new construction homes Nevada',
+      'Las Vegas new homes',
+      'new homes Las Vegas area',
+      'new construction homes for sale',
+      'new home communities North Las Vegas',
+      'new homes Las Vegas Valley',
+      'new construction Las Vegas Valley'
+    ],
+    openGraph: {
+      title: 'New Homes Las Vegas | New Construction Homes | Dr. Janet Duffy',
+      description: 'Find new construction homes in Las Vegas and North Las Vegas. Expert guidance from Dr. Janet Duffy for Century Communities, Bravado, and other new home communities.',
+      url: `${baseUrl}/new-homes-las-vegas`,
+      type: 'website',
+    },
+    alternates: {
+      canonical: `${baseUrl}/new-homes-las-vegas`,
+    },
+  }
 }
 
 export default async function NewHomesLasVegasPage() {

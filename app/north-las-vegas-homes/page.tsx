@@ -5,40 +5,51 @@ import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: 'North Las Vegas Homes for Sale | New Construction | Dr. Janet Duffy',
-  description: 'Find your dream home in North Las Vegas. Expert guidance from Dr. Janet Duffy for new construction homes, Bravado community, and Century Communities properties.',
-  keywords: [
-    'North Las Vegas homes',
-    'North Las Vegas homes for sale',
-    'new construction North Las Vegas',
-    'homes for sale North Las Vegas',
-    'Bravado homes',
-    'Century Communities North Las Vegas',
-    '89031 homes',
-    '89031 homes for sale',
-    'North Las Vegas real estate',
-    'North Las Vegas new homes',
-    'Las Vegas new homes',
-    'North Las Vegas housing market',
-    agent?.name || 'Dr. Janet Duffy',
-    'North Las Vegas real estate agent',
-    'new construction homes North Las Vegas',
-    'North Las Vegas properties',
-    'homes North Las Vegas',
-    'real estate North Las Vegas',
-    'buy homes North Las Vegas',
-    'North Las Vegas zip code 89031',
-    'North Las Vegas neighborhoods',
-    'luxury homes North Las Vegas'
-  ],
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
     title: 'North Las Vegas Homes for Sale | New Construction | Dr. Janet Duffy',
     description: 'Find your dream home in North Las Vegas. Expert guidance from Dr. Janet Duffy for new construction homes, Bravado community, and Century Communities properties.',
-    url: 'https://bravadohomes.com/north-las-vegas-homes',
-    type: 'website',
-  },
+    keywords: [
+      'North Las Vegas homes',
+      'North Las Vegas homes for sale',
+      'new construction North Las Vegas',
+      'homes for sale North Las Vegas',
+      'Bravado homes',
+      'Century Communities North Las Vegas',
+      '89031 homes',
+      '89031 homes for sale',
+      'North Las Vegas real estate',
+      'North Las Vegas new homes',
+      'Las Vegas new homes',
+      'North Las Vegas housing market',
+      agent?.name || 'Dr. Janet Duffy',
+      'North Las Vegas real estate agent',
+      'new construction homes North Las Vegas',
+      'North Las Vegas properties',
+      'homes North Las Vegas',
+      'real estate North Las Vegas',
+      'buy homes North Las Vegas',
+      'North Las Vegas zip code 89031',
+      'North Las Vegas neighborhoods',
+      'luxury homes North Las Vegas'
+    ],
+    openGraph: {
+      title: 'North Las Vegas Homes for Sale | New Construction | Dr. Janet Duffy',
+      description: 'Find your dream home in North Las Vegas. Expert guidance from Dr. Janet Duffy for new construction homes, Bravado community, and Century Communities properties.',
+      url: `${baseUrl}/north-las-vegas-homes`,
+      type: 'website',
+    },
+    alternates: {
+      canonical: `${baseUrl}/north-las-vegas-homes`,
+    },
+  }
 }
 
 export default async function NorthLasVegasHomesPage() {

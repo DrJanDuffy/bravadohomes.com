@@ -59,9 +59,6 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   
-  // Build optimizations
-  swcMinify: true,
-  
   // Headers for security and performance
   async headers() {
     return [
