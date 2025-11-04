@@ -1,0 +1,355 @@
+import RealScoutListings from '../components/realscout-listings'
+import RealScoutHomeValue from '../components/realscout-home-value'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Lennar vs Century Communities Las Vegas | Builder Comparison Guide | Dr. Janet Duffy',
+    description: 'Compare Lennar vs Century Communities in Las Vegas. Expert comparison of pricing, quality, locations, smart home technology, and more. Learn why Century Communities Bravado might be the better choice for your new home. Expert guidance from Dr. Janet Duffy.',
+    keywords: [
+      'lennar homes las vegas',
+      'lennar vs century communities',
+      'century communities vs lennar',
+      'lennar las vegas',
+      'century communities las vegas',
+      'compare home builders las vegas',
+      'best home builder las vegas',
+      'lennar homes',
+      'century communities bravado',
+      'bravado homes',
+      agent?.name || 'Dr. Janet Duffy',
+      'new construction builders las vegas',
+      'home builder comparison',
+    ],
+    alternates: {
+      canonical: `${baseUrl}/lennar-vs-century-communities`,
+    },
+    openGraph: {
+      title: 'Lennar vs Century Communities Las Vegas | Builder Comparison',
+      description: 'Compare Lennar vs Century Communities in Las Vegas. Expert comparison of pricing, quality, locations, and smart home technology.',
+      url: `${baseUrl}/lennar-vs-century-communities`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Lennar vs Century Communities Las Vegas',
+      description: 'Expert comparison of Lennar vs Century Communities in Las Vegas.',
+    },
+  }
+}
+
+export default async function LennarVsCenturyPage() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const email = config.contact.email
+  const agent = config.realEstateAgent
+
+  return (
+    <section>
+      {/* Hero Section */}
+      <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="vip-badge">
+            ⭐ EXPERT BUILDER COMPARISON GUIDE ⭐
+          </div>
+          <h1 className="text-5xl font-bold mb-6">
+            Lennar vs Century Communities Las Vegas
+          </h1>
+          <p className="text-2xl mb-4">
+            Expert Comparison: Which Home Builder is Right for You?
+          </p>
+          <p className="text-xl mb-8 opacity-90">
+            {agent?.name || 'Dr. Janet Duffy'} | Featured Century Communities Partner | Unbiased Builder Comparison
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+              📞 Call: (702) 500-1955
+            </a>
+            <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
+              📧 Email Dr. Janet
+            </a>
+            <a href="/floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+              🏠 View Bravado Floor Plans
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Introduction */}
+      <div className="content-section mb-12">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            When choosing a new construction home in Las Vegas, comparing top builders like <strong>Lennar</strong> and <strong>Century Communities</strong> is essential. 
+            Both are reputable national homebuilders, but they offer different approaches to home building, pricing, and community development. 
+            As a Featured Century Communities Partner, I'll provide an objective comparison to help you make an informed decision.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            This comparison focuses on key factors that matter most to homebuyers: <strong>pricing, quality, locations, smart home technology, 
+            community amenities, and buyer representation</strong>.
+          </p>
+        </div>
+      </div>
+
+      {/* Comparison Table */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Side-by-Side Comparison
+        </h2>
+        
+        <div className="overflow-x-auto">
+          <table className="w-full max-w-6xl mx-auto bg-white rounded-lg shadow-lg border border-gray-200">
+            <thead className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+              <tr>
+                <th className="px-6 py-4 text-left font-bold">Feature</th>
+                <th className="px-6 py-4 text-center font-bold">Lennar</th>
+                <th className="px-6 py-4 text-center font-bold">Century Communities</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">National Ranking</td>
+                <td className="px-6 py-4 text-center text-gray-700">Top 5 Homebuilder</td>
+                <td className="px-6 py-4 text-center text-gray-700">Top 10 Homebuilder</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Years in Business</td>
+                <td className="px-6 py-4 text-center text-gray-700">70+ years</td>
+                <td className="px-6 py-4 text-center text-gray-700">40+ years</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Smart Home Technology</td>
+                <td className="px-6 py-4 text-center text-gray-700">Wi-Fi Certified® (varies by community)</td>
+                <td className="px-6 py-4 text-center text-blue-600 font-semibold">Century Connect® (standard in many communities)</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Las Vegas Communities</td>
+                <td className="px-6 py-4 text-center text-gray-700">Multiple communities</td>
+                <td className="px-6 py-4 text-center text-gray-700">Multiple communities including Bravado</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Pricing Approach</td>
+                <td className="px-6 py-4 text-center text-gray-700">Varies by community</td>
+                <td className="px-6 py-4 text-center text-gray-700">Varies by community</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Buyer Representation</td>
+                <td className="px-6 py-4 text-center text-gray-700">Builder sales team</td>
+                <td className="px-6 py-4 text-center text-blue-600 font-semibold">Expert buyer representation available</td>
+              </tr>
+              <tr className="hover:bg-blue-50">
+                <td className="px-6 py-4 font-semibold text-gray-900">Energy Efficiency</td>
+                <td className="px-6 py-4 text-center text-gray-700">Energy-efficient features</td>
+                <td className="px-6 py-4 text-center text-gray-700">Energy-efficient features</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Detailed Comparison Sections */}
+      <div className="content-section mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Lennar */}
+          <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">
+              Lennar Homes Las Vegas
+            </h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">Strengths:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>One of the largest homebuilders in the U.S.</li>
+                  <li>Extensive community portfolio</li>
+                  <li>Wi-Fi Certified® smart home technology</li>
+                  <li>Long-established reputation</li>
+                  <li>Multiple floor plan options</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">Considerations:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>Smart home features may vary by community</li>
+                  <li>Typically works with builder sales team</li>
+                  <li>Pricing and availability vary by location</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Century Communities */}
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg border-2 border-blue-200">
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">
+              Century Communities (Bravado)
+            </h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">Strengths:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li className="font-semibold">Century Connect® smart home technology standard</li>
+                  <li className="font-semibold">Expert buyer representation available</li>
+                  <li>Top 10 national homebuilder</li>
+                  <li>Premium finishes and quality construction</li>
+                  <li>Gated community options (like Bravado)</li>
+                  <li>40+ years of experience</li>
+                  <li>Featured partner program for enhanced service</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">Bravado Advantages:</h4>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>Starting at $459,790 - competitive pricing</li>
+                  <li>Prime North Las Vegas location</li>
+                  <li>3-5 bedroom floor plans available</li>
+                  <li>Near Craig Ranch Regional Park</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Key Differences */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Key Differences That Matter
+        </h2>
+        
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="text-4xl mb-4 text-center">🤝</div>
+            <h4 className="font-bold text-gray-900 mb-3 text-center">Buyer Representation</h4>
+            <p className="text-gray-700 text-center">
+              <strong>Century Communities</strong> offers expert buyer representation through Featured Partners, ensuring your interests are protected throughout the process.
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="text-4xl mb-4 text-center">🏠</div>
+            <h4 className="font-bold text-gray-900 mb-3 text-center">Smart Home Technology</h4>
+            <p className="text-gray-700 text-center">
+              <strong>Century Connect®</strong> is standard in many Century Communities, while Lennar's Wi-Fi Certified® varies by community.
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="text-4xl mb-4 text-center">📍</div>
+            <h4 className="font-bold text-gray-900 mb-3 text-center">Community Focus</h4>
+            <p className="text-gray-700 text-center">
+              <strong>Bravado by Century Communities</strong> offers gated community living with premium amenities in North Las Vegas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose Century Communities */}
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-12">
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          Why Choose Century Communities Bravado?
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <h4 className="font-bold text-xl mb-3">✅ Expert Buyer Representation</h4>
+              <p className="opacity-90">
+                When you work with a Featured Century Communities Partner like {agent?.name || 'Dr. Janet Duffy'}, 
+                you get expert guidance that represents YOUR interests, not just the builder's.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-xl mb-3">✅ Standard Smart Home Technology</h4>
+              <p className="opacity-90">
+                Century Connect® is included in many Century Communities homes, giving you control over security, 
+                lighting, temperature, and more right from your smartphone.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-xl mb-3">✅ Premium Quality & Finishes</h4>
+              <p className="opacity-90">
+                Century Communities focuses on quality construction with premium finishes and thoughtful design details 
+                that make a difference in everyday living.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-xl mb-3">✅ Gated Community Living</h4>
+              <p className="opacity-90">
+                Bravado offers gated community security, beautiful landscaping, and a sense of community that 
+                enhances your quality of life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Recommendation Section */}
+      <div className="content-section mb-12">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            Our Recommendation
+          </h3>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            Both <strong>Lennar</strong> and <strong>Century Communities</strong> are reputable builders with quality homes. 
+            However, if you value:
+          </p>
+          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+            <li><strong>Expert buyer representation</strong> that protects your interests</li>
+            <li><strong>Standard smart home technology</strong> included in your home</li>
+            <li><strong>Gated community living</strong> with premium amenities</li>
+            <li><strong>Personalized service</strong> from a Featured Partner</li>
+            <li><strong>Competitive pricing</strong> starting at $459,790</li>
+          </ul>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Then <strong>Century Communities Bravado</strong> might be the better choice for you.
+          </p>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-12 text-center">
+        <h3 className="text-2xl font-bold mb-4">
+          Ready to Explore Century Communities Bravado?
+        </h3>
+        <p className="text-lg mb-6 opacity-90">
+          {agent?.name || 'Dr. Janet Duffy'}, Featured Century Communities Partner, can help you understand all your options 
+          and make an informed decision about your new home.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+            📞 Call: (702) 500-1955
+          </a>
+          <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
+            📧 Schedule Your Consultation
+          </a>
+          <a href="/floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
+            🏠 View Bravado Floor Plans
+          </a>
+        </div>
+      </div>
+
+      {/* RealScout Listings */}
+      <div className="content-section mb-12">
+        <h3 className="text-2xl font-bold mb-6 text-gray-900 text-center">
+          Available Bravado Homes
+        </h3>
+        <RealScoutListings />
+      </div>
+
+      {/* Disclaimer */}
+      <div className="content-section">
+        <p className="text-sm text-gray-600 italic text-center max-w-4xl mx-auto">
+          This comparison is provided for informational purposes. Builder features, pricing, and availability are subject to change. 
+          We recommend visiting both builders' communities and speaking with representatives to make the best decision for your needs. 
+          As a Featured Century Communities Partner, we specialize in Century Communities properties but are committed to helping you 
+          make an informed choice.
+        </p>
+      </div>
+    </section>
+  )
+}
+
