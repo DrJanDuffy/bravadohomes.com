@@ -574,6 +574,77 @@ export default async function Page() {
         <KCMRSSFeed />
       </div>
 
+      {/* Comprehensive Bravado Overview Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Complete Guide to Bravado Homes by Century Communities
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Bravado represents the pinnacle of new construction living in North Las Vegas. This comprehensive guide 
+          covers everything you need to know about Bravado Homes, from the floor plans and features to the 
+          community lifestyle and investment potential.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Bravado Homebuying Experience</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              When you choose Bravado Homes, you're not just buying a house—you're investing in a lifestyle. 
+              The homebuying process at Bravado is designed to be smooth, transparent, and enjoyable. Working with 
+              {agent?.name || 'Dr. Janet Duffy'} as your Featured Century Communities Partner ensures you have 
+              expert guidance every step of the way.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              From the initial consultation through closing and beyond, {agent?.name || 'Dr. Janet'} provides 
+              personalized service that protects your interests. You'll have access to insider information about 
+              available lots, pricing, and incentives that aren't always available to the general public. This 
+              VIP access can make a significant difference in finding the perfect home at the best possible price.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Century Communities Stands Out</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities has built a reputation as one of America's top 10 homebuilders by consistently 
+              delivering quality, value, and innovation. At Bravado, this commitment to excellence is evident in 
+              every detail. The Century Connect® smart home package, premium finishes, and thoughtful design 
+              elements all reflect Century Communities' dedication to creating homes that exceed expectations.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              What sets Century Communities apart is their focus on building communities, not just houses. At 
+              Bravado, this philosophy translates to a master-planned community with thoughtful amenities, 
+              beautiful landscaping, and a sense of place that makes residents proud to call it home. The 
+              gated community features provide security and exclusivity while maintaining the welcoming atmosphere 
+              that makes Bravado special.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Investment Potential and Market Position</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Bravado Homes represent a smart investment in North Las Vegas's fastest-growing corridor. The 
+            combination of quality construction, desirable location, and community amenities positions Bravado 
+            homes well for long-term appreciation. The North Las Vegas area continues to attract new residents, 
+            businesses, and infrastructure improvements, all of which contribute to property value growth.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The starting price of $459,790 for Bravado homes represents exceptional value in the Las Vegas 
+            new construction market. Comparable homes in other communities often cost significantly more, while 
+            Bravado includes premium features like Century Connect® smart home technology as standard. This 
+            combination of affordability and quality makes Bravado an attractive option for both first-time 
+            homebuyers and those looking to upgrade.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The energy-efficient design and smart home technology also contribute to long-term value through 
+            reduced utility costs. Homeowners can expect lower monthly expenses compared to older homes, and 
+            the smart home features add convenience and appeal that will remain valuable for years to come. 
+            This combination of immediate value and long-term investment potential makes Bravado a compelling 
+            choice for discerning homebuyers.
+          </p>
+        </div>
+      </div>
+
       {/* Final Urgency CTA Section */}
       <div className="bg-gradient-to-r from-red-600 to-purple-600 text-white p-12 rounded-lg text-center mb-8">
         <h2 className="text-4xl font-bold mb-6">
