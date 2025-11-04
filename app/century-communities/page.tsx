@@ -19,10 +19,18 @@ export async function generateMetadata(): Promise<Metadata> {
       'century communities bravado',
       'bravado century communities',
       'bravado century communities las vegas',
+      'century communities bravado homes las vegas',
       'century communities las vegas',
       'bravado homes',
       'century communities north las vegas',
       'bravado new homes',
+      'ironwood by century communities',
+      'southwind by century communities',
+      'southwind las vegas',
+      'homestead west las vegas',
+      'modena I century communities',
+      'modena II century communities',
+      'townes at union village century communities',
       agent?.name || 'Dr. Janet Duffy',
       'century communities featured partner',
       'new construction homes las vegas',
@@ -164,29 +172,39 @@ export default async function CenturyCommunitiesPage() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">More Century Communities</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Other Century Communities in Las Vegas</h3>
             <p className="text-gray-700 mb-4">
-              Century Communities has multiple communities throughout North Las Vegas and the greater Las Vegas area, 
-              each offering unique amenities and home designs to fit your lifestyle.
+              Century Communities has multiple communities throughout North Las Vegas and the greater Las Vegas area, each offering unique amenities and home designs to fit your lifestyle.
             </p>
             <ul className="space-y-2 text-gray-700 mb-6">
               <li className="flex items-center">
                 <span className="text-blue-500 mr-2">🏘️</span>
-                Multiple community locations
+                <strong>Ironwood by Century Communities</strong> - North Las Vegas
               </li>
               <li className="flex items-center">
-                <span className="text-blue-500 mr-2">🏗️</span>
-                Various floor plan options
+                <span className="text-blue-500 mr-2">🏘️</span>
+                <strong>Southwind by Century Communities</strong> - Las Vegas
               </li>
               <li className="flex items-center">
-                <span className="text-blue-500 mr-2">💰</span>
-                Flexible financing options
+                <span className="text-blue-500 mr-2">🏘️</span>
+                <strong>Modena I by Century Communities</strong> - Las Vegas
               </li>
               <li className="flex items-center">
-                <span className="text-blue-500 mr-2">🎯</span>
-                Expert builder representation
+                <span className="text-blue-500 mr-2">🏘️</span>
+                <strong>Modena II by Century Communities</strong> - Las Vegas
+              </li>
+              <li className="flex items-center">
+                <span className="text-blue-500 mr-2">🏘️</span>
+                <strong>The Townes at Union Village</strong> by Century Communities
+              </li>
+              <li className="flex items-center">
+                <span className="text-blue-500 mr-2">🏘️</span>
+                <strong>Homestead West</strong> by Century Communities - Las Vegas
               </li>
             </ul>
+            <p className="text-gray-700 mb-6 text-sm italic">
+              Note: We specialize in Bravado Homes. For information about other Century Communities, please contact Century Communities directly or inquire about available homes in these communities.
+            </p>
             <Link href="/services" className="cta-button w-full text-center">
               Explore All Communities
             </Link>

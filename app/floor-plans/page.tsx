@@ -2,17 +2,47 @@ import RealScoutListings from '../components/realscout-listings'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
-  description: 'Now Selling! Explore 3 two-story floor plans at Bravado North Las Vegas starting at $459,790. Smart tech included with Century Connect® package. Expert guidance from Dr. Janet Duffy, Featured Partner.',
-  keywords: 'Bravado floor plans, now selling, 3 two-story floor plans, new construction homes North Las Vegas, Century Communities homes, luxury homes 89031, Dr. Janet Duffy, two-story homes Las Vegas, smart tech included, Century Connect, starting at $459,790, 3 to 5 bedrooms, 2,119 sq ft, Nellis AFB, Craig Ranch Regional Park',
-  openGraph: {
-    title: 'Bravado Floor Plans | New Construction Homes North Las Vegas | Dr. Janet Duffy',
-    description: 'Now Selling! Explore 3 two-story floor plans at Bravado North Las Vegas starting at $459,790. Smart tech included with Century Connect® package. Expert guidance from Dr. Janet Duffy, Featured Partner.',
-    url: 'https://bravadohomes.com/floor-plans',
-    type: 'website',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Bravado Homes Las Vegas Floor Plans | Century Communities | Now Selling $459,790+',
+    description: 'Bravado Homes Las Vegas floor plans - 3 two-story floor plans available starting at $459,790. View Residence 1792, 1943, and 2119 floor plans with 3-5 bedrooms, smart tech included. Expert guidance from Dr. Janet Duffy, Featured Century Communities Partner.',
+    keywords: [
+      'bravado homes las vegas floor plans',
+      'bravado floor plans',
+      'bravado homes floor plans',
+      'century communities bravado floor plans',
+      'bravado las vegas floor plans',
+      'new construction floor plans las vegas',
+      'two-story floor plans north las vegas',
+      agent?.name || 'Dr. Janet Duffy',
+      'residence 1792',
+      'residence 1943',
+      'residence 2119',
+      'bravado homes for sale',
+      'starting at $459,790',
+    ],
+    alternates: {
+      canonical: `${baseUrl}/floor-plans`,
+    },
+    openGraph: {
+      title: 'Bravado Homes Las Vegas Floor Plans | Century Communities',
+      description: 'Bravado Homes Las Vegas floor plans - 3 two-story floor plans available starting at $459,790. View all floor plans with expert guidance from Dr. Janet Duffy.',
+      url: `${baseUrl}/floor-plans`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Bravado Homes Las Vegas Floor Plans',
+      description: 'View 3 two-story floor plans at Bravado Homes Las Vegas starting at $459,790.',
+    },
+  }
 }
 
 export default async function FloorPlansPage() {
@@ -28,7 +58,7 @@ export default async function FloorPlansPage() {
             ⭐ LIMITED TIME: 3 FLOOR PLANS REMAINING ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6">
-            Bravado Floor Plans North Las Vegas
+            Bravado Homes Las Vegas Floor Plans
           </h1>
           <p className="text-2xl mb-4">
             Now Selling! Luxury Two-Story Homes Starting at $459,790

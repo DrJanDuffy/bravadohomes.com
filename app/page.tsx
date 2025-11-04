@@ -86,7 +86,7 @@ export default async function Page() {
             Now Selling! Starting at $459,790 - Luxury Homes in Gated Community
           </p>
           <p className="text-xl mb-8 text-white drop-shadow-md bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm">
-            Expert Guidance from Dr. Janet Duffy | Century Communities Partnership
+            Expert Guidance from Dr. Janet Duffy | Century Communities Partnership | <strong>Bravado Homes Las Vegas For Sale</strong>
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
