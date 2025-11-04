@@ -6,19 +6,37 @@ import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Century Communities North Las Vegas | Bravado New Homes | Dr. Janet Duffy',
-  description: 'Explore Century Communities new construction homes in North Las Vegas. Featured partner Dr. Janet Duffy provides expert guidance for Bravado and other Century Communities properties.',
-  keywords: 'Century Communities, new construction homes, North Las Vegas, Bravado, Dr. Janet Duffy, featured partner, new homes Las Vegas',
-  openGraph: {
-    title: 'Century Communities North Las Vegas | Bravado New Homes | Dr. Janet Duffy',
-    description: 'Explore Century Communities new construction homes in North Las Vegas. Featured partner Dr. Janet Duffy provides expert guidance for Bravado and other Century Communities properties.',
-    url: 'https://bravadohomes.com/century-communities',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://bravadohomes.com/century-communities',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Century Communities Bravado | Bravado Century Communities Las Vegas | Dr. Janet Duffy',
+    description: 'Century Communities Bravado in Las Vegas. Explore Bravado Homes by Century Communities - one of America\'s top 10 homebuilders. Expert guidance from Dr. Janet Duffy, Featured Century Communities Partner. View floor plans, pricing, and schedule your tour.',
+    keywords: [
+      'century communities bravado',
+      'bravado century communities',
+      'bravado century communities las vegas',
+      'century communities las vegas',
+      'bravado homes',
+      'century communities north las vegas',
+      'bravado new homes',
+      agent?.name || 'Dr. Janet Duffy',
+      'century communities featured partner',
+      'new construction homes las vegas',
+    ],
+    openGraph: {
+      title: 'Century Communities Bravado | Bravado Century Communities Las Vegas',
+      description: 'Century Communities Bravado in Las Vegas. Explore Bravado Homes by Century Communities - one of America\'s top 10 homebuilders. Expert guidance from Dr. Janet Duffy.',
+      url: `${baseUrl}/century-communities`,
+      type: 'website',
+    },
+    alternates: {
+      canonical: `${baseUrl}/century-communities`,
+    },
+  }
 }
 
 export default async function CenturyCommunitiesPage() {
@@ -34,7 +52,7 @@ export default async function CenturyCommunitiesPage() {
             ⭐ CENTURY COMMUNITIES FEATURED PARTNER ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6">
-            Century Communities North Las Vegas
+            Century Communities Bravado | Bravado Century Communities Las Vegas
           </h1>
           <p className="text-2xl mb-4">
             New Construction Homes by America's Top 10 Homebuilder

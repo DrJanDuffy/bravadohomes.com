@@ -11,10 +11,44 @@ import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from './utils/domain'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://bravadohomes.com',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Bravado Homes | Century Communities Las Vegas | Now Selling $459,790+',
+    description: 'Bravado Homes by Century Communities in Las Vegas. Now selling luxury new construction homes starting at $459,790. 3 floor plans available with 3-5 bedrooms, smart tech included. Expert guidance from Dr. Janet Duffy, Featured Century Communities Partner. Schedule your VIP tour today!',
+    keywords: [
+      'bravado homes',
+      'bravado century communities',
+      'bravado century communities las vegas',
+      'century communities bravado',
+      'bravado community',
+      'the bravado',
+      'bravado homes las vegas',
+      'century communities las vegas',
+      'new homes las vegas',
+      'north las vegas new homes',
+      agent?.name || 'Dr. Janet Duffy',
+      '89031 homes',
+    ],
+    alternates: {
+      canonical: baseUrl,
+    },
+    openGraph: {
+      title: 'Bravado Homes | Century Communities Las Vegas | Now Selling $459,790+',
+      description: 'Bravado Homes by Century Communities in Las Vegas. Now selling luxury new construction homes starting at $459,790. 3 floor plans available. Expert guidance from Dr. Janet Duffy.',
+      url: baseUrl,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Bravado Homes | Century Communities Las Vegas',
+      description: 'Bravado Homes by Century Communities. Now selling luxury new construction homes starting at $459,790.',
+    },
+  }
 }
 
 export default async function Page() {
@@ -46,7 +80,7 @@ export default async function Page() {
             ⭐ LIMITED TIME: VIP ACCESS TO BRAVADO ⭐
           </div>
           <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">
-            Bravado North Las Vegas Luxury Homes
+            Bravado Homes | Century Communities Las Vegas
           </h1>
           <p className="text-2xl mb-4 text-white drop-shadow-md font-semibold">
             Now Selling! Starting at $459,790 - Luxury Homes in Gated Community
@@ -91,10 +125,10 @@ export default async function Page() {
       {/* Floor Plans Section - Move up for immediate engagement */}
       <div id="floor-plans" className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Bravado Floor Plans - Now Selling!
+          Bravado Homes Floor Plans - Now Selling!
         </h2>
         <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          <strong>Limited Availability!</strong> Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each home features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
+          <strong>Bravado Homes by Century Communities</strong> - Limited Availability! Choose from <strong>3 two-story floor plans</strong> with <strong>3 to 5 bedrooms</strong> and up to <strong>2,119 sq. ft.</strong> Each <strong>Bravado home</strong> features <strong>expansive living spaces</strong>, <strong>premium finishes</strong>, and <strong>smart tech included</strong> with the Century Connect® package.
         </p>
         
         <div className="grid lg:grid-cols-3 gap-8">
@@ -376,16 +410,16 @@ export default async function Page() {
       {/* About Bravado Section */}
       <div className="about-section">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center">
-          About Bravado by Century Communities
+          About Bravado Homes by Century Communities
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, is proud to represent <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado in North Las Vegas, NV</strong>. This prestigious gated community showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each home includes the innovative <strong>Century Connect® smart home package</strong>, modern design elements, and premium finishes that define luxury living in the 89031 zip code.
+          <strong>Dr. Janet Duffy</strong>, Featured New Home Construction & Buyer Representation Specialist, is proud to represent <strong>Century Communities</strong>—one of the nation's top 10 homebuilders—at <strong>Bravado Homes in North Las Vegas, NV</strong>. This prestigious gated <strong>Bravado community</strong> showcases stunning two-story floor plans ranging from 1,792 to 2,119 square feet, featuring up to 5 bedrooms and contemporary open layouts. Each <strong>Bravado home</strong> includes the innovative <strong>Century Connect® smart home package</strong>, modern design elements, and premium finishes that define luxury living in the 89031 zip code.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-          Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, Bravado offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. Residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
+          Strategically located at <strong>5060 Wind Springs Street, North Las Vegas, NV 89031</strong>, <strong>Bravado Homes</strong> offers unparalleled access to <strong>Craig Ranch Regional Park</strong>—North Las Vegas' premier recreational destination featuring 170 acres of trails, sports fields, and community amenities. <strong>Bravado community</strong> residents enjoy convenient proximity to <strong>Aliante Casino + Hotel</strong>, <strong>Las Vegas Premium Outlets North</strong>, and <strong>I-15 access</strong> for easy commuting to downtown Las Vegas, McCarran International Airport, and the Las Vegas Strip.
         </p>
         <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-          This master-planned community represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, world-class golf courses, and convenient access to <strong>Nellis AFB</strong>. Bravado's location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
+          This master-planned <strong>Bravado community</strong> represents the pinnacle of North Las Vegas living, combining the tranquility of suburban life with the excitement of nearby attractions including <strong>Topgolf Las Vegas</strong>, <strong>M Resort Spa Casino</strong>, world-class golf courses, and convenient access to <strong>Nellis AFB</strong>. <strong>Bravado Homes</strong>' location in the heart of North Las Vegas's fastest-growing corridor ensures strong property values and exceptional lifestyle amenities for discerning homebuyers.
         </p>
         
         <div className="grid md:grid-cols-3 gap-8 mb-8">
