@@ -500,6 +500,129 @@ export default async function LocationPage() {
         </div>
       </div>
 
+      {/* Commuting and Transportation Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Commuting and Transportation Advantages
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Bravado's location at 5060 Wind Springs Street provides exceptional transportation advantages, making 
+          commuting to work, accessing entertainment, and traveling convenient and efficient. The strategic 
+          positioning in North Las Vegas offers easy access to major highways and employment centers throughout 
+          the Las Vegas metropolitan area.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Easy Highway Access</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado's location provides convenient access to I-15, one of Las Vegas's major transportation 
+              arteries. This highway access makes commuting to downtown Las Vegas, the Las Vegas Strip, 
+              McCarran International Airport, and employment centers throughout the valley quick and straightforward. 
+              The proximity to major highways reduces commute times and makes daily travel more efficient.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Whether you work in downtown Las Vegas, on the Strip, at Nellis AFB, or in other areas of the 
+              metropolitan region, Bravado's location ensures you're never far from your destination. The 
+              combination of residential tranquility and urban accessibility makes Bravado ideal for professionals 
+              who want the best of both worlds—peaceful living with easy access to work and entertainment.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Proximity to Major Employment Centers</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas is home to numerous major employers, including Nellis Air Force Base, which is one 
+              of the area's largest employers. Bravado's location makes commuting to Nellis AFB, downtown Las Vegas 
+              employment centers, Strip resorts, and other major employers convenient. The strategic location 
+              positions residents well for career opportunities throughout the region.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The growing North Las Vegas economy also offers local employment opportunities, reducing commute 
+              distances for many residents. The combination of local employment options and easy access to 
+              regional employment centers makes Bravado an ideal location for professionals at various career 
+              stages and in different industries.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Schools and Education Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Excellent Schools and Educational Opportunities
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Families choosing Bravado benefit from access to excellent schools in the North Las Vegas area. The 
+          community's location provides convenient access to highly-rated elementary, middle, and high schools, 
+          making it an ideal choice for families with school-age children. The combination of quality education 
+          and prime location creates an excellent environment for raising children.
+        </p>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">School District Advantages</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Bravado is located in an area with access to quality schools within the Clark County School District, 
+            Nevada's largest school district. The proximity to excellent educational facilities ensures that 
+            children receive quality education while families enjoy the convenience of nearby schools. The school 
+            district's commitment to excellence and innovation benefits Bravado families.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The location also provides access to various educational opportunities, including private schools, 
+            charter schools, and specialized programs. Families have options to choose the educational approach 
+            that best fits their children's needs, while the convenient location ensures that school commutes are 
+            manageable and don't add significant time to daily routines.
+          </p>
+        </div>
+      </div>
+
+      {/* Investment and Growth Potential Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Location-Based Investment Potential and Growth
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Bravado's location in North Las Vegas positions it well for long-term property value appreciation. 
+          The area's growth trajectory, infrastructure improvements, and economic development create a favorable 
+          environment for property investment. Understanding these location-based advantages helps homeowners 
+          appreciate both the immediate benefits and long-term value of choosing Bravado.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">North Las Vegas Growth Trajectory</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas is one of the fastest-growing areas in the Las Vegas metropolitan region, with 
+              new businesses, residential developments, and infrastructure improvements enhancing the area's appeal. 
+              This growth creates strong demand for housing, which contributes to property value appreciation. 
+              Bravado's location in this growth corridor positions it well for long-term investment value.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The combination of existing amenities and planned development creates a positive environment for 
+              property values. Infrastructure improvements, new commercial developments, and continued residential 
+              growth all contribute to the area's appeal and property value growth. This growth trajectory makes 
+              Bravado an attractive investment in addition to being a great place to live.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Strategic Location Advantages</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado's location at 5060 Wind Springs Street offers strategic advantages that enhance both living 
+              experience and property value. The proximity to Craig Ranch Regional Park, major shopping centers, 
+              employment centers, and transportation infrastructure creates a location that remains desirable 
+              regardless of market conditions. These location advantages contribute to long-term property value.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The combination of location benefits, community amenities, and quality construction creates a 
+              property that maintains value and appeal over time. Location is one of the most important factors 
+              in real estate value, and Bravado's strategic positioning in North Las Vegas provides lasting 
+              advantages that benefit homeowners both now and in the future.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Ready to Explore Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-6">

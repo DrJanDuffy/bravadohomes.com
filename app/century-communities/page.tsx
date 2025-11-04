@@ -51,6 +51,7 @@ export default async function CenturyCommunitiesPage() {
   const headersList = await headers()
   const config = getCurrentDomainConfig({ headers: headersList })
   const email = config.contact.email
+  const agent = config.realEstateAgent
   return (
     <section>
       {/* Hero Section */}
