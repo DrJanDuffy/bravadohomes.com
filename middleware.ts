@@ -20,14 +20,20 @@ export function middleware(request: NextRequest) {
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
   }
-
-  // NOTE: www redirect is disabled here to avoid conflicts with Vercel/hosting redirects
-  // Configure www → non-www redirect at the Vercel domain settings level instead
-  // This prevents ERR_TOO_MANY_REDIRECTS errors
+  
+  // NOTE: www redirect should be configured at Vercel domain settings level
+  // Middleware www redirect is disabled to avoid conflicts with Vercel redirects
+  // If www redirects are needed, configure them in Vercel project settings
   
   // Remove search parameters from homepage to prevent duplicate content
-  // This fixes the ?s={search_term_string} issue
+  // This fixes the ?s={search_term_string} issue from schema markup
   if (url.pathname === '/' && url.search) {
+    url.search = ''
+    return NextResponse.redirect(url, 301)
+  }
+  
+  // Also handle search parameters on any page with the search template pattern
+  if (url.search.includes('s={search_term_string}') || url.search.includes('search_term_string')) {
     url.search = ''
     return NextResponse.redirect(url, 301)
   }
