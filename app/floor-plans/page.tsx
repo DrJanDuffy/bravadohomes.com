@@ -550,6 +550,202 @@ export default async function FloorPlansPage() {
         </div>
       </div>
 
+      {/* Choosing the Right Floor Plan Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          How to Choose the Right Bravado Floor Plan for Your Family
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Selecting the perfect floor plan is one of the most important decisions when buying a new home. At 
+          Bravado, we offer three distinct floor plans, each designed to meet different lifestyle needs. Understanding 
+          the unique features and benefits of each plan will help you make an informed choice that fits your family's 
+          current needs and future goals.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Consider Your Current Needs</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Think about how you currently use your living space. Do you need a home office or den? How many 
+              bedrooms do you actually need right now? The Residence 1792 offers flexibility with 3-4 bedrooms, 
+              making it ideal for smaller families or those who want extra space for guests or a home office.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              If you're planning to grow your family or frequently host guests, the Residence 2119 with its 
+              additional square footage and flexible downstairs den might be the better choice. Consider your 
+              daily routines and how the floor plan layout will support your lifestyle.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Plan for the Future</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              While it's important to meet your current needs, also consider how your needs might change over 
+              the next 5-10 years. Will your family grow? Will you need space for aging parents? Do you plan to 
+              work from home more in the future? The flexibility of Bravado's floor plans allows for various 
+              lifestyle changes.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The two-story design of all Bravado floor plans provides privacy and separation between living and 
+              sleeping areas, which becomes more valuable as families grow. The upstairs bedrooms create a quiet 
+              retreat, while downstairs living areas remain accessible for entertaining and daily activities.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Think About Resale Value</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              While you're buying a home to live in, it's also an investment. Consider which floor plan features 
+              are most desirable in the North Las Vegas market. The Residence 1943 has been particularly popular, 
+              suggesting strong resale potential. However, all three floor plans offer excellent value and appeal.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Features like the Century Connect® smart home technology, premium finishes, and thoughtful design 
+              elements contribute to long-term value. {agent?.name || 'Dr. Janet Duffy'} can help you understand 
+              the market dynamics and resale considerations for each floor plan option.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Detailed Floor Plan Comparison Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Detailed Comparison: Residence 1792 vs 1943 vs 2119
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Each Bravado floor plan offers unique advantages. Here's a comprehensive comparison to help you understand 
+          the differences and determine which plan best fits your lifestyle and budget.
+        </p>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Residence 1792: The Perfect Starter Home</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Starting at $459,790, the Residence 1792 is Bravado's entry-level floor plan, but "entry-level" 
+            doesn't mean basic. This 1,792 square foot home offers everything you need for comfortable living, 
+            with the flexibility to choose between 3 or 4 bedrooms depending on your needs. The two-story foyer 
+            with courtyard entrance creates an impressive first impression, while the wide-open great room and 
+            well-appointed kitchen provide the perfect space for everyday living and entertaining.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The Residence 1792 is ideal for first-time homebuyers, young professionals, small families, or empty 
+            nesters looking to downsize without sacrificing quality or style. The spacious center island in the 
+            kitchen and large walk-in pantry provide ample storage and workspace. The charming dining area with 
+            direct patio access makes outdoor dining and entertaining easy and enjoyable.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Upstairs, the expansive loft provides additional flexible space that can serve as a playroom, home 
+            office, or second living area. The convenient laundry room on the second floor eliminates the need 
+            to carry laundry up and down stairs. The private primary suite with deluxe bath offers a luxurious 
+            retreat after a long day, complete with premium finishes and thoughtful design details.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Residence 1943: The Most Popular Choice</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The Residence 1943, starting at $469,790, has earned the "Most Popular" designation for good reason. 
+            This 1,943 square foot floor plan offers the perfect balance of space, features, and value. The 
+            expansive primary suite with luxury amenities provides a true master retreat, while the model home 
+            is now open for viewing, allowing you to experience the quality and design firsthand.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The enhanced kitchen with premium appliances is a standout feature, making meal preparation and 
+            entertaining a joy. The flexible living spaces accommodate various furniture arrangements and 
+            lifestyle needs, making it easy to customize the home to your preferences. Whether you prefer 
+            formal dining or casual open-concept living, the Residence 1943 adapts to your style.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The Residence 1943 is particularly appealing to growing families who need a bit more space than the 
+            1792 offers but don't require the full square footage of the 2119. The thoughtful design maximizes 
+            every square foot, ensuring you get the most value and functionality from your investment. Many 
+            homeowners find this floor plan to be the sweet spot between affordability and space.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Residence 2119: Maximum Space and Flexibility</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            At 2,119 square feet, the Residence 2119 is Bravado's largest floor plan, starting at $479,790. This 
+            is the perfect choice for families who want maximum space and flexibility. The modeled downstairs den 
+            provides additional living space that can serve as a home office, guest room, playroom, or media 
+            room—whatever your family needs most.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            As the largest floor plan in the community, the Residence 2119 offers the most generous living 
+            spaces. The spacious great room is perfect for large family gatherings and entertaining, while the 
+            gourmet kitchen with large island provides ample workspace for cooking and socializing. The 
+            thoughtful layout ensures that even with more square footage, the home feels cohesive and well-designed.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The Residence 2119 is ideal for larger families, multi-generational households, or those who simply 
+            want more room to spread out. The additional square footage provides flexibility for future needs, 
+            whether that's a growing family, home-based business, or simply the desire for more personal space. 
+            The investment in extra square footage pays dividends in comfort, functionality, and long-term value.
+          </p>
+        </div>
+      </div>
+
+      {/* Standard Features Across All Plans Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Standard Features Included in Every Bravado Floor Plan
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Regardless of which floor plan you choose, every Bravado home includes premium features and finishes 
+          that elevate your living experience. Century Communities doesn't cut corners—these features come 
+          standard, not as expensive upgrades.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Century Connect® Smart Home Technology</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Every Bravado home includes the Century Connect® smart home package as standard. This comprehensive 
+              system allows you to control lighting, temperature, security, and more from your smartphone, 
+              whether you're at home or away. Unlike other builders where similar technology costs thousands in 
+              upgrades, Century Communities includes it in every Bravado home.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The smart home technology not only adds convenience but also helps reduce energy costs through 
+              intelligent scheduling and controls. Homeowners consistently praise this feature as one of the 
+              most valuable aspects of their Bravado home, appreciating both the immediate convenience and the 
+              long-term energy savings.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Premium Finishes and Quality Construction</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities uses premium materials and finishes throughout every Bravado home. From the 
+              foundation to the roof, quality construction is evident in every detail. Premium cabinetry, 
+              countertops, flooring, and fixtures are standard, not upgrades. The attention to detail in trim 
+              work, paint quality, and overall craftsmanship reflects Century Communities' commitment to excellence.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Energy-efficient features are built into every home, including high-efficiency HVAC systems, 
+              quality insulation, and energy-efficient windows. These features not only reduce your environmental 
+              impact but also lower your monthly utility bills, providing ongoing value throughout your ownership.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-blue-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Gated Community Amenities</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Every Bravado homeowner enjoys access to the gated community's amenities and security features. The 
+            well-maintained common areas, beautiful landscaping, and sense of community add value to every home, 
+            regardless of floor plan. The proximity to Craig Ranch Regional Park provides an extension of your 
+            backyard, with 170 acres of recreational opportunities just minutes away.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The gated community aspect provides security and exclusivity that enhances property values. The 
+            thoughtful community design creates a sense of place and belonging, making Bravado more than just 
+            a collection of houses—it's a true community where neighbors become friends and families thrive.
+          </p>
+        </div>
+      </div>
+
       {/* VIP Partnership Section */}
       <div className="vip-partnership mb-16">
         <div className="max-w-4xl mx-auto">
