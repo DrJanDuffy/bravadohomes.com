@@ -33,10 +33,10 @@ export const revalidate = 3600 // Revalidate every hour if using ISR
 export async function generateMetadata({ 
   params 
 }: { 
-  params: Promise<{ slug: string }> | { slug: string } 
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   try {
-    const resolvedParams = 'then' in params ? await params : params
+    const resolvedParams = await params
     const posts = getBlogPosts()
     let post = posts.find((post) => post && post.slug === resolvedParams.slug)
     
@@ -100,10 +100,10 @@ export async function generateMetadata({
 export default async function Blog({ 
   params 
 }: { 
-  params: Promise<{ slug: string }> | { slug: string } 
+  params: Promise<{ slug: string }>
 }) {
   try {
-    const resolvedParams = 'then' in params ? await params : params
+    const resolvedParams = await params
     
     // Get all posts and find the matching one
     const posts = getBlogPosts()
