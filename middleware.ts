@@ -2,21 +2,22 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl.clone()
+  const { pathname, search, protocol } = request.nextUrl
   
-  // Skip middleware for static files and API routes
+  // Skip middleware for static files and API routes (early return, no clone needed)
   if (
-    url.pathname.startsWith('/_next/') ||
-    url.pathname.startsWith('/api/') ||
-    url.pathname.startsWith('/favicon.ico') ||
-    url.pathname.startsWith('/robots.txt') ||
-    url.pathname.startsWith('/sitemap.xml')
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.startsWith('/robots.txt') ||
+    pathname.startsWith('/sitemap.xml')
   ) {
     return NextResponse.next()
   }
 
   // Redirect HTTP to HTTPS
-  if (request.nextUrl.protocol === 'http:') {
+  if (protocol === 'http:') {
+    const url = request.nextUrl.clone()
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
   }
@@ -27,13 +28,15 @@ export function middleware(request: NextRequest) {
   
   // Remove search parameters from homepage to prevent duplicate content
   // This fixes the ?s={search_term_string} issue from schema markup
-  if (url.pathname === '/' && url.search) {
+  if (pathname === '/' && search) {
+    const url = request.nextUrl.clone()
     url.search = ''
     return NextResponse.redirect(url, 301)
   }
   
   // Also handle search parameters on any page with the search template pattern
-  if (url.search.includes('s={search_term_string}') || url.search.includes('search_term_string')) {
+  if (search.includes('s={search_term_string}') || search.includes('search_term_string')) {
+    const url = request.nextUrl.clone()
     url.search = ''
     return NextResponse.redirect(url, 301)
   }
