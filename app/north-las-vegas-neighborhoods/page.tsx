@@ -7,7 +7,29 @@ import { getCurrentDomainConfig } from '../utils/domain'
 export const metadata = {
   title: 'North Las Vegas Neighborhoods | 89031 Area Guide | Dr. Janet Duffy',
   description: 'Explore North Las Vegas neighborhoods and communities. Expert guide to 89031 area including schools, amenities, and lifestyle from Dr. Janet Duffy.',
-  keywords: 'North Las Vegas neighborhoods, 89031 neighborhoods, North Las Vegas communities, Las Vegas neighborhoods, Dr. Janet Duffy, North Las Vegas guide',
+  keywords: [
+    'North Las Vegas neighborhoods',
+    '89031 neighborhoods',
+    'North Las Vegas communities',
+    'Las Vegas neighborhoods',
+    'best neighborhoods North Las Vegas',
+    'North Las Vegas area guide',
+    'North Las Vegas zip code 89031',
+    'North Las Vegas communities guide',
+    'neighborhoods North Las Vegas',
+    agent?.name || 'Dr. Janet Duffy',
+    'North Las Vegas guide',
+    'North Las Vegas area',
+    'North Las Vegas real estate neighborhoods',
+    'North Las Vegas location guide',
+    '89031 area neighborhoods',
+    'North Las Vegas residential areas',
+    'North Las Vegas community guide',
+    'North Las Vegas neighborhoods for families',
+    'best areas North Las Vegas',
+    'North Las Vegas zip codes',
+    'North Las Vegas living'
+  ],
   openGraph: {
     title: 'North Las Vegas Neighborhoods | 89031 Area Guide | Dr. Janet Duffy',
     description: 'Explore North Las Vegas neighborhoods and communities. Expert guide to 89031 area including schools, amenities, and lifestyle from Dr. Janet Duffy.',
@@ -298,16 +320,64 @@ export default async function NorthLasVegasNeighborhoodsPage() {
         </div>
       </div>
 
+      {/* Comprehensive Neighborhood Guide Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Guide to North Las Vegas Neighborhoods
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          North Las Vegas (zip code 89031) encompasses diverse <strong>neighborhoods</strong> and <strong>communities</strong>, each offering unique characteristics and lifestyle benefits. Understanding the different <strong>North Las Vegas neighborhoods</strong> helps you find the perfect area that matches your preferences, lifestyle, and budget. From established residential areas to new master-planned communities like Bravado, North Las Vegas offers options for every homebuyer.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">New Construction Communities</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas is experiencing significant growth in <strong>new construction communities</strong>, with master-planned developments offering modern amenities, smart home technology, and thoughtfully designed layouts. Communities like <strong>Bravado by Century Communities</strong> represent the future of North Las Vegas living, combining luxury features with accessible pricing.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              These <strong>new construction neighborhoods</strong> offer the latest in home design, energy efficiency, and community amenities. The gated communities provide security and exclusivity, while proximity to parks, schools, and shopping ensures convenience. New construction <strong>neighborhoods</strong> in North Las Vegas are particularly appealing to families, professionals, and first-time homebuyers who want modern features without the maintenance concerns of older homes.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Established Residential Areas</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              North Las Vegas also includes well-established <strong>neighborhoods</strong> with mature trees, established infrastructure, and strong community character. These areas offer a sense of permanence and stability, with proven property values and established amenities. Many of these <strong>neighborhoods</strong> feature larger lots and more traditional home designs.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Established <strong>North Las Vegas neighborhoods</strong> often provide excellent value for buyers who want character, mature landscaping, and established community infrastructure. These areas typically have well-regarded schools, established shopping districts, and proven track records for property appreciation. Understanding both new and established <strong>neighborhoods</strong> helps you make the best choice for your situation.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Choosing the Right North Las Vegas Neighborhood</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Selecting the right <strong>North Las Vegas neighborhood</strong> involves considering multiple factors: your lifestyle preferences, budget, commute requirements, school needs, and long-term goals. Each <strong>neighborhood</strong> in North Las Vegas offers unique advantages, and understanding these differences helps you find the perfect match.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Dr. Janet Duffy</strong> provides comprehensive <strong>neighborhood</strong> analysis that considers all these factors. Her expertise in North Las Vegas <strong>neighborhoods</strong> helps you understand the pros and cons of different areas, market trends, property values, and lifestyle factors. This expert guidance ensures you choose a <strong>neighborhood</strong> that meets your current needs and supports your long-term goals.
+          </p>
+        </div>
+      </div>
+
       {/* Expert Guidance */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Why Choose Dr. Janet Duffy for North Las Vegas?
+          Why Choose Dr. Janet Duffy for North Las Vegas Neighborhoods?
         </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          <strong>Dr. Janet Duffy</strong> brings deep expertise in <strong>North Las Vegas neighborhoods</strong> and communities, helping you understand the unique characteristics of different areas and find the perfect neighborhood for your lifestyle and budget.
+        </p>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Local Neighborhood Expertise</h3>
-            <ul className="space-y-4 text-gray-700">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Dr. Janet Duffy</strong> has extensive knowledge of <strong>North Las Vegas neighborhoods</strong> and communities, understanding the unique characteristics, advantages, and considerations of different areas. This expertise helps you make informed decisions about which <strong>neighborhood</strong> best fits your lifestyle, budget, and preferences.
+            </p>
+            <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
                 <span className="text-green-500 mr-3 mt-1">✓</span>
                 <span>Deep knowledge of North Las Vegas neighborhoods and communities</span>
@@ -331,9 +401,12 @@ export default async function NorthLasVegasNeighborhoodsPage() {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Comprehensive Service</h3>
-            <ul className="space-y-4 text-gray-700">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Comprehensive Neighborhood Analysis</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Dr. Janet Duffy</strong> provides comprehensive <strong>neighborhood</strong> analysis that goes beyond basic information. She helps you understand property values, market trends, school districts, amenities, and lifestyle factors that affect each <strong>North Las Vegas neighborhood</strong>. This detailed analysis ensures you make an informed decision.
+            </p>
+            <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
                 <span className="text-blue-500 mr-3 mt-1">🏠</span>
                 <span>Neighborhood comparison and analysis</span>
@@ -356,6 +429,16 @@ export default async function NorthLasVegasNeighborhoodsPage() {
               </li>
             </ul>
           </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">The Value of Neighborhood Expertise</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Understanding <strong>North Las Vegas neighborhoods</strong> requires more than just knowing addresses and zip codes. It requires insight into market dynamics, property values, community character, and lifestyle factors. <strong>Dr. Janet Duffy's</strong> expertise in <strong>North Las Vegas neighborhoods</strong> provides this comprehensive understanding, ensuring you choose a <strong>neighborhood</strong> that truly fits your needs.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Whether you're looking for a family-friendly <strong>neighborhood</strong> with excellent schools, a professional-focused area with easy commutes, or a community with specific amenities, <strong>Dr. Janet</strong> can guide you to the right <strong>North Las Vegas neighborhood</strong>. Her knowledge of both established and new construction <strong>neighborhoods</strong> ensures you have all the information needed to make the best decision.
+          </p>
         </div>
       </div>
 

@@ -8,7 +8,28 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Buyer Representation Services | Dr. Janet Duffy | Bravado Homes',
   description: 'Expert buyer representation services for new home construction in North Las Vegas. Dr. Janet Duffy provides independent guidance and advocacy for Century Communities homes at Bravado.',
-  keywords: 'buyer representation, new home construction, real estate agent, North Las Vegas, Bravado, Century Communities, Dr. Janet Duffy',
+  keywords: [
+    'buyer representation',
+    'buyer representation services',
+    'buyer representation North Las Vegas',
+    'buyer representation specialist',
+    'buyer representation expert',
+    'buyer advocacy',
+    'buyer agent',
+    'independent buyer representation',
+    'new home construction buyer representation',
+    'Century Communities buyer representation',
+    'Bravado buyer representation',
+    'Dr. Janet Duffy',
+    'buyer representation Las Vegas',
+    'real estate buyer agent',
+    'home buying representation',
+    'buyer representation services North Las Vegas',
+    '89031 buyer representation',
+    'new construction buyer representation',
+    'buyer representation expert',
+    'professional buyer representation'
+  ],
   openGraph: {
     title: 'Buyer Representation Services | Dr. Janet Duffy | Bravado Homes',
     description: 'Expert buyer representation services for new home construction in North Las Vegas. Dr. Janet Duffy provides independent guidance and advocacy.',
@@ -216,44 +237,144 @@ export default async function BuyerRepresentationPage() {
         </div>
       </div>
 
+      {/* Comprehensive Buyer Representation Benefits Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Benefits of Professional Buyer Representation
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          <strong>Professional buyer representation</strong> provides numerous benefits that protect your interests and ensure you make informed decisions throughout the home buying process. Unlike working directly with builder sales teams or listing agents, <strong>Dr. Janet Duffy's</strong> independent <strong>buyer representation</strong> ensures your needs, preferences, and financial interests are always prioritized. Understanding these benefits helps you appreciate the value of professional <strong>buyer representation</strong>.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Independent Advocacy and Protection</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              The most critical benefit of <strong>buyer representation</strong> is having an independent advocate who works exclusively for your interests. Unlike builder sales agents who represent the builder's interests, <strong>Dr. Janet Duffy</strong> provides independent <strong>buyer representation</strong> that ensures your needs, preferences, and financial interests are always prioritized. This independent advocacy is essential when purchasing new construction homes, where negotiations and contract terms can significantly impact your investment.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Buyer representation</strong> ensures you receive honest advice, fair negotiations, and protection throughout the process. <strong>Dr. Janet</strong> reviews all contracts, negotiates favorable terms, and ensures you understand all aspects of the transaction. This protection is particularly valuable in new construction, where complex contracts and builder practices require expert navigation to ensure your interests are protected.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Negotiation and Market Knowledge</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Professional buyer representation</strong> provides expert negotiation skills and market knowledge that benefit you throughout the transaction. <strong>Dr. Janet Duffy</strong> brings deep knowledge of the North Las Vegas market, pricing patterns, and what represents good value in the current market. Her expertise helps you make informed decisions and avoid overpaying or making poor choices.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Her negotiation skills ensure you receive favorable terms, pricing, and conditions. Whether negotiating purchase price, contract terms, or addressing issues during construction, <strong>Dr. Janet's</strong> <strong>buyer representation</strong> ensures you have professional advocacy that protects your interests. This expert negotiation and market knowledge is invaluable for making informed real estate decisions.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Buyer Representation is Essential in New Construction</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Buyer representation</strong> is particularly important in new construction, where builder sales teams represent the builder's interests, not yours. Without independent <strong>buyer representation</strong>, you may not realize that the sales agent's primary responsibility is to the builder, not to you as the buyer. This can lead to situations where your interests aren't fully protected.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Dr. Janet Duffy's</strong> independent <strong>buyer representation</strong> ensures your interests are protected throughout the entire process, from initial contract negotiations through final walkthrough and closing. She provides honest advice, fair negotiations, and ongoing advocacy that protects your investment. This independent representation is essential for making one of life's largest investments with confidence and protection.
+          </p>
+        </div>
+      </div>
+
       {/* Why Choose Dr. Janet Duffy */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Why Choose Dr. Janet Duffy for Buyer Representation?
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          <strong>Dr. Janet Duffy</strong> brings unique qualifications and expertise to <strong>buyer representation</strong> that benefit her clients throughout the home buying process. Her combination of specialized knowledge, <strong>Century Communities partnership</strong>, and commitment to client advocacy creates a <strong>buyer representation</strong> experience that's difficult to match in the North Las Vegas market.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">🏗️</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">New Construction Expert</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>Century Communities VIP Partnership</li>
-              <li>Construction process expertise</li>
-              <li>Builder relationship knowledge</li>
-              <li>Quality control experience</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Specialized expertise in <strong>new home construction</strong> processes and builder practices.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Century Communities VIP Partnership
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Construction process expertise
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Builder relationship knowledge
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Quality control experience
+              </li>
             </ul>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">🤝</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">Dedicated Advocacy</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>Exclusive representation</li>
-              <li>Unbiased guidance</li>
-              <li>Professional negotiation</li>
-              <li>Interest protection</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Independent <strong>buyer representation</strong> that protects your interests exclusively.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Exclusive representation
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Unbiased guidance
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Professional negotiation
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Interest protection
+              </li>
             </ul>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">🏠</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">Local Market Knowledge</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>North Las Vegas expertise</li>
-              <li>Bravado community specialist</li>
-              <li>Market trend analysis</li>
-              <li>Neighborhood insights</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Deep expertise in the North Las Vegas real estate market and Bravado community.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                North Las Vegas expertise
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Bravado community specialist
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Market trend analysis
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Neighborhood insights
+              </li>
             </ul>
           </div>
+        </div>
+        
+        <div className="bg-blue-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">The Value of Expert Buyer Representation</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Expert buyer representation</strong> provides value that extends far beyond the transaction itself. <strong>Dr. Janet Duffy's</strong> <strong>buyer representation</strong> services ensure you receive fair treatment, understand all contract terms, and have proper representation during any disputes or issues that arise. This professional advocacy provides peace of mind and protection that's essential when making one of life's largest investments.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The combination of specialized <strong>new construction expertise</strong>, independent <strong>buyer representation</strong>, and <strong>Century Communities partnership</strong> creates a unique value proposition for homebuyers. This combination ensures you have expert guidance, professional advocacy, and insider access—all while maintaining your interests as the top priority. This comprehensive <strong>buyer representation</strong> approach provides the best possible experience for homebuyers seeking new construction homes in North Las Vegas.
+          </p>
         </div>
       </div>
 

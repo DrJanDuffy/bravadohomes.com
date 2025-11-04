@@ -17,16 +17,28 @@ export async function generateMetadata(): Promise<Metadata> {
       'lennar homes las vegas',
       'lennar vs century communities',
       'century communities vs lennar',
+      'lennar vs century communities las vegas',
+      'compare lennar century communities',
       'lennar las vegas',
       'century communities las vegas',
       'compare home builders las vegas',
       'best home builder las vegas',
+      'home builder comparison las vegas',
       'lennar homes',
+      'lennar homes north las vegas',
       'century communities bravado',
       'bravado homes',
+      'which builder is better',
+      'lennar or century communities',
       agent?.name || 'Dr. Janet Duffy',
       'new construction builders las vegas',
       'home builder comparison',
+      'builder comparison guide',
+      'lennar everything included',
+      'century connect smart home',
+      'buyer representation',
+      'new construction builders',
+      'north las vegas builders'
     ],
     alternates: {
       canonical: `${baseUrl}/lennar-vs-century-communities`,
@@ -218,34 +230,110 @@ export default async function LennarVsCenturyPage() {
         </div>
       </div>
 
+      {/* Comprehensive Comparison Analysis Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Builder Comparison Analysis
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          When choosing between <strong>Lennar</strong> and <strong>Century Communities</strong> for your new construction home in Las Vegas, understanding the key differences helps you make an informed decision. Both builders have strengths, but the differences in approach, technology, and buyer representation can significantly impact your home buying experience and long-term satisfaction.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Buyer Representation and Advocacy</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              One of the most significant differences between <strong>Lennar</strong> and <strong>Century Communities</strong> is the availability of independent <strong>buyer representation</strong>. <strong>Century Communities</strong> offers the option to work with Featured Partners like <strong>{agent?.name || 'Dr. Janet Duffy'}</strong>, who provide expert <strong>buyer representation</strong> that protects your interests throughout the entire process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              With <strong>Lennar</strong>, you typically work directly with the builder's sales team, who represent the builder's interests. While they're helpful and informative, they don't provide independent advocacy for buyers. <strong>Century Communities</strong> Featured Partners, on the other hand, work exclusively for you, ensuring your interests are protected during negotiations, contract reviews, and throughout construction.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Smart Home Technology Approach</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Both builders offer smart home technology, but their approaches differ. <strong>Century Communities</strong> includes <strong>Century Connect®</strong> as standard equipment in many communities, including Bravado. This comprehensive system provides smart thermostats, lighting controls, security integration, and mobile app access—all included in the base price.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Lennar's</strong> "Everything's Included®" approach bundles smart home features, but the specific technology and extent of features can vary by community. While both approaches aim to provide value, <strong>Century Connect®</strong> being standard ensures consistent smart home capabilities across <strong>Century Communities</strong> properties, representing thousands of dollars in included value.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Community Size and Market Presence</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Lennar</strong> is the largest homebuilder in the U.S., with 18.4% market share in Las Vegas and 73,087 closings nationally in 2023. This size provides extensive community options and brand recognition. However, larger size can sometimes mean less personalized service and more standardized processes.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Century Communities</strong> is a top 10 homebuilder with 4.9% Las Vegas market share and 9,568 national closings in 2023. While smaller, this size allows for more personalized service, especially through Featured Partners. The focus on quality over quantity means attention to detail and customer satisfaction often takes priority over volume.
+          </p>
+        </div>
+      </div>
+
       {/* Key Differences */}
       <div className="content-section mb-12">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Key Differences That Matter
+          Key Differences That Matter Most
         </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          These differences can significantly impact your home buying experience, long-term satisfaction, and property value. Understanding what matters most to you helps determine which builder is the better fit for your situation.
+        </p>
         
         <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
             <div className="text-4xl mb-4 text-center">🤝</div>
-            <h4 className="font-bold text-gray-900 mb-3 text-center">Buyer Representation</h4>
-            <p className="text-gray-700 text-center">
-              <strong>Century Communities</strong> offers expert buyer representation through Featured Partners, ensuring your interests are protected throughout the process.
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Buyer Representation</h3>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              <strong>Century Communities</strong> offers expert <strong>buyer representation</strong> through Featured Partners, ensuring your interests are protected throughout the process. This independent advocacy is invaluable when negotiating contracts, addressing issues, and ensuring quality standards.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              With <strong>Lennar</strong>, you typically work with builder sales teams who represent the builder's interests. While helpful, they don't provide the same level of independent advocacy that protects your investment.
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
             <div className="text-4xl mb-4 text-center">🏠</div>
-            <h4 className="font-bold text-gray-900 mb-3 text-center">Smart Home Technology</h4>
-            <p className="text-gray-700 text-center">
-              <strong>Century Connect®</strong> is standard in many Century Communities, while Lennar's <strong>"Everything's Included®"</strong> smart home features are bundled but may vary by community.
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Smart Home Technology</h3>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              <strong>Century Connect®</strong> is standard in many <strong>Century Communities</strong>, providing consistent smart home capabilities included in the base price. This comprehensive system represents thousands of dollars in value that would be expensive upgrades with other builders.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Lennar's</strong> "Everything's Included®" bundles smart features, but the specific technology varies by community. The bundling approach is valuable, but the consistency of <strong>Century Connect®</strong> ensures predictable smart home capabilities.
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
             <div className="text-4xl mb-4 text-center">📍</div>
-            <h4 className="font-bold text-gray-900 mb-3 text-center">Community Focus</h4>
-            <p className="text-gray-700 text-center">
-              <strong>Bravado by Century Communities</strong> offers gated community living with premium amenities in North Las Vegas.
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Community Focus</h3>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              <strong>Bravado by Century Communities</strong> offers gated community living with premium amenities in North Las Vegas. The community-focused approach creates a sense of place and belonging that enhances property values and quality of life.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Both builders offer quality communities, but <strong>Century Communities</strong> emphasis on complete communities with amenities, security, and thoughtful design creates lasting value. The gated community aspect of Bravado provides security and exclusivity that's rare at this price point.
+            </p>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Pricing and Value Proposition</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Both <strong>Lennar</strong> and <strong>Century Communities</strong> offer competitive pricing, but the value proposition differs. <strong>Century Communities Bravado</strong> starts at $459,790 and includes <strong>Century Connect®</strong> smart home technology as standard, representing significant included value.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Lennar's</strong> pricing varies by community and location, with "Everything's Included®" bundling features. The value depends on which features are included in the specific community you're considering. Understanding what's included versus what's an upgrade is crucial for comparing true value.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Quality and Construction Standards</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Both builders maintain quality construction standards, but their approaches differ. <strong>Century Communities</strong> focus on quality over quantity means attention to detail and craftsmanship often takes priority. The company's reputation is built on excellence rather than just size.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Lennar's</strong> large scale operations provide efficiency and consistency, but the focus on volume can sometimes mean less customization flexibility. Both builders use quality materials and proven construction methods, but the level of personalization and attention to detail can vary.
             </p>
           </div>
         </div>

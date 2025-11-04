@@ -8,7 +8,32 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Financing & Incentives | Bravado Homes | Dr. Janet Duffy',
   description: 'Explore exclusive financing options and builder incentives for Bravado new construction homes in North Las Vegas. Expert guidance from Dr. Janet Duffy, Century Communities Featured Partner.',
-  keywords: 'financing incentives, new home financing, builder incentives, Century Communities, Bravado, North Las Vegas, Dr. Janet Duffy',
+  keywords: [
+    'financing incentives',
+    'financing incentives North Las Vegas',
+    'new home financing',
+    'new home financing options',
+    'builder incentives',
+    'Century Communities incentives',
+    'Century Communities financing',
+    'Bravado financing',
+    'Bravado incentives',
+    'new construction financing',
+    'home financing options',
+    'first-time homebuyer financing',
+    'VA loans',
+    'FHA loans',
+    'conventional loans',
+    'jumbo loans',
+    'rate buydowns',
+    'closing cost credits',
+    'upgrade credits',
+    'Dr. Janet Duffy',
+    'North Las Vegas financing',
+    '89031 financing',
+    'new home pre-approval',
+    'builder financing programs'
+  ],
   openGraph: {
     title: 'Financing & Incentives | Bravado Homes | Dr. Janet Duffy',
     description: 'Explore exclusive financing options and builder incentives for Bravado new construction homes in North Las Vegas.',
@@ -184,44 +209,144 @@ export default async function FinancingIncentivesPage() {
         </div>
       </div>
 
+      {/* Comprehensive Financing Options Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Financing Options for Bravado Homes
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Understanding your <strong>financing options</strong> is crucial when purchasing a new construction home at Bravado. <strong>Dr. Janet Duffy</strong> works with <strong>Century Communities</strong> and preferred lenders to provide you with access to the best <strong>financing programs</strong> and <strong>builder incentives</strong> available. Her expertise ensures you understand all options and choose the financing that best fits your situation.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Conventional Financing Options</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Conventional loans</strong> are the most common financing option for <strong>new construction homes</strong> at Bravado. These loans typically offer competitive interest rates and flexible terms for qualified buyers. Conventional financing is available for buyers with good credit scores and stable income, providing access to <strong>new construction homes</strong> starting at $459,790.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Dr. Janet Duffy</strong> can connect you with lenders who specialize in <strong>new construction financing</strong> and understand the unique requirements of buying a home that's being built. These lenders work with <strong>Century Communities</strong> to provide streamlined financing processes that align with construction timelines. Conventional financing typically requires a down payment of 10-20%, though some programs offer lower down payment options for qualified buyers.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">FHA and VA Financing Programs</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>FHA loans</strong> provide low down payment options for qualified buyers, making <strong>new construction homes</strong> more accessible. These government-backed loans typically require a down payment of 3.5% for qualified buyers, making them ideal for first-time homebuyers or those with limited down payment funds. <strong>FHA financing</strong> is available for Bravado homes that meet FHA requirements.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>VA loans</strong> offer exceptional benefits for veterans and active military personnel, including zero down payment options and competitive interest rates. These loans are available for qualified veterans purchasing <strong>new construction homes</strong> at Bravado. <strong>Dr. Janet Duffy</strong> can help you understand VA loan benefits and connect you with VA-approved lenders who specialize in <strong>new construction financing</strong>.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Financing Matters in New Construction</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>New construction financing</strong> differs from financing existing homes in several important ways. The financing process must align with construction timelines, and lenders must understand the unique aspects of builder contracts and construction progress. <strong>Dr. Janet Duffy</strong> works with lenders who specialize in <strong>new construction financing</strong>, ensuring the process is smooth and aligned with your construction timeline.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The combination of <strong>builder incentives</strong> and appropriate <strong>financing options</strong> can significantly reduce your overall costs and make your new home more affordable. <strong>Dr. Janet's</strong> expertise in both financing and <strong>builder incentives</strong> ensures you receive comprehensive guidance that maximizes your purchasing power and minimizes your costs. This integrated approach to financing and incentives is one of the key benefits of working with an experienced <strong>new construction specialist</strong>.
+          </p>
+        </div>
+      </div>
+
       {/* Pre-Approval Process */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Getting Pre-Approved
+          Getting Pre-Approved for Your Bravado Home
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Getting <strong>pre-approved</strong> is the first step in purchasing your new construction home at Bravado. <strong>Pre-approval</strong> gives you a clear understanding of your purchasing power, helps you make informed decisions, and strengthens your position when working with builders. <strong>Dr. Janet Duffy</strong> can guide you through the <strong>pre-approval process</strong> and connect you with lenders who specialize in <strong>new construction financing</strong>.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">📋</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">Documentation</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>• Income verification</li>
-              <li>• Bank statements</li>
-              <li>• Credit report</li>
-              <li>• Employment history</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Gathering the necessary documentation is the first step in the <strong>pre-approval process</strong>.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Income verification
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Bank statements
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Credit report
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Employment history
+              </li>
             </ul>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">💳</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">Credit Review</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>• Credit score analysis</li>
-              <li>• Debt-to-income ratio</li>
-              <li>• Payment history review</li>
-              <li>• Credit improvement tips</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Lenders review your credit profile to determine your <strong>financing eligibility</strong> and terms.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Credit score analysis
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Debt-to-income ratio
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Payment history review
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Credit improvement tips
+              </li>
             </ul>
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center card-hover">
             <div className="text-4xl mb-4">✅</div>
             <h3 className="text-xl font-bold mb-4 text-gray-900">Pre-Approval</h3>
-            <ul className="text-gray-700 space-y-2">
-              <li>• Loan amount determination</li>
-              <li>• Interest rate lock</li>
-              <li>• Pre-approval letter</li>
-              <li>• Shopping power</li>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Receive your <strong>pre-approval letter</strong> and start shopping with confidence.
+            </p>
+            <ul className="text-gray-700 space-y-2 text-left">
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Loan amount determination
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Interest rate lock
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Pre-approval letter
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-500 mr-2">✓</span>
+                Shopping power
+              </li>
             </ul>
           </div>
+        </div>
+        
+        <div className="bg-blue-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Benefits of Pre-Approval</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>Pre-approval</strong> provides numerous benefits when purchasing a <strong>new construction home</strong>. It gives you a clear understanding of your purchasing power, helps you focus your search on homes within your budget, and demonstrates to builders that you're a serious, qualified buyer. <strong>Pre-approval</strong> also allows you to lock in interest rates when market conditions are favorable, protecting you from rate increases during the construction period.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Dr. Janet Duffy</strong> can guide you through the <strong>pre-approval process</strong> and connect you with lenders who understand the unique aspects of <strong>new construction financing</strong>. Her expertise ensures you receive the best terms and rates available, while her <strong>Century Communities partnership</strong> provides access to preferred lenders who specialize in builder financing. This comprehensive approach to <strong>pre-approval</strong> and financing ensures you're well-prepared to purchase your new Bravado home.
+          </p>
         </div>
       </div>
 

@@ -3,6 +3,50 @@ import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import RealScoutHomeValue from '../components/realscout-home-value'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Century Connect® Smart Home Technology | Bravado Homes | Dr. Janet Duffy',
+    description: 'Discover Century Connect® smart home technology included in every Bravado home. Advanced smart home features, energy efficiency, and security. Expert guidance from Dr. Janet Duffy, Featured Century Communities Partner.',
+    keywords: [
+      'Century Connect smart home',
+      'Century Connect smart home technology',
+      'smart home technology',
+      'smart home technology North Las Vegas',
+      'smart home features',
+      'smart thermostat',
+      'smart lighting',
+      'smart locks',
+      'home automation',
+      'energy efficient homes',
+      'smart home North Las Vegas',
+      'Bravado smart homes',
+      'Century Communities smart home',
+      agent?.name || 'Dr. Janet Duffy',
+      'smart home technology Las Vegas',
+      '89031 smart homes',
+      'voice assistant integration',
+      'smart home security',
+      'energy monitoring',
+      'new construction smart homes'
+    ],
+    alternates: {
+      canonical: `${baseUrl}/smart-home-technology`,
+    },
+    openGraph: {
+      title: 'Century Connect® Smart Home Technology | Bravado Homes',
+      description: 'Discover Century Connect® smart home technology included in every Bravado home. Advanced features, energy efficiency, and security.',
+      url: `${baseUrl}/smart-home-technology`,
+      type: 'website',
+    },
+  }
+}
 
 export default async function SmartHomeTechnologyPage() {
   const headersList = await headers()
