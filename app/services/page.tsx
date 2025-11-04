@@ -9,7 +9,28 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Real Estate Services | Dr. Janet Duffy | Bravado Homes North Las Vegas',
   description: 'Expert new home construction and buyer representation services in North Las Vegas. Dr. Janet Duffy provides specialized guidance for Century Communities homes at Bravado.',
-  keywords: 'new home construction, buyer representation, real estate services, North Las Vegas, Bravado, Century Communities, Dr. Janet Duffy',
+  keywords: [
+    'new home construction services',
+    'buyer representation services',
+    'real estate services North Las Vegas',
+    'Century Communities expert',
+    'new construction specialist',
+    'buyer representation specialist',
+    'North Las Vegas real estate services',
+    'Bravado homes services',
+    'Dr. Janet Duffy services',
+    'new home construction guidance',
+    'buyer advocacy services',
+    'real estate consultation',
+    'new construction consultation',
+    'home buying services',
+    '89031 real estate services',
+    'Century Communities partner services',
+    'new home construction expert',
+    'buyer representation expert',
+    'North Las Vegas home buying',
+    'real estate agent services'
+  ],
   openGraph: {
     title: 'Real Estate Services | Dr. Janet Duffy | Bravado Homes North Las Vegas',
     description: 'Expert new home construction and buyer representation services in North Las Vegas. Dr. Janet Duffy provides specialized guidance for Century Communities homes at Bravado.',
@@ -178,6 +199,90 @@ export default async function ServicesPage() {
                 priceMax="600000"
               />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Comprehensive Service Details Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Real Estate Services for North Las Vegas Homebuyers
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          <strong>Dr. Janet Duffy</strong> provides comprehensive <strong>real estate services</strong> specifically designed for <strong>North Las Vegas homebuyers</strong> seeking <strong>new construction homes</strong>. As a <strong>Featured New Home Construction and Buyer Representation specialist</strong> with <strong>Century Communities</strong>, Dr. Duffy offers specialized expertise that goes beyond traditional real estate services, providing you with the guidance and advocacy needed to navigate the <strong>new home construction process</strong> successfully.
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">New Home Construction Expertise</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>New home construction</strong> involves a complex process that requires specialized knowledge and expertise. Dr. Janet Duffy's <strong>new construction services</strong> include comprehensive guidance from initial floor plan selection through final walkthrough and closing. Her expertise ensures you understand construction timelines, quality standards, customization options, and what to expect at each stage of the building process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              As a <strong>Featured Century Communities Partner</strong>, Dr. Duffy has insider knowledge of <strong>Century Communities'</strong> construction processes, quality standards, and available options. She can help you navigate design center selections, understand upgrade values, coordinate inspections, and ensure your new home meets all quality expectations. This specialized <strong>new construction expertise</strong> is invaluable for homebuyers who want to make informed decisions throughout the building process.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Buyer Representation and Advocacy</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Buyer representation</strong> is a critical service that protects your interests throughout the home buying process. Unlike builder sales agents who represent the builder's interests, <strong>Dr. Janet Duffy</strong> provides independent <strong>buyer representation</strong> that ensures your needs, preferences, and financial interests are always prioritized. This independent representation is essential when purchasing <strong>new construction homes</strong>, where negotiations and contract terms can significantly impact your investment.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Dr. Duffy's <strong>buyer representation services</strong> include contract review, negotiation support, inspection coordination, and ongoing advocacy throughout construction and closing. She ensures you receive fair treatment, understand all contract terms, and have proper representation during any disputes or issues that arise. This <strong>buyer advocacy</strong> provides peace of mind and protection that's essential when making one of life's largest investments.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mb-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Choose Specialized New Construction Services?</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            <strong>New home construction</strong> differs significantly from purchasing existing homes, requiring specialized knowledge of construction processes, builder practices, and quality standards. <strong>Dr. Janet Duffy's</strong> specialized <strong>new construction services</strong> provide the expertise needed to navigate these unique challenges successfully. Her partnership with <strong>Century Communities</strong> gives her insider knowledge of construction timelines, quality standards, and available options that benefit her clients.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Additionally, <strong>buyer representation</strong> is particularly important in new construction, where builder sales teams represent the builder's interests. Dr. Duffy's independent <strong>buyer representation</strong> ensures your interests are protected throughout the process, from initial contract negotiations through final walkthrough. This combination of specialized <strong>new construction expertise</strong> and independent <strong>buyer advocacy</strong> creates the best possible experience for homebuyers seeking <strong>new construction homes in North Las Vegas</strong>.
+          </p>
+        </div>
+      </div>
+
+      {/* Service Process Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          The Home Buying Process with Dr. Janet Duffy
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Understanding the <strong>new home construction process</strong> helps you know what to expect when working with <strong>Dr. Janet Duffy</strong>. Her comprehensive <strong>real estate services</strong> guide you through each stage, ensuring you're informed, protected, and confident in your decisions throughout your home buying journey.
+        </p>
+        
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Initial Consultation and Planning</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Your journey begins with an initial consultation where <strong>Dr. Janet Duffy</strong> helps you understand your needs, preferences, and budget. She'll discuss available floor plans, customization options, construction timelines, and financing considerations. This consultation provides the foundation for making informed decisions throughout the process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              During this phase, Dr. Duffy provides market insights, helps you understand the <strong>new construction process</strong>, and begins developing a strategy that aligns with your goals. Her <strong>buyer representation</strong> services ensure your interests are protected from the very beginning, and her <strong>Century Communities partnership</strong> provides access to exclusive information and opportunities.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Home Selection and Customization</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Once you've identified your preferred floor plan, <strong>Dr. Janet Duffy</strong> guides you through lot selection, customization options, and upgrade decisions. Her expertise helps you understand which customizations add value and which are primarily for personal enjoyment, ensuring you make smart investment choices.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Her <strong>new construction expertise</strong> ensures you understand construction timelines, availability, and customization deadlines. She provides honest guidance about upgrade values, helps you stay within budget, and ensures your selections align with your long-term goals. This personalized guidance is one of the key benefits of working with a <strong>Featured Century Communities Partner</strong>.
+            </p>
+          </div>
+          
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Construction and Closing Support</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Throughout construction, <strong>Dr. Janet Duffy</strong> remains your advocate, coordinating inspections, addressing concerns, and ensuring quality standards are met. Her <strong>buyer representation</strong> services ensure you're informed about construction progress and have proper representation during walkthroughs and inspections.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              During closing, Dr. Duffy guides you through the final paperwork, ensures all terms are honored, and provides ongoing support as you settle into your new home. Her comprehensive <strong>real estate services</strong> extend beyond closing, as she remains available to answer questions and provide referrals for any post-closing needs you may have.
+            </p>
           </div>
         </div>
       </div>

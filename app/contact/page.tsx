@@ -3,6 +3,48 @@ import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutSimpleSearch from '../components/realscout-simple-search'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Contact Dr. Janet Duffy | Bravado Homes North Las Vegas | Century Communities Expert',
+    description: 'Contact Dr. Janet Duffy for expert new home construction and buyer representation services in North Las Vegas. Featured Century Communities Partner. Call (702) 500-1955 or email today.',
+    keywords: [
+      'contact Dr. Janet Duffy',
+      'Dr. Janet Duffy contact',
+      'Bravado homes contact',
+      'North Las Vegas real estate agent',
+      'Century Communities expert',
+      'new home construction specialist',
+      'buyer representation',
+      'real estate agent North Las Vegas',
+      '89031 real estate',
+      'Bravado homes for sale',
+      'schedule tour Bravado',
+      'model home tour',
+      'Nevada real estate license S.0197614',
+      agent?.name || 'Dr. Janet Duffy',
+      'Century Communities partner',
+      'new construction consultation',
+      'home buying guidance',
+      'North Las Vegas homes'
+    ],
+    alternates: {
+      canonical: `${baseUrl}/contact`,
+    },
+    openGraph: {
+      title: 'Contact Dr. Janet Duffy | Bravado Homes North Las Vegas',
+      description: 'Contact Dr. Janet Duffy for expert new home construction and buyer representation services. Featured Century Communities Partner.',
+      url: `${baseUrl}/contact`,
+      type: 'website',
+    },
+  }
+}
 
 export default async function ContactPage() {
   const headersList = await headers()
