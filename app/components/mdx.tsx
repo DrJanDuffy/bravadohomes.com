@@ -67,7 +67,6 @@ function slugify(str) {
 function createHeading(level: number) {
   const Heading = ({ children }: { children: React.ReactNode }) => {
     let slug = slugify(String(children))
-    const HeadingTag = `h${level}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
     
     if (level === 1) {
       return (
