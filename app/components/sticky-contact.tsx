@@ -1,8 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useDomainConfig } from '../hooks/use-domain-config'
 
 export default function StickyContact() {
+  const config = useDomainConfig()
+  const email = config.contact.email
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -42,7 +45,7 @@ export default function StickyContact() {
               📞 (702) 500-1955
             </a>
             <a 
-              href="mailto:DrJanSells@BravadoHomes.com" 
+              href={`mailto:${email}`} 
               className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-700 transition-colors flex items-center"
             >
               📧 Email Dr. Janet

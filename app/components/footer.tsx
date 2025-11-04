@@ -1,6 +1,11 @@
 import RealScoutListings from './realscout-listings'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from '../utils/domain'
 
-export default function Footer() {
+export default async function Footer() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const email = config.contact.email
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-8 rounded-lg mt-16">
       <div className="max-w-6xl mx-auto">
@@ -45,8 +50,8 @@ export default function Footer() {
               </p>
               <p>
                 <strong>Email:</strong><br />
-                <a href="mailto:DrJanSells@BravadoHomes.com" className="hover:text-blue-200 transition-colors">
-                  DrJanSells@BravadoHomes.com
+                <a href={`mailto:${email}`} className="hover:text-blue-200 transition-colors">
+                  {email}
                 </a>
               </p>
               <p className="text-sm">

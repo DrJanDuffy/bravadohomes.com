@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import RealScoutSimpleSearch from './realscout-simple-search'
 import { useState } from 'react'
+import { useDomainConfig } from '../hooks/use-domain-config'
 
 interface NavItem {
   name: string
@@ -50,6 +51,8 @@ const navItems: Record<string, NavItem> = {
 }
 
 export function Navbar() {
+  const config = useDomainConfig()
+  const email = config.contact.email
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
 
   return (
@@ -119,7 +122,7 @@ export function Navbar() {
             <a href="tel:+17025001955" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-700 transition-colors">
               Call: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+            <a href={`mailto:${email}`} className="text-blue-600 hover:text-blue-700 text-sm font-medium">
               Email Dr. Janet
             </a>
             <div className="hidden lg:block">

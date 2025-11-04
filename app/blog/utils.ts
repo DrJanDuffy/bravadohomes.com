@@ -92,23 +92,44 @@ export function getBlogPosts(): BlogPost[] {
   }
 
   try {
-    const postsDir = path.join(process.cwd(), 'app', 'blog', 'posts')
+    // In serverless environments, process.cwd() might not work as expected
+    // Try to use __dirname or resolve paths differently
+    let postsDir: string
+    
+    // Check if we're in a serverless environment
+    if (typeof process !== 'undefined' && process.env.VERCEL) {
+      // In Vercel, use a relative path from the project root
+      postsDir = path.join(process.cwd(), 'app', 'blog', 'posts')
+    } else {
+      // In development or other environments
+      postsDir = path.join(process.cwd(), 'app', 'blog', 'posts')
+    }
     
     // Check if directory exists
     if (!fs.existsSync(postsDir)) {
+      console.warn(`Blog posts directory not found: ${postsDir}`)
+      // Cache empty array to prevent repeated attempts
+      blogPostsCache = []
       return []
     }
     
     const posts = getMDXData(postsDir)
     
-    // Cache the posts
-    blogPostsCache = posts
+    // Only cache if we got valid posts
+    if (posts && posts.length > 0) {
+      blogPostsCache = posts
+    } else {
+      // Cache empty array to prevent repeated file system access attempts
+      blogPostsCache = []
+    }
     
     return posts
   } catch (error) {
     // In serverless environments, fs might not be available
     // Return empty array to prevent crashes
     console.error('Error loading blog posts:', error)
+    // Cache empty array to prevent repeated error attempts
+    blogPostsCache = []
     return []
   }
 }

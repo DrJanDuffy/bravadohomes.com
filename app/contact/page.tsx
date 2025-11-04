@@ -1,8 +1,13 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutSimpleSearch from '../components/realscout-simple-search'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from '../utils/domain'
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const email = config.contact.email
   return (
     <section>
       {/* Hero Section */}
@@ -24,7 +29,7 @@ export default function ContactPage() {
             <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
               📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
+            <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
             <a href="tel:+17022221964" className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors text-lg">
@@ -160,7 +165,7 @@ export default function ContactPage() {
               to discuss your needs, show you available floor plans, and answer all 
               your questions about life at Bravado.
             </p>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="cta-button w-full text-center">
+            <a href={`mailto:${email}`} className="cta-button w-full text-center">
               Schedule Virtual Meeting
             </a>
           </div>
@@ -173,7 +178,7 @@ export default function ContactPage() {
               and community amenities. Dr. Duffy responds promptly to all inquiries 
               with personalized guidance.
             </p>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="cta-button w-full text-center">
+            <a href={`mailto:${email}`} className="cta-button w-full text-center">
               Email Dr. Duffy
             </a>
           </div>
@@ -258,7 +263,7 @@ export default function ContactPage() {
             <p className="text-gray-700 mb-2">
               <strong>Phone:</strong> (702) 500-1955<br />
               <strong>Urgent/Marketing:</strong> (702) 222-1964<br />
-              <strong>Email:</strong> DrJanSells@BravadoHomes.com
+              <strong>Email:</strong> {email}
             </p>
             <p className="text-gray-700">
               <strong>Nevada License:</strong> S.0197614<br />
@@ -446,9 +451,9 @@ export default function ContactPage() {
             CALL NOW<br />
             <span className="text-2xl">(702) 500-1955</span>
           </a>
-          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+          <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
-            DrJanSells@BravadoHomes.com
+            {email}
           </a>
           <a href="tel:+17022221964" className="bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors">
             URGENT<br />

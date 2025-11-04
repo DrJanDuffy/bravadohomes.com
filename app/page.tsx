@@ -7,6 +7,8 @@ import SchemaMarkup from './components/schema'
 import AIOptimizationSchema from './components/ai-optimization-schema'
 import PhotoGallery from './components/photo-gallery'
 import KCMRSSFeed from './components/kcm-rss-feed'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from './utils/domain'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,7 +17,10 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Page() {
+export default async function Page() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const email = config.contact.email
   return (
     <>
       <SchemaMarkup />
@@ -53,7 +58,7 @@ export default function Page() {
             <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
               📞 Call NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
+            <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors text-lg">
               📧 Email Dr. Janet
             </a>
             <a href="#floor-plans" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors text-lg">
@@ -303,7 +308,7 @@ export default function Page() {
             <a href="tel:+17025001955" className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
               📞 CALL NOW: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-colors text-lg">
+            <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-600 transition-colors text-lg">
               📧 EMAIL DR. JANET
             </a>
           </div>
@@ -547,9 +552,9 @@ export default function Page() {
             📞 SECURE YOUR HOME NOW<br />
             <span className="text-2xl">(702) 500-1955</span>
           </a>
-          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition-colors">
+          <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-red-600 transition-colors">
             📧 EMAIL DR. JANET<br />
-            DrJanSells@BravadoHomes.com
+            {email}
           </a>
         </div>
         
@@ -583,7 +588,7 @@ export default function Page() {
             <h3 className="text-xl font-bold mb-3">Dr. Janet Duffy</h3>
             <p>Las Vegas Real Estate Expert<br />
             Nevada License: S.0197614<br />
-            DrJanSells@BravadoHomes.com</p>
+            {email}</p>
           </div>
           
           <div className="contact-info">

@@ -1,8 +1,13 @@
 import RealScoutListings from '../components/realscout-listings'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import RealScoutHomeValue from '../components/realscout-home-value'
+import { headers } from 'next/headers'
+import { getCurrentDomainConfig } from '../utils/domain'
 
-export default function SmartHomeTechnologyPage() {
+export default async function SmartHomeTechnologyPage() {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const email = config.contact.email
   return (
     <section>
       {/* Hero Section */}
@@ -21,7 +26,7 @@ export default function SmartHomeTechnologyPage() {
             <a href="tel:+17025001955" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               📞 Call: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+            <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
               📧 Email Dr. Janet
             </a>
             <a href="/contact" className="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
@@ -362,9 +367,9 @@ export default function SmartHomeTechnologyPage() {
             CALL NOW<br />
             <span className="text-2xl">(702) 500-1955</span>
           </a>
-          <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+          <a href={`mailto:${email}`} className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
             EMAIL<br />
-            DrJanSells@BravadoHomes.com
+            {email}
           </a>
         </div>
         
@@ -380,7 +385,7 @@ export default function SmartHomeTechnologyPage() {
             <h3 className="text-xl font-bold mb-3">Dr. Janet Duffy</h3>
             <p>Las Vegas Real Estate Expert<br />
             Nevada License: S.0197614<br />
-            DrJanSells@BravadoHomes.com</p>
+            {email}</p>
           </div>
           
           <div className="contact-info">

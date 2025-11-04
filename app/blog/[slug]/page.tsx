@@ -8,17 +8,27 @@ import type { Metadata } from 'next'
 export async function generateStaticParams() {
   try {
     let posts = getBlogPosts()
+    if (!posts || posts.length === 0) {
+      console.warn('No blog posts found for static generation')
+      return []
+    }
     return posts.map((post) => ({
       slug: post.slug,
     }))
   } catch (error) {
     console.error('Error generating static params:', error)
+    // Return empty array to allow dynamic rendering as fallback
     return []
   }
 }
 
 // Force dynamic rendering as fallback if static generation fails
 export const dynamicParams = true
+
+// Allow both static and dynamic rendering
+// Static generation preferred, with dynamic fallback
+export const dynamic = 'auto' // Allow static generation when possible
+export const revalidate = 3600 // Revalidate every hour if using ISR
 
 export async function generateMetadata({ 
   params 
@@ -76,9 +86,13 @@ export async function generateMetadata({
   }
   } catch (error) {
     console.error('Error generating metadata:', error)
+    // Return minimal metadata to prevent 5xx errors
     return {
       title: 'Blog Post',
       description: 'Blog post page',
+      alternates: {
+        canonical: `${baseUrl}/blog`,
+      },
     }
   }
 }

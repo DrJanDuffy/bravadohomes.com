@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useDomainConfig } from '../hooks/use-domain-config'
 import OptimizedImage, { FALLBACK_IMAGES } from './optimized-image'
 
 interface GalleryImage {
@@ -11,6 +12,8 @@ interface GalleryImage {
 }
 
 export default function PhotoGallery() {
+  const config = useDomainConfig()
+  const email = config.contact.email
   const [currentSlide, setCurrentSlide] = useState(0)
   
   // Optimized, diverse images with proper framing and fallbacks
@@ -246,7 +249,7 @@ export default function PhotoGallery() {
             <a href="tel:+17025001955" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg">
               📞 Call Dr. Janet: (702) 500-1955
             </a>
-            <a href="mailto:DrJanSells@BravadoHomes.com" className="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors shadow-lg">
+            <a href={`mailto:${email}`} className="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition-colors shadow-lg">
               📧 Email for Tour Info
             </a>
             <a href="/contact" className="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition-colors shadow-lg">
