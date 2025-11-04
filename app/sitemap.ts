@@ -55,6 +55,22 @@ export default async function sitemap() {
     { route: '/buyer-representation', priority: 0.7, changefreq: 'monthly' },
     { route: '/financing-incentives', priority: 0.6, changefreq: 'monthly' },
     
+    // GEO Strategy: Buyer-type pages (high priority for AI visibility)
+    { route: '/buyers/55-plus', priority: 0.85, changefreq: 'weekly' },
+    { route: '/buyers/first-time', priority: 0.85, changefreq: 'weekly' },
+    { route: '/buyers/divorce', priority: 0.85, changefreq: 'weekly' },
+    { route: '/buyers/investors', priority: 0.85, changefreq: 'weekly' },
+    
+    // E-E-A-T: Authority building pages
+    { route: '/transparency', priority: 0.8, changefreq: 'monthly' },
+    { route: '/case-studies', priority: 0.75, changefreq: 'weekly' },
+    { route: '/research', priority: 0.75, changefreq: 'weekly' },
+    
+    // Neighborhood hubs (hyper-local content)
+    { route: '/neighborhoods/summerlin', priority: 0.8, changefreq: 'weekly' },
+    { route: '/neighborhoods/henderson', priority: 0.8, changefreq: 'weekly' },
+    { route: '/neighborhoods/centennial-hills', priority: 0.8, changefreq: 'weekly' },
+    
     // Blog pages (medium priority)
     { route: '/blog', priority: 0.6, changefreq: 'weekly' },
   ].map(({ route, priority, changefreq }) => ({

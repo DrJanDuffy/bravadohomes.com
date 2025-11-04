@@ -359,6 +359,87 @@ export default async function SchemaMarkup() {
           ]
         },
         "inLanguage": "en-US"
+      },
+      {
+        "@type": "Service",
+        "@id": `${baseUrl}/#buyer-representation-service`,
+        "name": "Buyer Representation",
+        "description": "Independent buyer representation service protecting client interests throughout the home buying process",
+        "provider": {
+          "@id": `${baseUrl}/#agent`
+        },
+        "serviceType": "Real Estate Buyer Representation",
+        "areaServed": {
+          "@type": "City",
+          "name": location.city,
+          "containedInPlace": {
+            "@type": "State",
+            "name": location.state
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "description": "Professional buyer representation services"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": `${baseUrl}/#new-construction-service`,
+        "name": "New Home Construction Guidance",
+        "description": "Expert guidance for new home construction purchases with Century Communities partnership benefits",
+        "provider": {
+          "@id": `${baseUrl}/#agent`
+        },
+        "serviceType": "New Home Construction Consulting",
+        "areaServed": {
+          "@type": "City",
+          "name": location.city,
+          "containedInPlace": {
+            "@type": "State",
+            "name": location.state
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "description": "New construction home buying services with VIP access"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": `${baseUrl}/#person`,
+        "name": agent?.name || "Dr. Janet Duffy",
+        "jobTitle": "Featured New Home Construction & Buyer Representation Specialist",
+        "worksFor": {
+          "@id": `${baseUrl}/#organization`
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Century Communities",
+          "description": "Featured Partner"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "license",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Nevada Real Estate Division"
+            },
+            "name": "Nevada Real Estate License",
+            "credentialId": agent?.licenseNumber || "S.0197614"
+          }
+        ],
+        "knowsAbout": [
+          "Real Estate",
+          "New Home Construction",
+          "Buyer Representation",
+          "Las Vegas Real Estate Market",
+          "Clinical Psychology Applied to Real Estate"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Clinical Psychology Program"
+        }
       }
     ]
   }

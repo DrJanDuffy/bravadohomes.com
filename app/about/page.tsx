@@ -149,6 +149,82 @@ export default async function AboutPage() {
         </div>
       </div>
 
+      {/* E-E-A-T: 30+ Years Experience Timeline */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          30+ Years of Las Vegas Real Estate Experience
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 mb-8">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Experience Timeline</h3>
+            <div className="space-y-4">
+              <div className="border-l-4 border-blue-600 pl-4">
+                <h4 className="font-bold text-gray-900">1995-Present: 30+ Years in Las Vegas Real Estate</h4>
+                <p className="text-gray-700">
+                  Dr. Janet Duffy has been serving Las Vegas homebuyers for over three decades, witnessing 
+                  and adapting to market cycles, neighborhood development, and changing buyer needs. This 
+                  extensive experience provides unparalleled market knowledge and client service expertise.
+                </p>
+              </div>
+              <div className="border-l-4 border-purple-600 pl-4">
+                <h4 className="font-bold text-gray-900">Clinical Psychology Background</h4>
+                <p className="text-gray-700">
+                  Dr. Janet Duffy's clinical psychology background provides unique insights into buyer behavior, 
+                  life transitions, and the emotional aspects of home buying. This expertise enhances her ability 
+                  to understand client needs, especially during major life changes like retirement, first-time 
+                  buying, or divorce situations.
+                </p>
+              </div>
+              <div className="border-l-4 border-green-600 pl-4">
+                <h4 className="font-bold text-gray-900">Century Communities Partnership History</h4>
+                <p className="text-gray-700">
+                  As a Featured Century Communities Partner, Dr. Janet Duffy has built a long-standing relationship 
+                  with one of America's top 10 homebuilders. This partnership provides clients with exclusive access, 
+                  priority lot selection, and insider knowledge of Century Communities' processes and quality standards.
+                </p>
+              </div>
+              <div className="border-l-4 border-yellow-600 pl-4">
+                <h4 className="font-bold text-gray-900">Expertise Across Buyer Types</h4>
+                <p className="text-gray-700">
+                  Dr. Janet Duffy specializes in helping diverse buyer types including first-time buyers, 
+                  55+ active adult community buyers, divorce situations, and real estate investors. Her 
+                  experience across these different scenarios provides comprehensive expertise for any buyer situation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* E-E-A-T: Authoritativeness & Trustworthiness */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Authoritativeness & Trustworthiness
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Authoritativeness</h3>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Featured Century Communities Partner recognition</li>
+              <li>30+ years of continuous Las Vegas market experience</li>
+              <li>Specialized expertise in new construction and buyer representation</li>
+              <li>Published market research and case studies</li>
+              <li>Recognition within the Las Vegas real estate community</li>
+            </ul>
+          </div>
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Trustworthiness</h3>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Nevada Real Estate License (S.0197614) - verified and active</li>
+              <li>Independent buyer representation ensuring client interests are protected</li>
+              <li>Transparent decision-making process (see /transparency)</li>
+              <li>Client-focused approach prioritizing buyer success over sales</li>
+              <li>Ongoing support beyond closing demonstrating long-term commitment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* Expertise Section */}
       <div className="content-section">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
