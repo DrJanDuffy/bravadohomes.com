@@ -908,3 +908,30 @@ realscout-home-value {
   --rs-hvw-secondary-button-color: #ffffff;
   --rs-hvw-widget-width: auto;
 }
+
+/* Navigation-specific RealScout search styling */
+.nav-realscout-search {
+  width: 250px;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-realscout-search .realscout-widget-wrapper {
+  width: 100%;
+  min-height: auto !important;
+}
+
+.nav-realscout-search .realscout-simple-search-container {
+  min-height: auto !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-realscout-search realscout-simple-search {
+  display: block !important;
+  width: 100%;
+  min-height: auto !important;
+  height: auto;
+}

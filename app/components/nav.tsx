@@ -126,7 +126,9 @@ export function Navbar() {
               Email Dr. Janet
             </a>
             <div className="hidden lg:block">
-              <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+              <div className="nav-realscout-search">
+                <RealScoutSimpleSearch agentEncodedId="QWdlbnQtMjI1MDUw" />
+              </div>
             </div>
           </div>
         </div>
