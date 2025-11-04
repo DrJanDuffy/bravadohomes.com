@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { getCurrentDomainConfig, type DomainConfig } from '../utils/domain'
-import { defaultDomain } from '../domains-config'
+import { getCurrentDomainConfig } from '../utils/domain'
+import { defaultDomain, type DomainConfig } from '../domains-config'
 
 /**
  * Client-side hook to get domain configuration
