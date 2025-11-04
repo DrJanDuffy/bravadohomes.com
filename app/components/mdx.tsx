@@ -27,21 +27,21 @@ function Table({ data }: { data: { headers: string[], rows: string[][] } }) {
 }
 
 function CustomLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }) {
-  let href = props.href
+  const { href, children, ...restProps } = props
 
   if (href.startsWith('/')) {
     return (
-      <Link href={href} {...props}>
-        {props.children}
+      <Link href={href} {...restProps}>
+        {children}
       </Link>
     )
   }
 
   if (href.startsWith('#')) {
-    return <a {...props} />
+    return <a href={href} {...restProps}>{children}</a>
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return <a href={href} target="_blank" rel="noopener noreferrer" {...restProps}>{children}</a>
 }
 
 function RoundedImage(props: React.ComponentProps<typeof Image>) {
