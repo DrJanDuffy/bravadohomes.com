@@ -1,6 +1,45 @@
 import RealScoutListings from '../components/realscout-listings'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const agent = config.realEstateAgent
+
+  return {
+    title: 'Bravado Community | Gated Luxury Community North Las Vegas | Dr. Janet Duffy',
+    description: 'Bravado Community - Gated luxury community in North Las Vegas with park, walking paths, and security. Expert guidance from Dr. Janet Duffy, Featured Century Communities Partner. View available homes starting at $459,790.',
+    keywords: [
+      'bravado community',
+      'bravado north las vegas',
+      'gated community north las vegas',
+      'bravado homes community',
+      'century communities bravado',
+      'north las vegas gated communities',
+      'bravado community amenities',
+      agent?.name || 'Dr. Janet Duffy',
+      '89031 community',
+      'new construction community las vegas',
+    ],
+    alternates: {
+      canonical: `${baseUrl}/community`,
+    },
+    openGraph: {
+      title: 'Bravado Community | Gated Luxury Community North Las Vegas',
+      description: 'Bravado Community - Gated luxury community in North Las Vegas with park, walking paths, and security. Expert guidance from Dr. Janet Duffy.',
+      url: `${baseUrl}/community`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Bravado Community | North Las Vegas',
+      description: 'Gated luxury community in North Las Vegas with park, walking paths, and security.',
+    },
+  }
+}
 
 export default async function CommunityPage() {
   const headersList = await headers()

@@ -22,11 +22,10 @@ export async function generateStaticParams() {
   }
 }
 
-// Force static generation at build time
-// This ensures blog posts are pre-rendered and don't need file system access at runtime
-export const dynamic = 'force-static'
-export const dynamicParams = false // Disable dynamic params to ensure all posts are pre-generated at build time
-export const revalidate = false // Fully static, no revalidation needed
+// Use dynamic rendering to avoid React version conflicts during static generation
+// Blog posts will be rendered on-demand at request time
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true
 
 export async function generateMetadata({ 
   params 

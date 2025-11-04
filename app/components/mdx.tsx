@@ -54,7 +54,7 @@ function Code({ children, ...props }: React.HTMLAttributes<HTMLElement> & { chil
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
 
-function slugify(str) {
+function slugify(str: string): string {
   return str
     .toString()
     .toLowerCase()
@@ -65,70 +65,73 @@ function slugify(str) {
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
 }
 
-function createHeading(level: number) {
-  const Heading = ({ children }: { children: React.ReactNode }) => {
-    let slug = slugify(String(children))
-    
-    if (level === 1) {
-      return (
-        <h1 id={slug}>
-          <a href={`#${slug}`} className="anchor" />
-          {children}
-        </h1>
-      )
-    }
-    if (level === 2) {
-      return (
-        <h2 id={slug}>
-          <a href={`#${slug}`} className="anchor" />
-          {children}
-        </h2>
-      )
-    }
-    if (level === 3) {
-      return (
-        <h3 id={slug}>
-          <a href={`#${slug}`} className="anchor" />
-          {children}
-        </h3>
-      )
-    }
-    if (level === 4) {
-      return (
-        <h4 id={slug}>
-          <a href={`#${slug}`} className="anchor" />
-          {children}
-        </h4>
-      )
-    }
-    if (level === 5) {
-      return (
-        <h5 id={slug}>
-          <a href={`#${slug}`} className="anchor" />
-          {children}
-        </h5>
-      )
-    }
-    return (
-      <h6 id={slug}>
-        <a href={`#${slug}`} className="anchor" />
-        {children}
-      </h6>
-    )
-  }
-
-  Heading.displayName = `Heading${level}`
-
-  return Heading
+function Heading1({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h1',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
 }
 
-let components = {
-  h1: createHeading(1),
-  h2: createHeading(2),
-  h3: createHeading(3),
-  h4: createHeading(4),
-  h5: createHeading(5),
-  h6: createHeading(6),
+function Heading2({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h2',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
+}
+
+function Heading3({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h3',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
+}
+
+function Heading4({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h4',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
+}
+
+function Heading5({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h5',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
+}
+
+function Heading6({ children }: { children: React.ReactNode }) {
+  const slug = slugify(String(children))
+  return React.createElement(
+    'h6',
+    { id: slug },
+    React.createElement('a', { href: `#${slug}`, className: 'anchor' }),
+    children
+  )
+}
+
+const components = {
+  h1: Heading1,
+  h2: Heading2,
+  h3: Heading3,
+  h4: Heading4,
+  h5: Heading5,
+  h6: Heading6,
   Image: RoundedImage,
   a: CustomLink,
   code: Code,
