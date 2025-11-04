@@ -17,7 +17,7 @@ export const metadata = {
     'North Las Vegas zip code 89031',
     'North Las Vegas communities guide',
     'neighborhoods North Las Vegas',
-    agent?.name || 'Dr. Janet Duffy',
+    'Dr. Janet Duffy',
     'North Las Vegas guide',
     'North Las Vegas area',
     'North Las Vegas real estate neighborhoods',
