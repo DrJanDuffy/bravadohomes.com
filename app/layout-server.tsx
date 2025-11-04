@@ -80,23 +80,8 @@ export async function generateDomainMetadata(): Promise<Metadata> {
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
-      // Optimize for AI search engines
-      'GPTBot': {
-        index: true,
-        follow: true,
-      },
-      'ChatGPT-User': {
-        index: true,
-        follow: true,
-      },
-      'ClaudeBot': {
-        index: true,
-        follow: true,
-      },
-      'PerplexityBot': {
-        index: true,
-        follow: true,
-      },
+      // Note: AI bot-specific robots directives are handled in robots.txt
+      // Next.js metadata API only supports googleBot as a known property
     },
     verification: {
       google: config.googleVerification || process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
