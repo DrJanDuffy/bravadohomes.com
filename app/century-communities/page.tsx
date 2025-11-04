@@ -212,33 +212,111 @@ export default async function CenturyCommunitiesPage() {
         </div>
       </div>
 
+      {/* Century Communities History and Reputation Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Century Communities: A Leader in Quality Homebuilding
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Century Communities has established itself as one of America's most respected homebuilders through 
+          consistent delivery of quality, innovation, and customer satisfaction. Founded in 2002, Century 
+          Communities has grown to become one of the top 10 homebuilders in the nation, with a reputation built 
+          on excellence rather than just size.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Commitment to Quality Construction</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities doesn't cut corners. Every home is built with attention to detail, quality 
+              materials, and craftsmanship that reflects the company's commitment to excellence. From foundation 
+              to roof, Century Communities uses premium materials and proven construction methods that ensure 
+              homes stand the test of time.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The company's quality standards are evident in every aspect of construction, from the structural 
+              integrity to the finishes. Homeowners consistently praise Century Communities for the solid 
+              construction and attention to detail that exceeds expectations. This commitment to quality is 
+              one reason why Century Communities has maintained its position as a top 10 homebuilder.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Innovation in Home Design</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities is known for innovative floor plans that maximize space and functionality. 
+              The company's design team creates layouts that adapt to modern lifestyles while maintaining timeless 
+              appeal. At Bravado, this innovation is evident in the thoughtful floor plans that provide flexibility 
+              for various family needs.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The Century Connect® smart home technology represents Century Communities' commitment to innovation. 
+              By including this comprehensive smart home system as standard, Century Communities demonstrates 
+              its forward-thinking approach to homebuilding. This innovation enhances both the immediate living 
+              experience and long-term value of Century Communities homes.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Century Connect Smart Home */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
           Century Connect® Smart Home Technology
         </h2>
-        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto">
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
           Every Century Communities home comes equipped with Century Connect®, an innovative smart home package 
           that puts control of your home at your fingertips. Manage security, lighting, temperature, and more 
-          from anywhere in the world.
+          from anywhere in the world. This comprehensive system is included as standard at Bravado, representing 
+          thousands of dollars in value compared to other builders where similar technology is an expensive upgrade.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-blue-50 p-6 rounded-lg text-center">
-            <div className="text-4xl mb-4">🔒</div>
-            <h3 className="text-xl font-bold mb-3 text-gray-900">Smart Security</h3>
-            <p className="text-gray-700">Remote door locks, security cameras, and monitoring systems for complete peace of mind.</p>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="text-4xl mb-4 text-center">🔒</div>
+            <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">Smart Security</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Remote door locks, security cameras, and monitoring systems provide complete peace of mind. Monitor 
+              your home from anywhere using your smartphone, receive alerts when doors are opened, and check 
+              security camera feeds in real-time. The smart security system integrates seamlessly with other 
+              Century Connect® features for comprehensive home protection.
+            </p>
           </div>
-          <div className="bg-purple-50 p-6 rounded-lg text-center">
-            <div className="text-4xl mb-4">🌡️</div>
-            <h3 className="text-xl font-bold mb-3 text-gray-900">Climate Control</h3>
-            <p className="text-gray-700">Smart thermostats and HVAC systems that learn your preferences and save energy.</p>
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <div className="text-4xl mb-4 text-center">🌡️</div>
+            <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">Climate Control</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Smart thermostats and HVAC systems learn your preferences and save energy automatically. Adjust 
+              temperature from your phone, set schedules, and optimize energy usage. The intelligent climate 
+              control system helps reduce utility bills while maintaining perfect comfort throughout your home.
+            </p>
           </div>
-          <div className="bg-green-50 p-6 rounded-lg text-center">
-            <div className="text-4xl mb-4">💡</div>
-            <h3 className="text-xl font-bold mb-3 text-gray-900">Smart Lighting</h3>
-            <p className="text-gray-700">Automated lighting systems with scheduling, dimming, and color control options.</p>
+          <div className="bg-green-50 p-6 rounded-lg">
+            <div className="text-4xl mb-4 text-center">💡</div>
+            <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">Smart Lighting</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Automated lighting systems with scheduling, dimming, and color control options. Create lighting 
+              scenes for different times of day, control lights remotely, and set schedules for energy efficiency. 
+              The smart lighting system enhances both convenience and security, making your home feel lived-in 
+              even when you're away.
+            </p>
           </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Integrated Smart Home Experience</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Century Connect® isn't just a collection of smart devices—it's an integrated system that works 
+            together seamlessly. All features are controlled through a single, user-friendly app, making it 
+            easy to manage your entire home from one place. The system is designed to be intuitive and accessible, 
+            so you don't need to be tech-savvy to enjoy the benefits.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The integrated approach means that your security, lighting, and climate control systems can work 
+            together. For example, when you unlock your door, the system can automatically adjust lighting and 
+            temperature to your preferred settings. This level of integration creates a truly smart home 
+            experience that enhances daily living while reducing energy costs.
+          </p>
         </div>
       </div>
 
@@ -280,6 +358,53 @@ export default async function CenturyCommunitiesPage() {
                 priceMax="600000"
               />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Century Communities Communities in Las Vegas Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Century Communities Throughout Las Vegas
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Century Communities has established a strong presence in the Las Vegas market, with multiple 
+          communities throughout North Las Vegas and the greater Las Vegas area. Each community offers unique 
+          features and amenities, but all share Century Communities' commitment to quality construction, 
+          innovative design, and customer satisfaction.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Bravado: Premier Gated Community</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado represents Century Communities' premier offering in North Las Vegas, featuring a gated 
+              community with premium amenities and luxury finishes. Located at 5060 Wind Springs Street, Bravado 
+              offers three distinct floor plans ranging from 1,792 to 2,119 square feet, all including Century 
+              Connect® smart home technology as standard.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The Bravado community exemplifies Century Communities' approach to building complete communities, 
+              not just houses. The gated entrance, well-maintained common areas, and proximity to Craig Ranch 
+              Regional Park create an exceptional living environment. Bravado's location in North Las Vegas's 
+              fastest-growing corridor positions it as both a great place to live and a smart investment.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Other Century Communities Locations</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities has established several other communities throughout Las Vegas, each offering 
+              unique features and price points. These include Ironwood by Century Communities, Southwind by 
+              Century Communities, Modena I and II, The Townes at Union Village, and Homestead West. Each 
+              community reflects Century Communities' quality standards while offering distinct features and amenities.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              While {agent?.name || 'Dr. Janet Duffy'} specializes in Bravado Homes, she can provide information 
+              about other Century Communities locations and help you understand the differences between communities. 
+              Her expertise with Century Communities means she can help you find the right community and floor plan 
+              for your specific needs, whether that's Bravado or another Century Communities location.
+            </p>
           </div>
         </div>
       </div>
