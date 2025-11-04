@@ -3,6 +3,47 @@ import RealScoutHomeValue from '../components/realscout-home-value'
 import RealScoutAdvancedSearch from '../components/realscout-advanced-search'
 import { headers } from 'next/headers'
 import { getCurrentDomainConfig } from '../utils/domain'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers()
+  const config = getCurrentDomainConfig({ headers: headersList })
+  const baseUrl = config.baseUrl
+  const location = config.location
+  const agent = config.realEstateAgent
+
+  return {
+    title: `Prime Location | ${config.businessName} | North Las Vegas`,
+    description: `Discover the prime location of ${config.businessName} at 5060 Wind Springs Street, North Las Vegas, NV 89031. Expert location guidance from ${agent?.name || 'Dr. Janet Duffy'}, Century Communities Featured Partner. Easy access to Craig Ranch Regional Park, shopping, dining, and major Las Vegas attractions.`,
+    keywords: [
+      `${config.businessName} location`,
+      'North Las Vegas location',
+      '5060 Wind Springs Street',
+      'Craig Ranch Regional Park',
+      'North Las Vegas real estate location',
+      'Las Vegas new homes location',
+      agent?.name || 'Dr. Janet Duffy',
+      'Century Communities location',
+      location.zip,
+      `${location.city} prime location`,
+      'NV 89031',
+    ],
+    alternates: {
+      canonical: `${baseUrl}/location`,
+    },
+    openGraph: {
+      title: `Prime Location | ${config.businessName} | North Las Vegas`,
+      description: `Discover the prime location of ${config.businessName} at 5060 Wind Springs Street, North Las Vegas, NV 89031. Expert location guidance from ${agent?.name || 'Dr. Janet Duffy'}.`,
+      url: `${baseUrl}/location`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Prime Location | ${config.businessName}`,
+      description: `Discover the prime location of ${config.businessName} in North Las Vegas.`,
+    },
+  }
+}
 
 export default async function LocationPage() {
   const headersList = await headers()
