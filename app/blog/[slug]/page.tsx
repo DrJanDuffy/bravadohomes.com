@@ -22,13 +22,11 @@ export async function generateStaticParams() {
   }
 }
 
-// Force dynamic rendering as fallback if static generation fails
-export const dynamicParams = true
-
-// Allow both static and dynamic rendering
-// Static generation preferred, with dynamic fallback
-export const dynamic = 'auto' // Allow static generation when possible
-export const revalidate = 3600 // Revalidate every hour if using ISR
+// Force static generation at build time
+// This ensures blog posts are pre-rendered and don't need file system access at runtime
+export const dynamic = 'force-static'
+export const dynamicParams = false // Disable dynamic params to ensure all posts are pre-generated at build time
+export const revalidate = false // Fully static, no revalidation needed
 
 export async function generateMetadata({ 
   params 
