@@ -58,6 +58,7 @@ export default async function Page() {
   const headersList = await headers()
   const config = getCurrentDomainConfig({ headers: headersList })
   const email = config.contact.email
+  const agent = config.realEstateAgent
   return (
     <>
       <SchemaMarkup />
@@ -724,13 +725,92 @@ export default async function Page() {
         </div>
       </div>
 
+      {/* Bravado Home Features and Benefits Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Comprehensive Guide to Bravado Home Features and Benefits
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Every Bravado home is designed with careful attention to detail, premium features, and thoughtful 
+          amenities that enhance daily living. Understanding these features and benefits helps you appreciate 
+          the value and quality that Century Communities brings to every home in the Bravado community.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Energy Efficiency and Cost Savings</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado homes are built with energy efficiency in mind, featuring high-efficiency HVAC systems, 
+              quality insulation, energy-efficient windows, and smart home technology that optimizes energy usage. 
+              These features not only reduce your environmental impact but also significantly lower monthly utility 
+              costs compared to older homes or less efficient new construction.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The Century Connect® smart home system includes intelligent climate control that learns your 
+              preferences and adjusts automatically to minimize energy waste. Smart lighting systems can be 
+              scheduled and controlled remotely, ensuring lights aren't left on unnecessarily. These energy-saving 
+              features provide ongoing value throughout your ownership, reducing monthly expenses while maintaining 
+              comfort and convenience.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Premium Finishes and Design Elements</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Every Bravado home includes premium finishes that would typically be expensive upgrades in other 
+              communities. Premium cabinetry, countertops, flooring, and fixtures are standard, not optional. 
+              The attention to detail in design elements, trim work, and overall aesthetics creates a luxury 
+              living experience at an accessible price point.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The thoughtful design extends beyond finishes to include functional elements like walk-in pantries, 
+              spacious center islands, and well-planned storage solutions. These design features enhance daily 
+              living while maintaining the home's aesthetic appeal. The combination of form and function creates 
+              spaces that are both beautiful and practical for real-world living.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Flexible Living Spaces</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado's floor plans are designed with flexibility in mind, allowing homes to adapt to different 
+              lifestyle needs and family situations. Whether you need a home office, guest room, playroom, or 
+              additional living space, the floor plans provide options to accommodate your needs. This flexibility 
+              ensures your home remains functional as your family's needs evolve.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The two-story design provides privacy and separation between living and sleeping areas, while open-concept 
+              layouts create spacious, connected living spaces. The thoughtful placement of windows maximizes natural 
+              light, and the flow between rooms creates an inviting atmosphere. This combination of flexibility and 
+              thoughtful design ensures your Bravado home works for your lifestyle both now and in the future.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Smart Home Technology Integration</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              The Century Connect® smart home system included in every Bravado home provides comprehensive control 
+              over security, lighting, climate, and more. This integrated system is designed to be user-friendly, 
+              so you don't need to be tech-savvy to enjoy the benefits. The single app interface makes managing 
+              your entire home simple and convenient.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The smart home technology not only adds convenience but also enhances security and energy efficiency. 
+              Remote monitoring capabilities provide peace of mind when you're away, while automated systems ensure 
+              your home operates efficiently even when you're not thinking about it. This technology integration 
+              represents thousands of dollars in value and significantly enhances the living experience at Bravado.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Final Urgency CTA Section */}
       <div className="bg-gradient-to-r from-red-600 to-purple-600 text-white p-12 rounded-lg text-center mb-8">
         <h2 className="text-4xl font-bold mb-6">
           🚨 DON'T MISS OUT - BRAVADO IS SELLING FAST!
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          <strong>Only 3 floor plans remaining!</strong> Get VIP access to Bravado with Dr. Janet Duffy's expert guidance. 
+          <strong>Only 3 floor plans remaining!</strong> Get VIP access to Bravado with {agent?.name || 'Dr. Janet Duffy'}'s expert guidance. 
           Schedule your private tour today before these luxury homes are gone forever.
         </p>
         

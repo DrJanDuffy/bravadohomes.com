@@ -860,13 +860,73 @@ export default async function FloorPlansPage() {
         </div>
       </div>
 
+      {/* Floor Plan Customization Options Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Customization Options and Personalization
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          While Bravado floor plans are thoughtfully designed, you also have opportunities to personalize your home 
+          with various options and upgrades. Understanding what customization options are available and which ones 
+          add value helps you make informed decisions that enhance your living experience without overspending.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Interior Customization Options</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Century Communities offers various interior customization options that allow you to personalize your 
+              Bravado home to match your style and preferences. These may include flooring selections, cabinet 
+              upgrades, countertop materials, fixture choices, and paint colors. {agent?.name || 'Dr. Janet Duffy'} 
+              can help you understand which upgrades add value and which might not provide proportional return on investment.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The customization process is designed to be enjoyable and straightforward, with design centers and 
+              selection appointments to guide you through your choices. Having expert guidance ensures you make 
+              selections that enhance both your immediate enjoyment and long-term property value. This personalized 
+              approach is one of the benefits of working with a Featured Century Communities Partner.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Exterior and Structural Options</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Depending on availability and construction phase, you may have options for exterior finishes, 
+              structural modifications, or additional features like covered patios, extended garages, or additional 
+              rooms. These options allow you to create a home that truly fits your lifestyle and preferences.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              {agent?.name || 'Dr. Janet'} can help you understand which structural options are available for your 
+              chosen floor plan and lot, and which modifications make sense for your situation. Early selection of 
+              your floor plan and lot provides the most customization opportunities, as construction timelines and 
+              phase availability affect what options can be incorporated into your home.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Making Smart Upgrade Decisions</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Not all upgrades are created equal when it comes to value and return on investment. Some upgrades, like 
+            additional square footage or premium kitchen finishes, typically add significant value and appeal. Others 
+            may be important for your personal enjoyment but might not provide proportional resale value.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            {agent?.name || 'Dr. Janet Duffy'} provides expert guidance on upgrade decisions, helping you understand 
+            which customizations add value and which are primarily for personal enjoyment. This guidance ensures you 
+            make smart decisions that enhance your living experience while maintaining good investment value. The 
+            goal is to create a home you love that also maintains strong resale potential.
+          </p>
+        </div>
+      </div>
+
       {/* Ready to Explore Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-6">
           Ready to Find Your Perfect Floor Plan?
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Call or email Dr. Janet Duffy today for a private tour and expert guidance on your Bravado floor plan selection
+          Call or email {agent?.name || 'Dr. Janet Duffy'} today for a private tour and expert guidance on your Bravado floor plan selection
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-8">

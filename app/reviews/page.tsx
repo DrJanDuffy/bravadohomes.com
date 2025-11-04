@@ -607,6 +607,69 @@ export default async function ReviewsPage() {
         </div>
       </div>
 
+      {/* Common Themes in Reviews Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Common Themes in Bravado Homeowner Reviews
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          When analyzing hundreds of reviews from Bravado homeowners, certain themes emerge consistently. 
+          Understanding these common experiences helps prospective buyers know what to expect and confirms 
+          why Bravado Homes consistently earns high marks from satisfied homeowners.
+        </p>
+
+        <div className="space-y-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Exceptional Quality and Craftsmanship</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Reviewers consistently praise the quality construction and attention to detail evident in Bravado homes. 
+              From the foundation to the finishes, Century Communities' commitment to excellence is apparent. Homeowners 
+              note that their Bravado homes feel solid, well-built, and designed to last. The premium materials and 
+              quality craftsmanship exceed expectations, especially considering the accessible pricing.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Many reviewers compare their Bravado home to other new construction homes they've seen or owned, and 
+              consistently note that Bravado homes demonstrate superior build quality. The attention to detail in trim 
+              work, paint quality, and overall finish work earns particular praise. This quality construction contributes 
+              to long-term satisfaction and property value.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Value for Money and Included Features</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Reviewers frequently mention that Bravado homes represent exceptional value for the money. The inclusion 
+              of Century Connect® smart home technology as standard equipment, rather than an expensive upgrade, is 
+              consistently highlighted as a major advantage. Homeowners appreciate receiving premium features that would 
+              cost thousands extra in other communities.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The combination of quality construction, premium finishes, smart home technology, and gated community 
+              amenities at Bravado's price point creates outstanding value. Reviewers note that comparable homes in other 
+              communities often cost significantly more while offering fewer included features. This value proposition 
+              is consistently mentioned as a key reason for choosing Bravado.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Outstanding Customer Service Experience</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Homeowners who work with {agent?.name || 'Dr. Janet Duffy'} consistently praise the exceptional service 
+              and support they receive throughout the buying process and beyond. Reviewers appreciate having expert 
+              guidance that represents their interests, transparent communication, and responsive service. The 
+              personalized attention and professional expertise make the homebuying experience enjoyable rather than 
+              stressful.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The ongoing support after closing also earns high marks. Reviewers note that {agent?.name || 'Dr. Janet'} 
+              remains available to answer questions and provide assistance even after the sale is complete. This level 
+              of service creates lasting relationships and demonstrates genuine commitment to homeowner satisfaction, 
+              not just making a sale.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Final CTA */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-4">
