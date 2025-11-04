@@ -332,16 +332,10 @@ export default async function SchemaMarkup() {
         "publisher": {
           "@id": `${baseUrl}/#organization`
         },
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": `${baseUrl}/?s={search_term_string}`
-            },
-            "query-input": "required name=search_term_string"
-          }
-        ],
+        // Note: SearchAction removed to prevent Google from crawling search URL templates
+        // Real estate sites don't typically have on-site search functionality
+        // Contact information is the primary search "action" for this site
+        "potentialAction": [],
         "inLanguage": "en-US"
       },
       {

@@ -15,6 +15,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  // Redirect HTTP to HTTPS
+  if (request.nextUrl.protocol === 'http:') {
+    url.protocol = 'https:'
+    return NextResponse.redirect(url, 301)
+  }
+
   // NOTE: www redirect is disabled here to avoid conflicts with Vercel/hosting redirects
   // Configure www → non-www redirect at the Vercel domain settings level instead
   // This prevents ERR_TOO_MANY_REDIRECTS errors
