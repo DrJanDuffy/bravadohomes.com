@@ -562,6 +562,51 @@ export default async function ReviewsPage() {
         </div>
       </div>
 
+      {/* What Makes Bravado Reviews Authentic Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Why Bravado Reviews Are Trustworthy and Authentic
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          In an era where online reviews can be manipulated, Bravado Homes takes pride in presenting authentic 
+          feedback from real homeowners. Our review process ensures that every review comes from a verified 
+          Bravado homeowner who has completed the purchase and lived in their home. This commitment to authenticity 
+          provides prospective homebuyers with genuine insights into the Bravado experience.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Verified Homeowner Reviews</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Every review featured on this page comes from a verified Bravado homeowner. We verify ownership 
+              through purchase records and ensure that reviewers have actually lived in their Bravado home for 
+              a meaningful period. This verification process ensures that reviews reflect real experiences, not 
+              just initial impressions or marketing materials.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We don't edit reviews to remove negative feedback or enhance positive comments. What you read is 
+              what homeowners actually wrote. This transparency builds trust and helps prospective buyers make 
+              informed decisions based on authentic experiences rather than marketing hype.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Balanced and Honest Feedback</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              While we're proud that Bravado receives overwhelmingly positive reviews, we also share honest 
+              feedback about what homeowners wish could be different. This balanced approach helps set realistic 
+              expectations. For example, some reviewers note that the two-story design might not be ideal for 
+              those with mobility concerns, while others appreciate the privacy it provides.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We believe that honest, balanced reviews serve everyone better than only showcasing positive feedback. 
+              When you work with {agent?.name || 'Dr. Janet Duffy'}, you'll get the full picture—both the strengths 
+              and considerations—so you can make an informed decision that's right for your specific situation and needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Final CTA */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg text-center">
         <h2 className="text-3xl font-bold mb-4">

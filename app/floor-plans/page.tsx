@@ -49,6 +49,7 @@ export default async function FloorPlansPage() {
   const headersList = await headers()
   const config = getCurrentDomainConfig({ headers: headersList })
   const email = config.contact.email
+  const agent = config.realEstateAgent
   return (
     <section>
       {/* Hero Section */}
@@ -778,6 +779,84 @@ export default async function FloorPlansPage() {
               <p className="opacity-90">Premier relationship-backed negotiation power</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Floor Plan Selection Process Section */}
+      <div className="content-section mb-12">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          The Floor Plan Selection Process: What to Expect
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Choosing your Bravado floor plan is an exciting process that involves understanding your needs, 
+          exploring your options, and making an informed decision. Here's what to expect when working with 
+          {agent?.name || 'Dr. Janet Duffy'} to select the perfect floor plan for your family.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Initial Consultation</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Your journey begins with a consultation where {agent?.name || 'Dr. Janet'} will help you 
+              understand your family's specific needs, lifestyle, and preferences. We'll discuss your current 
+              living situation, future plans, and what's most important to you in a new home. This conversation 
+              helps narrow down which floor plan might work best for your situation.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We'll also discuss your budget, financing options, and timeline. Understanding these factors 
+              upfront helps ensure we're looking at realistic options that fit your circumstances. This initial 
+              consultation is completely free and comes with no obligation—it's all about helping you make an 
+              informed decision.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Model Home Tours</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Seeing a floor plan in person is essential to truly understanding how it will work for your family. 
+              {agent?.name || 'Dr. Janet'} will arrange private tours of the available model homes, allowing you 
+              to experience each floor plan firsthand. During these tours, you'll see how the spaces flow, how 
+              natural light enters the home, and how the layout functions in real life.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We'll discuss the features and finishes you're seeing, point out customization options, and answer 
+              any questions you have. These tours are invaluable for making an informed decision. You'll be able 
+              to visualize how your furniture will fit, how your family will use the spaces, and whether the 
+              floor plan truly meets your needs.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Lot Selection and Customization</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Once you've chosen a floor plan, {agent?.name || 'Dr. Janet'} will help you select the perfect lot 
+              from available options. Lot selection affects views, privacy, natural light, and sometimes even 
+              pricing. We'll discuss the pros and cons of different lot positions to help you make the best choice.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              You'll also have opportunities to customize your home with various options and upgrades. {agent?.name || 'Dr. Janet'} 
+              can help you understand which upgrades add value and which might not be worth the investment. Her 
+              expertise ensures you make smart customization choices that enhance your living experience without 
+              overspending on features that don't add proportional value.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Making Your Decision</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            After touring models and discussing your options, you'll have all the information needed to make 
+            an informed decision. {agent?.name || 'Dr. Janet'} will help you weigh the pros and cons of each 
+            floor plan option, considering your specific needs, budget, and preferences. There's no pressure—we 
+            want you to feel confident in your choice.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Once you've selected your floor plan and lot, the process moves forward with contract signing and 
+            the beginning of the construction process. Throughout construction, {agent?.name || 'Dr. Janet'} 
+            remains your advocate, ensuring quality standards are met and addressing any questions or concerns 
+            that arise. This ongoing support continues through closing and beyond, as you settle into your new 
+            Bravado home.
+          </p>
         </div>
       </div>
 

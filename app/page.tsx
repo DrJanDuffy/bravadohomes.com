@@ -645,6 +645,85 @@ export default async function Page() {
         </div>
       </div>
 
+      {/* Why Choose Bravado Over Other Communities Section */}
+      <div className="content-section mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+          Why Bravado Stands Out Among Las Vegas New Construction Communities
+        </h2>
+        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+          Las Vegas offers numerous new construction communities, but Bravado Homes by Century Communities 
+          stands apart for several compelling reasons. When comparing Bravado to other options in North Las Vegas 
+          and the greater Las Vegas area, these distinguishing factors consistently emerge as reasons why 
+          homebuyers choose Bravado.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Included Smart Home Technology</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Unlike many builders where smart home features are expensive upgrades, Bravado includes Century 
+              Connect® as standard equipment. This comprehensive smart home system typically costs $5,000-$10,000 
+              as an upgrade in other communities, but at Bravado, it comes with every home. This represents 
+              significant value and convenience that homeowners appreciate from day one.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The Century Connect® system includes smart locks, video doorbells, automated lighting, smart 
+              thermostats, and comprehensive security monitoring. All of this is controlled through a single, 
+              user-friendly app on your smartphone. Homeowners consistently rate this feature as one of the 
+              most valuable aspects of choosing Bravado over competing communities.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Gated Community at Entry-Level Pricing</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Finding a gated community with premium amenities at Bravado's starting price of $459,790 is 
+              exceptional in the Las Vegas market. Most gated communities in North Las Vegas start significantly 
+              higher, often $50,000-$100,000 more for comparable homes. Bravado provides the security, 
+              exclusivity, and community amenities of higher-priced developments at an accessible price point.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              The gated entrance provides peace of mind and adds to the sense of community. Well-maintained 
+              common areas and landscaping enhance property values while creating an attractive living environment. 
+              The combination of gated security and affordable pricing makes Bravado an outstanding value 
+              proposition in the Las Vegas new construction market.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Expert Buyer Representation Available</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Most new construction communities only offer builder sales teams whose primary interest is 
+              representing the builder, not the buyer. At Bravado, you have the option to work with 
+              {agent?.name || 'Dr. Janet Duffy'} as an independent buyer's representative. This means you 
+              have someone advocating for your interests throughout the entire process.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              {agent?.name || 'Dr. Janet'} provides expert guidance on lot selection, pricing negotiation, 
+              upgrade decisions, and contract terms. Having an experienced professional who specializes in 
+              new construction and understands the Century Communities process gives you a significant advantage 
+              throughout your homebuying journey.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Prime Location with Growth Potential</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Bravado's location at 5060 Wind Springs Street in North Las Vegas positions it in one of the 
+              area's fastest-growing corridors. The proximity to Craig Ranch Regional Park, major employment 
+              centers, and infrastructure improvements creates strong appreciation potential. The North Las Vegas 
+              area continues to attract new residents and businesses, driving property value growth.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Easy access to I-15 provides convenient commuting to downtown Las Vegas, the Strip, McCarran 
+              International Airport, and Nellis AFB. This connectivity is valuable for both current living 
+              and future resale. The combination of location, growth potential, and community amenities 
+              makes Bravado a smart investment choice in addition to being a great place to live.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Final Urgency CTA Section */}
       <div className="bg-gradient-to-r from-red-600 to-purple-600 text-white p-12 rounded-lg text-center mb-8">
         <h2 className="text-4xl font-bold mb-6">
