@@ -340,7 +340,7 @@ export default async function LennarVsCenturyPage() {
         <h3 className="text-2xl font-bold mb-6 text-gray-900 text-center">
           Available Bravado Homes
         </h3>
-        <RealScoutListings />
+        <RealScoutListings agentEncodedId="QWdlbnQtMjI1MDUw" />
       </div>
 
       {/* Disclaimer */}
