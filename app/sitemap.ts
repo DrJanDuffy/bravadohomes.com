@@ -62,6 +62,7 @@ export default async function sitemap() {
     // GEO Strategy: Buyer-type pages (high priority for AI visibility)
     { route: '/buyers/55-plus', priority: 0.85, changefreq: 'weekly' },
     { route: '/buyers/first-time', priority: 0.85, changefreq: 'weekly' },
+    { route: '/buyers/first-time/steps-guide', priority: 0.75, changefreq: 'monthly' },
     { route: '/buyers/divorce', priority: 0.85, changefreq: 'weekly' },
     { route: '/buyers/investors', priority: 0.85, changefreq: 'weekly' },
     { route: '/buyers/investors/roi-guide', priority: 0.75, changefreq: 'monthly' },

@@ -185,6 +185,19 @@ export default async function FirstTimeBuyersPage() {
             </p>
           </div>
         </div>
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg mt-8">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Need the Full First-Time Buyer Roadmap?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We moved the complete first-time buyer process into a dedicated guide so this page can stay focused on
+            FAQs, listings, and fast answers.
+          </p>
+          <a
+            href="/buyers/first-time/steps-guide"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+          >
+            Read the First-Time Buyer Steps Guide
+          </a>
+        </div>
       </div>
 
       {/* FAQ Section */}
