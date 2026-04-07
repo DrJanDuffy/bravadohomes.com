@@ -58,8 +58,33 @@ export default async function Residence1792Page() {
   const headersList = await headers()
   const config = getCurrentDomainConfig({ headers: headersList })
   const email = config.contact.email
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Residence 1792',
+    description: '1,792 sq ft, 3-4 bedrooms, 2.5 bathrooms',
+    category: 'New Home Construction',
+    brand: {
+      '@type': 'Brand',
+      name: 'Century Communities',
+    },
+    url: 'https://www.bravadohomes.com/models/residence-1792',
+    image: 'https://www.bravadohomes.com/images/bravado/floor-plans/residence-1792.jpg',
+    offers: {
+      '@type': 'Offer',
+      price: '459790',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.bravadohomes.com/models/residence-1792',
+    },
+  }
   return (
     <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+
       {/* Hero Section */}
       <div className="hero-gradient text-white py-16 px-8 rounded-lg mb-12">
         <div className="max-w-6xl mx-auto text-center">
