@@ -64,6 +64,7 @@ export default async function sitemap() {
     { route: '/buyers/first-time', priority: 0.85, changefreq: 'weekly' },
     { route: '/buyers/divorce', priority: 0.85, changefreq: 'weekly' },
     { route: '/buyers/investors', priority: 0.85, changefreq: 'weekly' },
+    { route: '/buyers/investors/roi-guide', priority: 0.75, changefreq: 'monthly' },
     
     // E-E-A-T: Authority building pages
     { route: '/transparency', priority: 0.8, changefreq: 'monthly' },

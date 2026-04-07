@@ -170,6 +170,19 @@ export default async function InvestorsPage() {
             </ul>
           </div>
         </div>
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">Need a Deeper ROI Breakdown?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We moved detailed ROI and cap-rate strategy into a dedicated guide to keep this page focused on investor
+            FAQs and active opportunities.
+          </p>
+          <a
+            href="/buyers/investors/roi-guide"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+          >
+            Read the ROI and Cap Rate Guide
+          </a>
+        </div>
       </div>
 
       {/* FAQ Section */}
