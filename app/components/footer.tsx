@@ -31,6 +31,15 @@ export default async function Footer() {
               <li><a href="/location" className="hover:text-blue-200 transition-colors">Location</a></li>
               <li><a href="/contact" className="hover:text-blue-200 transition-colors">Contact</a></li>
             </ul>
+            <h4 className="text-lg font-bold mt-6 mb-4">Popular Home Searches</h4>
+            <ul className="space-y-2 opacity-90">
+              <li><a href="/models/residence-1792" className="hover:text-blue-200 transition-colors">Bravado Residence 1792</a></li>
+              <li><a href="/models/residence-1943" className="hover:text-blue-200 transition-colors">Bravado Residence 1943</a></li>
+              <li><a href="/models/residence-2119" className="hover:text-blue-200 transition-colors">Bravado Residence 2119</a></li>
+              <li><a href="/amenities" className="hover:text-blue-200 transition-colors">North Las Vegas Amenities</a></li>
+              <li><a href="/new-home-construction" className="hover:text-blue-200 transition-colors">New Construction Guide</a></li>
+              <li><a href="/buyer-representation" className="hover:text-blue-200 transition-colors">Buyer Representation Services</a></li>
+            </ul>
           </div>
           
           <div>

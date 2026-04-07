@@ -5,7 +5,7 @@ export function GET() {
 Allow: /
 
 # Sitemap
-Sitemap: https://bravadohomes.com/sitemap.xml
+Sitemap: https://www.bravadohomes.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

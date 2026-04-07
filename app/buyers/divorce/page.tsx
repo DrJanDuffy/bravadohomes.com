@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Divorce-Friendly Fast Sale Homes: Las Vegas Market',
     description: 'Expert guidance for divorce real estate sales with fast sale strategies and compassionate support.',
-    url: 'https://bravadohomes.com/buyers/divorce',
+    url: 'https://www.bravadohomes.com/buyers/divorce',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/buyers/divorce',
+    canonical: 'https://www.bravadohomes.com/buyers/divorce',
   },
 }
 

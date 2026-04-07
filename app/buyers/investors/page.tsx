@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Las Vegas Real Estate Investment ROI Guide',
     description: 'Expert real estate investment guide with ROI analysis, cap rates, and market trends for Las Vegas.',
-    url: 'https://bravadohomes.com/buyers/investors',
+    url: 'https://www.bravadohomes.com/buyers/investors',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/buyers/investors',
+    canonical: 'https://www.bravadohomes.com/buyers/investors',
   },
 }
 

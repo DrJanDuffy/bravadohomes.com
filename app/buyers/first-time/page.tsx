@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Complete First-Time Buyer Guide: Las Vegas 2025',
     description: 'Expert first-time home buyer guide for Las Vegas with financing tips, neighborhood recommendations, and step-by-step guidance.',
-    url: 'https://bravadohomes.com/buyers/first-time',
+    url: 'https://www.bravadohomes.com/buyers/first-time',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/buyers/first-time',
+    canonical: 'https://www.bravadohomes.com/buyers/first-time',
   },
 }
 

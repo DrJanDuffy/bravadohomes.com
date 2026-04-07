@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How We Choose: Transparent Decision-Making Process',
     description: 'Transparent explanation of our neighborhood selection, home recommendation, and buyer representation processes.',
-    url: 'https://bravadohomes.com/transparency',
+    url: 'https://www.bravadohomes.com/transparency',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/transparency',
+    canonical: 'https://www.bravadohomes.com/transparency',
   },
 }
 

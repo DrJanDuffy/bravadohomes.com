@@ -36,6 +36,6 @@ export function getCurrentDomainConfig(request?: { headers: Headers | { get: (ke
  * Check if domain is in allowed list
  */
 export function isValidDomain(domain: string): boolean {
-  return domain === 'bravadohomes.com' || domain === 'mayfieldestateslasvegas.com'
+  return domain === 'bravadohomes.com' || domain === 'www.bravadohomes.com' || domain === 'mayfieldestateslasvegas.com'
 }
 

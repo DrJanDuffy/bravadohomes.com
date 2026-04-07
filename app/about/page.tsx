@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/about',
+    canonical: 'https://www.bravadohomes.com/about',
   },
 }
 

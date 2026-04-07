@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     title: 'North Las Vegas Neighborhoods | 89031 Area Guide | Dr. Janet Duffy',
     description: 'Explore North Las Vegas neighborhoods and communities. Expert guide to 89031 area including schools, amenities, and lifestyle from Dr. Janet Duffy.',
-    url: 'https://bravadohomes.com/north-las-vegas-neighborhoods',
+    url: 'https://www.bravadohomes.com/north-las-vegas-neighborhoods',
     type: 'website',
   },
 }

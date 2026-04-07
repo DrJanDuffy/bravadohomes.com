@@ -196,7 +196,7 @@ export default async function SchemaMarkup() {
           "description": "Featured Partner"
         },
         "worksFor": {
-          "@id": "https://bravadohomes.com/#business"
+          "@id": "https://www.bravadohomes.com/#business"
         },
         "knowsAbout": [
           "New Home Construction",
@@ -206,15 +206,15 @@ export default async function SchemaMarkup() {
           "North Las Vegas Real Estate"
         ],
         "sameAs": [
-          "https://bravadohomes.com"
+          "https://www.bravadohomes.com"
         ]
       },
       {
         "@type": "ResidentialComplex",
-        "@id": "https://bravadohomes.com/#community",
+        "@id": "https://www.bravadohomes.com/#community",
         "name": "Bravado",
         "description": "Luxury gated community in North Las Vegas featuring new construction homes by Century Communities",
-        "url": "https://bravadohomes.com",
+        "url": "https://www.bravadohomes.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "5060 Wind Springs Street",

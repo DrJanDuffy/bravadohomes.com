@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Real Estate Services | Dr. Janet Duffy | Bravado Homes North Las Vegas',
     description: 'Expert new home construction and buyer representation services in North Las Vegas. Dr. Janet Duffy provides specialized guidance for Century Communities homes at Bravado.',
-    url: 'https://bravadohomes.com/services',
+    url: 'https://www.bravadohomes.com/services',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/services',
+    canonical: 'https://www.bravadohomes.com/services',
   },
 }
 

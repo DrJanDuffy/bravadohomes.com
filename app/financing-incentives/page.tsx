@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Financing & Incentives | Bravado Homes | Dr. Janet Duffy',
     description: 'Explore exclusive financing options and builder incentives for Bravado new construction homes in North Las Vegas.',
-    url: 'https://bravadohomes.com/financing-incentives',
+    url: 'https://www.bravadohomes.com/financing-incentives',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/financing-incentives',
+    canonical: 'https://www.bravadohomes.com/financing-incentives',
   },
 }
 

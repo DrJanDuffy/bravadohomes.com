@@ -31,7 +31,7 @@ export async function GET() {
     // Fetch the RSS feed
     const response = await fetch(RSS_FEED_URL, {
       headers: {
-        'User-Agent': 'BravadoHomes/1.0 (https://bravadohomes.com)',
+        'User-Agent': 'BravadoHomes/1.0 (https://www.bravadohomes.com)',
         'Accept': 'application/rss+xml, application/xml, text/xml',
       },
       // Cache for 24 hours since RSS updates only on weekdays
@@ -48,7 +48,7 @@ export async function GET() {
     const feed: RSSFeed = {
       title: extractXmlContent(xmlText, 'title') || 'Market Insights',
       description: extractXmlContent(xmlText, 'description') || 'Latest real estate market insights',
-      link: extractXmlContent(xmlText, 'link') || 'https://bravadohomes.com',
+      link: extractXmlContent(xmlText, 'link') || 'https://www.bravadohomes.com',
       items: []
     }
 
@@ -151,25 +151,25 @@ export async function GET() {
     const fallbackFeed: RSSFeed = {
       title: 'Market Insights from Dr. Janet Duffy',
       description: 'Latest real estate market insights for North Las Vegas',
-      link: 'https://bravadohomes.com',
+      link: 'https://www.bravadohomes.com',
       items: [
         {
           title: 'North Las Vegas Real Estate Market Update',
-          link: 'https://bravadohomes.com',
+          link: 'https://www.bravadohomes.com',
           description: 'Stay informed about the latest trends in North Las Vegas real estate market with insights from Dr. Janet Duffy.',
           pubDate: new Date().toISOString(),
           guid: 'fallback-1'
         },
         {
           title: 'New Home Construction Trends in 2025',
-          link: 'https://bravadohomes.com',
+          link: 'https://www.bravadohomes.com',
           description: 'Discover the latest trends in new home construction and what buyers are looking for in 2025.',
           pubDate: new Date().toISOString(),
           guid: 'fallback-2'
         },
         {
           title: 'Bravado Community Market Analysis',
-          link: 'https://bravadohomes.com',
+          link: 'https://www.bravadohomes.com',
           description: 'Get expert analysis on the Bravado community market and investment opportunities.',
           pubDate: new Date().toISOString(),
           guid: 'fallback-3'

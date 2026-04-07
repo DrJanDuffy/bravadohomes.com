@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best 55+ Active Adult Communities in Las Vegas',
     description: 'Expert guide to 55+ active adult communities in Las Vegas and North Las Vegas from Dr. Janet Duffy.',
-    url: 'https://bravadohomes.com/buyers/55-plus',
+    url: 'https://www.bravadohomes.com/buyers/55-plus',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/buyers/55-plus',
+    canonical: 'https://www.bravadohomes.com/buyers/55-plus',
   },
 }
 

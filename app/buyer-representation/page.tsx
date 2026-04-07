@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Buyer Representation Services | Dr. Janet Duffy | Bravado Homes',
     description: 'Expert buyer representation services for new home construction in North Las Vegas. Dr. Janet Duffy provides independent guidance and advocacy.',
-    url: 'https://bravadohomes.com/buyer-representation',
+    url: 'https://www.bravadohomes.com/buyer-representation',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/buyer-representation',
+    canonical: 'https://www.bravadohomes.com/buyer-representation',
   },
 }
 

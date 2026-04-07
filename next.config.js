@@ -1,5 +1,9 @@
+const path = require('path')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Keep tracing scoped to this repo and avoid parent lockfile detection.
+  outputFileTracingRoot: path.join(__dirname),
   // Configuration for Next.js 15
   experimental: {
     // Enable any experimental features if needed

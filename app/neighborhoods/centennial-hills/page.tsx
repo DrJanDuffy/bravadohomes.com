@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Centennial Hills Neighborhood Guide | Las Vegas Real Estate',
     description: 'Complete Centennial Hills neighborhood guide with schools, amenities, and real estate insights.',
-    url: 'https://bravadohomes.com/neighborhoods/centennial-hills',
+    url: 'https://www.bravadohomes.com/neighborhoods/centennial-hills',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/neighborhoods/centennial-hills',
+    canonical: 'https://www.bravadohomes.com/neighborhoods/centennial-hills',
   },
 }
 

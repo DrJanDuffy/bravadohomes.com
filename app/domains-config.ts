@@ -34,7 +34,32 @@ export type DomainConfig = {
 export const domains: Record<string, DomainConfig> = {
   'bravadohomes.com': {
     domain: 'bravadohomes.com',
-    baseUrl: 'https://bravadohomes.com',
+    baseUrl: 'https://www.bravadohomes.com',
+    googleVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-6H8SG3KDBY',
+    businessName: 'Bravado Homes by Dr. Janet Duffy',
+    location: {
+      address: '5060 Wind Springs Street',
+      city: 'North Las Vegas',
+      state: 'NV',
+      zip: '89031',
+      coordinates: {
+        lat: '36.253435600755466',
+        lng: '-115.13597331838079',
+      },
+    },
+    contact: {
+      phone: '+17025001955',
+      email: 'DrJanSells@BravadoHomes.com',
+    },
+    realEstateAgent: {
+      name: 'Dr. Janet Duffy',
+      licenseNumber: 'S.0197614',
+    },
+  },
+  'www.bravadohomes.com': {
+    domain: 'www.bravadohomes.com',
+    baseUrl: 'https://www.bravadohomes.com',
     googleVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
     gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-6H8SG3KDBY',
     businessName: 'Bravado Homes by Dr. Janet Duffy',

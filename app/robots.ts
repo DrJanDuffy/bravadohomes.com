@@ -12,13 +12,13 @@ export default async function robots() {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/', '/private/', '/_next/static/', '/_next/image/'],
+        disallow: ['/api/', '/admin/', '/private/'],
       },
       // Search Engines
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/api/', '/admin/', '/private/', '/_next/static/', '/_next/image/'],
+        disallow: ['/api/', '/admin/', '/private/'],
       },
       {
         userAgent: 'Google-CloudVertexBot',

@@ -12,8 +12,8 @@ interface SEOHeadProps {
 export default function SEOHead({
   title = "Bravado Homes by Dr. Janet Duffy | New Homes in North Las Vegas",
   description = "Discover luxury new homes at Bravado in North Las Vegas. Dr. Janet Duffy, Featured New Home Construction & Buyer Representation Specialist for Century Communities, offers expert guidance on homes from $459,990.",
-  canonicalUrl = "https://bravadohomes.com",
-  ogImage = "https://bravadohomes.com/images/bravado/exterior/community-hero.jpg",
+  canonicalUrl = "https://www.bravadohomes.com",
+  ogImage = "https://www.bravadohomes.com/images/bravado/exterior/community-hero.jpg",
   ogType = "website",
   keywords = "Bravado North Las Vegas, new homes Las Vegas, Century Communities, Dr. Janet Duffy, new home construction, buyer representation, luxury homes North Las Vegas, 89031",
   zipCode = "89031",

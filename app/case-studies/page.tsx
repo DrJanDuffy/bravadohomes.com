@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Real Estate Case Studies & Market Analysis',
     description: 'Case studies and market analysis from 30+ years of Las Vegas real estate experience.',
-    url: 'https://bravadohomes.com/case-studies',
+    url: 'https://www.bravadohomes.com/case-studies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/case-studies',
+    canonical: 'https://www.bravadohomes.com/case-studies',
   },
 }
 

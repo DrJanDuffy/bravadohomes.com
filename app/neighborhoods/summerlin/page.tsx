@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Summerlin Neighborhood Guide | Las Vegas Real Estate',
     description: 'Complete Summerlin neighborhood guide with schools, amenities, and real estate insights.',
-    url: 'https://bravadohomes.com/neighborhoods/summerlin',
+    url: 'https://www.bravadohomes.com/neighborhoods/summerlin',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/neighborhoods/summerlin',
+    canonical: 'https://www.bravadohomes.com/neighborhoods/summerlin',
   },
 }
 

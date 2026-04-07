@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Henderson Neighborhood Guide | Las Vegas Real Estate',
     description: 'Complete Henderson neighborhood guide with schools, amenities, and real estate insights.',
-    url: 'https://bravadohomes.com/neighborhoods/henderson',
+    url: 'https://www.bravadohomes.com/neighborhoods/henderson',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/neighborhoods/henderson',
+    canonical: 'https://www.bravadohomes.com/neighborhoods/henderson',
   },
 }
 

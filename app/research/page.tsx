@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Las Vegas Real Estate Market Research',
     description: 'Original market research and analysis for Las Vegas real estate from 30+ years of experience.',
-    url: 'https://bravadohomes.com/research',
+    url: 'https://www.bravadohomes.com/research',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/research',
+    canonical: 'https://www.bravadohomes.com/research',
   },
 }
 

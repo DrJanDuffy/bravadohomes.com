@@ -3,6 +3,7 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const { pathname, search, protocol } = request.nextUrl
+  const host = request.headers.get('host') || ''
   
   // Skip middleware for static files and API routes (early return, no clone needed)
   if (
@@ -21,6 +22,13 @@ export function middleware(request: NextRequest) {
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
   }
+
+  // Canonicalize host to www for bravadohomes.com
+  if (host === 'bravadohomes.com') {
+    const url = request.nextUrl.clone()
+    url.host = 'www.bravadohomes.com'
+    return NextResponse.redirect(url, 308)
+  }
   
   // NOTE: www redirect should be configured at Vercel domain settings level
   // Middleware www redirect is disabled to avoid conflicts with Vercel redirects
@@ -37,6 +45,14 @@ export function middleware(request: NextRequest) {
   // Also handle search parameters on any page with the search template pattern
   if (search.includes('s={search_term_string}') || search.includes('search_term_string')) {
     const url = request.nextUrl.clone()
+    url.search = ''
+    return NextResponse.redirect(url, 301)
+  }
+
+  // Resolve legacy neighborhood hub URL to a valid indexed destination.
+  if (pathname === '/neighborhoods') {
+    const url = request.nextUrl.clone()
+    url.pathname = '/north-las-vegas-neighborhoods'
     url.search = ''
     return NextResponse.redirect(url, 301)
   }

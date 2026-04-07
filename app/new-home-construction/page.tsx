@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'New Home Construction | North Las Vegas | Dr. Janet Duffy',
     description: 'Expert new home construction guidance in North Las Vegas. Dr. Janet Duffy provides specialized services for Century Communities homes.',
-    url: 'https://bravadohomes.com/new-home-construction',
+    url: 'https://www.bravadohomes.com/new-home-construction',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://bravadohomes.com/new-home-construction',
+    canonical: 'https://www.bravadohomes.com/new-home-construction',
   },
 }
 
