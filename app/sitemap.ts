@@ -43,8 +43,10 @@ export default async function sitemap() {
     
     // Service and informational pages
     { route: '/services', priority: 0.75, changefreq: 'weekly' },
+    { route: '/services/home-buying-process', priority: 0.7, changefreq: 'monthly' },
     { route: '/amenities', priority: 0.7, changefreq: 'monthly' },
     { route: '/smart-home-technology', priority: 0.7, changefreq: 'monthly' },
+    { route: '/smart-home-technology/automation-guide', priority: 0.7, changefreq: 'monthly' },
     
     // SEO landing pages (if they exist)
     { route: '/north-las-vegas-homes', priority: 0.8, changefreq: 'weekly' },
@@ -52,7 +54,9 @@ export default async function sitemap() {
     { route: '/north-las-vegas-neighborhoods', priority: 0.7, changefreq: 'weekly' },
     { route: '/century-communities', priority: 0.7, changefreq: 'weekly' },
     { route: '/new-home-construction', priority: 0.7, changefreq: 'monthly' },
+    { route: '/century-communities/builder-quality', priority: 0.7, changefreq: 'monthly' },
     { route: '/buyer-representation', priority: 0.7, changefreq: 'monthly' },
+    { route: '/buyer-representation/benefits', priority: 0.7, changefreq: 'monthly' },
     { route: '/financing-incentives', priority: 0.6, changefreq: 'monthly' },
     
     // GEO Strategy: Buyer-type pages (high priority for AI visibility)

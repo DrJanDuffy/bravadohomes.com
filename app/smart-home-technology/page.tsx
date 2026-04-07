@@ -226,90 +226,21 @@ export default async function SmartHomeTechnologyPage() {
         </div>
       </div>
 
-      {/* Energy Efficiency & Cost Savings */}
       <div className="mb-16">
-        <div className="vip-partnership bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-lg text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Energy Efficiency & Cost Savings
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            Automation Features Guide
           </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Century Connect® smart home technology helps reduce energy costs and environmental impact
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We moved our detailed automation content into a dedicated guide so this page stays focused on the
+            complete Century Connect overview and active listings.
           </p>
-          
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="feature-icon mx-auto">💰</div>
-              <h3 className="text-xl font-bold mb-3">Lower Energy Bills</h3>
-              <p className="opacity-90">Smart thermostats and lighting reduce energy consumption</p>
-            </div>
-            <div className="text-center">
-              <div className="feature-icon mx-auto">🌱</div>
-              <h3 className="text-xl font-bold mb-3">Environmental Impact</h3>
-              <p className="opacity-90">Reduced energy usage for a more sustainable lifestyle</p>
-            </div>
-            <div className="text-center">
-              <div className="feature-icon mx-auto">📊</div>
-              <h3 className="text-xl font-bold mb-3">Usage Monitoring</h3>
-              <p className="opacity-90">Real-time energy tracking and optimization insights</p>
-            </div>
-            <div className="text-center">
-              <div className="feature-icon mx-auto">🏆</div>
-              <h3 className="text-xl font-bold mb-3">Smart Optimization</h3>
-              <p className="opacity-90">Automated systems work together for maximum efficiency</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Voice Assistant Integration */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Voice Assistant Integration
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-sm border">
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Voice Control Features</h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                "Hey Google" and "Alexa" integration
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Voice-controlled lighting and temperature
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Hands-free home automation
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Custom voice commands and routines
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-white p-8 rounded-lg shadow-sm border">
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Smart Home Routines</h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                "Good Morning" routine activation
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                "Good Night" automation
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Custom scene creation
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Scheduled automation
-              </li>
-            </ul>
-          </div>
+          <a
+            href="/smart-home-technology/automation-guide"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+          >
+            Read the Century Connect Automation Guide
+          </a>
         </div>
       </div>
 

@@ -222,71 +222,22 @@ export default async function CenturyCommunitiesPage() {
         </div>
       </div>
 
-      {/* Century Communities History and Reputation Section */}
       <div className="content-section mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
-          Century Communities: A Leader in Quality Homebuilding
-        </h2>
-        <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          <strong>Century Communities</strong> has established itself as one of America's most respected homebuilders through 
-          consistent delivery of quality, innovation, and customer satisfaction. Founded in 2002, <strong>Century 
-          Communities</strong> has grown to become one of the top 10 homebuilders in the nation, with a reputation built 
-          on excellence rather than just size. This focus on quality over quantity sets <strong>Century Communities</strong> apart 
-          in the competitive homebuilding industry.
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Commitment to Quality Construction</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>Century Communities</strong> doesn't cut corners. Every home is built with attention to detail, quality 
-              materials, and craftsmanship that reflects the company's commitment to excellence. From foundation 
-              to roof, <strong>Century Communities</strong> uses premium materials and proven construction methods that ensure 
-              homes stand the test of time. This commitment to quality is evident in every aspect of construction.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              The company's quality standards are evident in every aspect of construction, from the structural 
-              integrity to the finishes. Homeowners consistently praise <strong>Century Communities</strong> for the solid 
-              construction and attention to detail that exceeds expectations. This commitment to quality is 
-              one reason why <strong>Century Communities</strong> has maintained its position as a top 10 homebuilder, 
-              earning recognition for excellence in both construction quality and customer satisfaction.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">Innovation in Home Design</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>Century Communities</strong> is known for innovative floor plans that maximize space and functionality. 
-              The company's design team creates layouts that adapt to modern lifestyles while maintaining timeless 
-              appeal. At Bravado, this innovation is evident in the thoughtful floor plans that provide flexibility 
-              for various family needs and lifestyle preferences.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              The <strong>Century Connect®</strong> smart home technology represents <strong>Century Communities</strong> commitment to innovation. 
-              By including this comprehensive smart home system as standard, <strong>Century Communities</strong> demonstrates 
-              its forward-thinking approach to homebuilding. This innovation enhances both the immediate living 
-              experience and long-term value of <strong>Century Communities</strong> homes, positioning them ahead of the 
-              competition in terms of modern features and technology.
-            </p>
-          </div>
-        </div>
-        
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">Customer Satisfaction and Reputation</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Century Communities</strong> reputation for customer satisfaction is built on consistent delivery of quality 
-            homes and exceptional service. The company's focus on customer relationships, rather than just volume, 
-            creates a homebuying experience that exceeds expectations. Homeowners consistently praise <strong>Century 
-            Communities</strong> for responsiveness, quality construction, and ongoing support throughout the building 
-            process and beyond.
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            Builder Quality Guide
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We moved our detailed builder-quality content into a dedicated guide so this page stays focused on
+            Century Communities opportunities in Las Vegas. Review construction standards, design quality, and
+            customer-experience considerations in the full breakdown.
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            The Featured Partner program, which includes experts like <strong>{agent?.name || 'Dr. Janet Duffy'}</strong>, enhances 
-            this customer-focused approach. Featured Partners provide personalized service, expert guidance, and 
-            independent buyer representation that ensures customer interests are protected. This combination of 
-            quality construction and exceptional service creates a reputation that attracts discerning homebuyers 
-            who value both quality and service excellence.
-          </p>
+          <a
+            href="/century-communities/builder-quality"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+          >
+            Read Century Communities Builder Quality Guide
+          </a>
         </div>
       </div>
 
