@@ -105,7 +105,14 @@ export default async function SchemaMarkup() {
                 "@type": "Product",
                 "name": "Residence 1792",
                 "description": "1,792 sq ft, 3-4 bedrooms, 2.5 bathrooms",
-                "category": "New Home Construction"
+                "category": "New Home Construction",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "459790",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": `${baseUrl}/models/residence-1792`
+                }
               },
               "price": "459790",
               "priceCurrency": "USD",
@@ -118,7 +125,14 @@ export default async function SchemaMarkup() {
                 "@type": "Product",
                 "name": "Residence 1943",
                 "description": "1,943 sq ft, 3 bedrooms, 2.5 bathrooms",
-                "category": "New Home Construction"
+                "category": "New Home Construction",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "469790",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": `${baseUrl}/models/residence-1943`
+                }
               },
               "price": "469790",
               "priceCurrency": "USD",
@@ -131,7 +145,14 @@ export default async function SchemaMarkup() {
                 "@type": "Product",
                 "name": "Residence 2119",
                 "description": "2,119 sq ft, 3 bedrooms, 2.5 bathrooms",
-                "category": "New Home Construction"
+                "category": "New Home Construction",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "479790",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": `${baseUrl}/models/residence-2119`
+                }
               },
               "price": "479790",
               "priceCurrency": "USD",
